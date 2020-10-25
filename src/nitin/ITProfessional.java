@@ -10,6 +10,7 @@
 	f. displayInformation()
 Hint: One String, 4 boolean variable needed
 Note: In Console Print statement in a proper way. */
+package nitin;
 
 class ITProfessional{
 	String nameOfEmployee;
