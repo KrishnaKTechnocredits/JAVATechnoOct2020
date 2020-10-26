@@ -50,6 +50,7 @@ class Mall {
 	}
 
 	public static void main(String[] args) {
+		
 		Mall mall = new Mall();
 		mall.itemAddedToCart(12);
 		mall.customerName("Harsh");

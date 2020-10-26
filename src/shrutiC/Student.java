@@ -35,6 +35,7 @@ class Student {
 		student.studentName("Shruti");
 		student.gainedMark(92);
 		student.displayStudentInfo();
+		
 	}
 
 }
