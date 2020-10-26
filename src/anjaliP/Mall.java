@@ -61,7 +61,5 @@ public class Mall
 		mall.needBill(true);
 		mall.haveCarryBag(false);
 		mall.displayCutomerInfo(mall);
-
 	}
-
 }
