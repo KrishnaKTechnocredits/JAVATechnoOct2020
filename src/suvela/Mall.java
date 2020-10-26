@@ -4,6 +4,7 @@ class Mall {
 	int items;
 	String cust_Name;
 	String payment;
+	String section;
 	boolean bill;
 	boolean carry_Bag;
 
@@ -28,16 +29,14 @@ class Mall {
 	}
 
 	void decideSection() {
-
-		System.out.println(cust_Name + " bought " + items + " items and payment done using " + payment);
 		if (items < 10 && payment == "cash")
-			System.out.println("Send customer to section 1A");
-		if (items > 10 && payment == "cash")
-			System.out.println("Send customer to section 1C");
-		if (items > 10 && payment == "visa_card")
-			System.out.println("Send customer to section 1B");
-		if (items < 10 && payment == "visa_card")
-			System.out.println("Send customer to section 1D");
+			section = "1A";
+		else if (items > 10 && payment == "cash")
+			section = "1C";
+		else if (items > 10 && payment == "visa_card")
+			section = "1B";
+		else if (items < 10 && payment == "visa_card")
+			section = "1D";
 	}
 
 	void displayCustomerInfo() {
@@ -46,6 +45,7 @@ class Mall {
 			System.out.println("Customer wants bill and carry Bag");
 		else
 			System.out.println("Customer does not want bill and Carry Bag");
+		System.out.println(cust_Name + " bought " + items + " items and payment done using " + payment + " in " + section);
 
 	}
 
@@ -56,8 +56,9 @@ class Mall {
 		mall.haveCarryBag(true);
 		mall.needBill(false);
 		mall.paymentDoneUsing("cash");
-		mall.displayCustomerInfo();
 		mall.decideSection();
+		mall.displayCustomerInfo();
+		
 
 	}
 
