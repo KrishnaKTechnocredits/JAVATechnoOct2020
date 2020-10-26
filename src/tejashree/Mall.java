@@ -23,13 +23,13 @@ public class Mall {
 		System.out.println(custName + " added " + itemCount + " items and payment done using " + paymentChoice + section);
 	}
 	void needBill(boolean needBill) {
-		if (!needBill) {
+		if (needBill) {
 			System.out.println(custName + " needs a copy of bill");
 		} else
 			System.out.println(custName + " does not need a bill copy");
 	}
 	void haveCarryBag(boolean needBag) {
-		if (!needBag) {
+		if (needBag) {
 			System.out.println(custName + " needs a carry bag");
 		} else
 			System.out.println(custName + " does not need a carry bag");
@@ -52,6 +52,7 @@ public class Mall {
 		mall.itemAddedToCart(9);
 		mall.paymentDoneUsingCash("cash");
 		mall.decideSection();
+		mall.needBill(true);
 		mall.haveCarryBag(true);
 		mall.displayCustomerInfo();
 	}
