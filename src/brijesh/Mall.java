@@ -20,8 +20,7 @@ public class Mall {
 		this.paymentMode=paymentMode;	
 	}
 	
-	void displayCutomerInfo(Mall mall) {
-		mall.decideSection();
+	void displayCutomerInfo() {
 		System.out.println(name+" brought "+numberOfItems+" items and payment done using "+paymentMode+" in section "+section);
 		if(requiredBill)
 			System.out.print("customer requested for bill. ");
@@ -59,7 +58,8 @@ public class Mall {
 		mall.customerName("Vikash");
 		mall.needBill(true);
 		mall.haveCarryBag(false);
-		mall.displayCutomerInfo(mall);
+		mall.decideSection();
+		mall.displayCutomerInfo();
 
 	}
 
