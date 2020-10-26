@@ -23,6 +23,8 @@ public class Mall {
 	int numberOfItems;
 	String name;
 	String modeOfPay;
+	boolean bill;
+	boolean carryBag;
 	String section;
 	void itemAddedToCart(int numberOfItems){
 		this.numberOfItems = numberOfItems;
@@ -37,11 +39,11 @@ public class Mall {
 	}
 	
 	void needBill(boolean bill) {
-		
+		this.bill = bill;
 	}
 	
-	void haveCarryBag(boolean CarryBag) {
-		
+	void haveCarryBag(boolean carryBag) {
+		this.carryBag = carryBag;
 	}
 	
 	void displayCutomerInfo(){
@@ -72,6 +74,8 @@ public class Mall {
 		mall.customerName("Ruby");
 		mall.itemAddedToCart(10);
 		mall.paymentDoneUsing("Visa Card");
+		mall.haveCarryBag(true);
+		mall.needBill(true);
 		mall.decisionSection();
 		mall.displayCutomerInfo();
 	}
