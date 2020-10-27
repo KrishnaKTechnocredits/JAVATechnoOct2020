@@ -45,19 +45,19 @@ class Shop{
 	
 	void itemsInStock(){
 		if (maggieInStock > 0)
-			System.out.println("Maggie is Available In Stock! " + maggieInStock + " packets remaining");
+			System.out.println("Maggie is Available In Stock " + maggieInStock + " packets remaining");
 		
 		if (dosaInStock > 0)
-			System.out.println("Dosa is Available In Stock! " + dosaInStock + " packets remaining");
+			System.out.println("Dosa is Available In Stock " + dosaInStock + " packets remaining");
 	
 		if (oilInStock > 0)
-			System.out.println("Oil is Available In Stock! " + oilInStock + " packets remaining");
+			System.out.println("Oil is Available In Stock " + oilInStock + " packets remaining");
 		
 		if (panipuriInStock > 0)
-			System.out.println("Panipuri is Available In Stock! " + panipuriInStock + " packets remaining");
+			System.out.println("Panipuri is Available In Stock " + panipuriInStock + " packets remaining");
 		
 		if (masalaInStock > 0)
-			System.out.println("Masala is Available In Stock! " + masalaInStock + " packets remaining");
+			System.out.println("Masala is Available In Stock " + masalaInStock + " packets remaining");
 	}
 	
 	void itemsOutOfStock() {
