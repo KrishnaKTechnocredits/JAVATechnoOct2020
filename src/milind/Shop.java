@@ -13,31 +13,31 @@ public class Shop {
 		if(orderOfMaggy <= stocksOfMaggie) {
 			stocksOfMaggie = stocksOfMaggie - orderOfMaggy;
 		} else {
-			System.out.println("Maggy packets are running out of stock");
+			System.out.println(stocksOfMaggie + " maggy packets are in stock and you are asking for " + orderOfMaggy);
 		}
 		
 		if(orderOfDosa <= stocksOfDosa) {
 			stocksOfDosa = stocksOfDosa - orderOfDosa;
 		} else {
-			System.out.println("Dosa packets are running out of stock");
+			System.out.println(stocksOfDosa + " dosa packets are in stock  and you are asking for " + orderOfDosa);
 		}
 		
 		if(orderOfPouches <= stocksOfPouches) {
 			stocksOfPouches = stocksOfPouches - orderOfPouches;
 		} else {
-			System.out.println("Oil Pouches are running out of stock");
+			System.out.println(stocksOfPouches + " oil pouches are in stock and you are asking for " + orderOfPouches);
 		}
 		
 		if(orderOfPanipuri <= stocksOfPanipuri) {
 			stocksOfPanipuri = stocksOfPanipuri - orderOfPanipuri;
 		} else {
-			System.out.println("Panipuri packets are running out of stock");
+			System.out.println(stocksOfPanipuri + " panipury packets are in stock and you are asking for " + orderOfPanipuri);
 		}
 		
 		if(orderOfMasala <= stocksOfMasala) {
 			stocksOfMasala = stocksOfMasala - orderOfMasala;
 		} else {
-			System.out.println("Masala packets are running out of stock");
+			System.out.println(stocksOfMasala + " masala packets are in stock and you are asking for " + orderOfMasala);
 		}
 	}
 	
@@ -99,7 +99,7 @@ public class Shop {
 	
 	public static void main(String[] args) {
 		Shop shop = new Shop();
-		shop.customerOrder(49,4,3,4,7);
+		shop.customerOrder(51,4,3,4,7);
 		shop.outOfStockItem();
 		shop.availableItem();
 	}
