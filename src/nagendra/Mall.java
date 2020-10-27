@@ -1,3 +1,4 @@
+
 package nagendra;
 
 public class Mall {
@@ -42,7 +43,7 @@ public class Mall {
 		} else if (numberOfItems > 10 && paymentType.equals("cash")) {
 			section = "section 1c";
 
-		} else {
+		} else if (numberOfItems < 10 && paymentType.equals("visa card")) {
 			section = "section 1D";
 		}
 	}
