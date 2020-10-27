@@ -1,50 +1,65 @@
 package apurva;
 
 class Mall {
+
+	String custName;
+	int items;
+	boolean bill;
+	boolean carryBag;
+	String payment;
+	
 	void itemAddedToCart(int items) {
-		System.out.println(items);
+		this.items = items;
 	}
 
-	void customerName(String name) {
-		System.out.println(name);
+	void customerName(String custname) {
+		this.custName = custname;
 	}
 
-	void paymentDoneUsing(String visaCard, String cash) {
-		System.out.println();
-	}
-
-	void displayCustomerInfo(int items, String visaCard, String cash){
-		String payment = null;
-		if (items<10 && payment==cash)
-			System.out.println();
-		else if (items>10 && payment==visaCard)
-			System.out.println();
-		else if (items>10 && payment==cash)
-			System.out.println();
-		else if (items<10 && payment==visaCard)
-			System.out.println();
+	void paymentDoneUsing(String payment) {
+		this.payment = payment;
 	}
 
 	void needBill(boolean bill) {
-		System.out.println(true);
+		this.bill = bill;
 	}
 
 	void haveCarryBag(boolean carryBag) {
-		System.out.println(true);
+		this.carryBag = carryBag;
 	}
 
-	void decideSection(String section) {
-		System.out.println();
+	void decideSection() {
+		if (items < 10 && payment == "cash")
+			System.out.println("1A");
+		else if (items > 10 && payment == "visaCard")
+			System.out.println("1B");
+		else if (items > 10 && payment == "cash")
+			System.out.println("1C");
+		else if (items < 10 && payment == "visaCard")
+			System.out.println("1D");
 	}
 
-	public static void main(String[] args){
+	void displayCustomerInfo() {
+		System.out.println(custName + " Total Num of items = " + items + " payment mode = " + payment);
+		if (bill) {
+			System.out.println("Customer needs a bill");
+		} else {
+			System.out.println("Customer not requesting for bill");
+		}
+
+		if (carryBag) {
+			System.out.println("Need a carry bag");
+		} else {
+			System.out.println("No need carry bag");
+		}
+	}
+
+	public static void main(String[] args) {
 		Mall mall = new Mall();
 		mall.itemAddedToCart(12);
 		mall.customerName("Harsh");
-		mall.paymentDoneUsing("visa card", null);
-		mall.displayCustomerInfo(12, null, null);
-		mall.needBill(false);
-		mall.haveCarryBag(false);
-		mall.decideSection(null);
+		mall.paymentDoneUsing("visaCard");
+		mall.displayCustomerInfo();
+		mall.decideSection();
 	}
 }
