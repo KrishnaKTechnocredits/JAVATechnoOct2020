@@ -5,7 +5,7 @@ public class Mall {
 	int numberOfItem;
 	String name;
 	String paymentMethod;
-	boolean billPrint
+	boolean billPrint;
 	boolean needCarryBag;
 	
 	void itemAddedToCart(int numberOfItem) {
