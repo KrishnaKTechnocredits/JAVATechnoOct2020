@@ -73,7 +73,7 @@ public class ShopStockDetails {
 		if(intialStockOfMasala>0)
 			System.out.println("Masala Packets : "+intialStockOfMasala);
 		System.out.println();
-		}
+	}
 
 	public static void main(String[] args) {
 		ShopStockDetails shopStockDetails=new ShopStockDetails();
