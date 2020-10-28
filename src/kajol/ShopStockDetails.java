@@ -39,7 +39,7 @@ public class ShopStockDetails {
 		if(purchasedMasala>intialStockOfMasala) 
 			System.out.println("Available Stock for Masala Packets is "+intialStockOfMasala+" packets and You have requested for "+purchasedMasala+"  packets.Quantity Running Out of Available Stock");
 		else {
-			System.out.println("Masala Purchased : "+intialStockOfMasala);
+			System.out.println("Masala Purchased : "+purchasedMasala);
 			intialStockOfMasala=intialStockOfMasala-purchasedMasala;
 		}
 		System.out.println(); 
