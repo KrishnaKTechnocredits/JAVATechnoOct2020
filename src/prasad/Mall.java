@@ -41,7 +41,7 @@ public class Mall {
 	}
 	
 	void decideSection() {
-		if (numberofItems<10 && paymentMethod.equals("cash"))
+		if (numberofItems<=10 && paymentMethod.equals("cash"))
 			System.out.print(" and payment done using " + paymentMethod + " in section 1A");
 		else if (numberofItems>10 && paymentMethod.equals("visa card"))
 			System.out.print(" and payment done using " + paymentMethod + " in section 1B");
@@ -53,7 +53,7 @@ public class Mall {
 	
 	public static void main (String[]arg) {
 		Mall mall = new Mall();
-		mall.itemsAddedToCart(9);
+		mall.itemsAddedToCart(12);
 		mall.customername("Martina");
 		mall.paymentDoneusing("visa card");
 		mall.needBill(true);
