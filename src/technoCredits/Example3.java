@@ -4,7 +4,7 @@ public class Example3 {
 	int count;
 	
 	void displayCount() {
-		System.out.println(count);
+		System.out.println(count+"Hi");
 		count = count + 1;
 	}
 	
