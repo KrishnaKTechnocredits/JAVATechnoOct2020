@@ -1,7 +1,7 @@
 package priya;
 
 public class StudentInfo {
-	String name = "Aarya";
+	String name = "Priya";
 	String middlename = "Ajit";
 	String surname = "More";
 	String birthdate = "06th Dec 2008";

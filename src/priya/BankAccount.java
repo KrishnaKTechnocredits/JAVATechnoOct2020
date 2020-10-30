@@ -22,7 +22,7 @@ public class BankAccount {
 	}
 	public static void main(String[] args) {
 		BankAccount bankaccount = new BankAccount();
-		bankaccount.setDetails("Priya","priya@006", 112233445);
+		bankaccount.setDetails("Aarya","priya@006", 112233445);
 		bankaccount.displayInfo();
 		bankaccount.updatePassword("priya@123");
 		bankaccount.displayInfo();
