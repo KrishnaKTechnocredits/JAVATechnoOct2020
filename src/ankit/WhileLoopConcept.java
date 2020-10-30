@@ -1,4 +1,4 @@
-package assignments;
+package ankit;
 
 public class WhileLoopConcept {
 
