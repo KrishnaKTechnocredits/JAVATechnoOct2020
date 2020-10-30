@@ -27,10 +27,11 @@ class NumberPrint {
 
 	void divNum3(int start, int end) {
 		for (int index = start; index <= end; index++) {
-			if (index % 7 == 0 && index % 13 == 0) {
-				System.out.println("Divisible by 7 & 13 numbers are: " + index);
+			if (index % 7 == 0) 
+				System.out.println(index + " is divisible by 7 ");
+			else if	(index % 13 == 0)
+				System.out.println(index + " is divisible by 13");
 			}
-		}
 	}
 
 	public static void main(String[] args) {
