@@ -45,11 +45,11 @@ public class LoopAssignment8 {
 	}
 
 	public static void main(String[] args) {
-		LoopAssignment8 loopAssignment7 = new LoopAssignment8();
-		loopAssignment7.displayEvenNumber(10, 15);
-		loopAssignment7.displayNumberDivBy5(10, 30);
-		loopAssignment7.displayNumberDivBy5And3(5, 18);
-		loopAssignment7.displayNumberDivBy7Or13(5, 40);
+		LoopAssignment8 loopAssignment8 = new LoopAssignment8();
+		loopAssignment8.displayEvenNumber(10, 15);
+		loopAssignment8.displayNumberDivBy5(10, 30);
+		loopAssignment8.displayNumberDivBy5And3(5, 18);
+		loopAssignment8.displayNumberDivBy7Or13(5, 40);
 
 	}
 
