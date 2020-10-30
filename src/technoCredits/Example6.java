@@ -6,7 +6,7 @@ package technoCredits;
 // pMarks > 98 ... print mMarks.
 // We have successfully processed student data
 
-public class Example2 {
+public class Example6 {
     
 	void processData(String studentName, int mMarks, int pMarks, int cMarks){
 		boolean flag = true;
@@ -28,7 +28,7 @@ public class Example2 {
 	}
 	
 	public static void main(String[] args) {
-		Example2 example2 = new Example2();
+		Example6 example2 = new Example6();
 		example2.processData("Techno", 92 , 89, 93);
 	}
 }
