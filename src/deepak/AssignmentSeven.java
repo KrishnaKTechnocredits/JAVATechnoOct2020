@@ -51,8 +51,12 @@ public class AssignmentSeven {
 		for(int i=start; i<=end; i++) {
 			
 			if(i%7==0 || i%13==0) {
-				
-				System.out.println(i);
+				if(i%7==0) {
+					System.out.println(i +" Divisible By "+ 7);
+				}
+				else {
+					System.out.println(i +" Divisible By "+ 13);
+				}	
 			}
 		}
 		
