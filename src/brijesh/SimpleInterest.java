@@ -1,7 +1,7 @@
 package brijesh;
 class SimpleInterest{
-	void findInterest(int p, int t, int r){
-		System.out.println("Interest: "+p*t*r/100);
+	void findInterest(int principalAmount, int termInYears, int rateOfInterest){
+		System.out.println("Interest: "+principalAmount*termInYears*rateOfInterest/100);
 	}
 	public static void main(String[] args){
 		SimpleInterest simpleInterest=new SimpleInterest();
