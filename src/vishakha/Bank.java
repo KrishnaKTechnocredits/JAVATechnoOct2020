@@ -16,16 +16,12 @@ public class Bank {
 		currentBalance = currentBalance + creditAmt;
 		creditCount++;
 		totalCreditCount++;
-		//System.out.println("Amount Credited is : "+creditAmt);
-		//printBalance();
 	}
 	
 	void debitAmount(int debitAmt){
 		currentBalance = currentBalance - debitAmt;
 		debitCount++;
 		totalDebitCount++;
-		//System.out.println("Amount debited is : "+debitAmt);
-		//printBalance();
 	}
 	
 	void printBalance(){
