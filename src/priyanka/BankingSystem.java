@@ -18,7 +18,7 @@ public class BankingSystem {
 			creditAmount(2000);
 			debitAmount(500);
 			creditAmount(200);
-			individualTransaction();
+			//individualTransaction();
 			printBalance();
 		}
 
@@ -27,7 +27,7 @@ public class BankingSystem {
 			creditAmount(5000);
 			debitAmount(500);
 			creditAmount(2000);
-			individualTransaction();
+			//individualTransaction();
 			printBalance();
 		}
 	}
@@ -54,7 +54,7 @@ public class BankingSystem {
 	void printBalance() {
 		printBal++;
 		totalPrintBalance++;
-		// individualTransaction();
+		individualTransaction();
 	}
 
 	void individualTransaction() {
