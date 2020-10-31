@@ -35,7 +35,7 @@ public class DivisionByWhile{
 	   {
 	    if(start%7==0 )
 	     System.out.println(start +" is divisible by 7");
-	     start++;
+	     
 	    if(start%13==0)
 	     System.out.println(start +" is divisible by 13");
 	     start++;
