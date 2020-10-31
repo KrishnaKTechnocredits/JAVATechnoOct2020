@@ -42,7 +42,7 @@ public class BankingSystem {
 		
 		bank1.debitAmount(300);
 		for (int i = 1; i <= 2; i++) {
-			bank1.creditAmount(400);
+			bank1.creditAmount(i*100);
 		}
 		bank1.printBalance();
 		bank1.individualTransactionSummary(1);
@@ -50,7 +50,7 @@ public class BankingSystem {
 		BankingSystem bank2 = new BankingSystem();
 		
 		for (int i = 1; i <= 5; i++) {
-			bank2.creditAmount(100);
+			bank2.creditAmount(i*100);
 		}
 		for (int i = 1; i <= 2; i++) {
 			bank2.debitAmount(100);
