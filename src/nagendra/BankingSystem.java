@@ -9,8 +9,6 @@ public class BankingSystem {
     static int debit;
     static int print;
 
-
-    
 	void creditAmount() {
 		creditAmount++;
 		credit++;
