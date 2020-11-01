@@ -1,7 +1,7 @@
 package anjaliS;
 
 public class BankingSystem
-  {
+{
 	  int debitdAmtCnt;
 	  int creditAmtCnt;
 	  int balanceCnt;
@@ -13,20 +13,20 @@ public class BankingSystem
 
 	   void creditAmount(int creditAmt)
 	  {
-	      currentBalance=currentBalance+creditAmt;
-		   creditAmtCnt++;
-		   totalCreditCnt++;
+	     currentBalance=currentBalance+creditAmt;
+	     creditAmtCnt++;
+	     totalCreditCnt++;
       }
-	    void debitAmount(int debitAmt)
+	   void debitAmount(int debitAmt)
 	  {  
-		  currentBalance=currentBalance-debitAmt;
-		  debitdAmtCnt++;
-		  totalDebitCnt++;
+		 currentBalance=currentBalance-debitAmt;
+		 debitdAmtCnt++;
+	     totalDebitCnt++;
 	  }
 	  
 	   void printBalance(String name)
 	  {
-	    System.out.println( "Current Balance Of " +name+ ":"+currentBalance);
+	     System.out.println( "Current Balance Of " +name+ ":"+currentBalance);
 		 balanceCnt++;
 		 totalBalanceCnt++;
 	  }
