@@ -20,19 +20,24 @@ public class Bankingsystem {
 	}
 	
 	void debitamt(int amt) {
-		debitamount=debitamount+amt;
-		accountbalance = accountbalance-amt;
-		debitcount++;	
-		totaldebitcount++;
+		if(accountbalance<amt) {
+			System.out.println("Error:- Debit transaction failed due to insufficient balance in the account.");
+		}
+		else {
+			accountbalance = accountbalance-amt;
+			debitcount++;
+			totaldebitcount++;
+			debitamount=debitamount+amt;
+		}	
 	}
 	
 	void individualTransactionSummary() {
 		System.out.println("Credit:- " + creditcount+ " times " + "; Debit:- " + debitcount+ " times " + "; Print Balance:- " + printbalance + " times");
-		System.out.println(" Credit amount: " + "Rs "+ creditamount+"/-" + " ; Debit amount: " + "Rs " + debitamount + "/-");
+		System.out.println("Credit amount: " + "Rs "+ creditamount+"/-" + " ; Debit amount: " + "Rs " + debitamount + "/-");
 	}
 	
 	void printbalance() {
-		System.out.println("account balance:-" + "Rs " + accountbalance + "/-");
+		System.out.println("account balance:- " + "Rs " + accountbalance + "/-");
 		printbalance++;
 		totalprintbalancecount++;
 	}
@@ -49,10 +54,10 @@ public class Bankingsystem {
 		Bankingsystem user2 = new Bankingsystem();
 		user1.creditamt(52340);
 		user1.creditamt(87940);
-		user1.debitamt(5000);
+		user1.debitamt(2000000);
 		System.out.print("Printing user1 ");
 		user1.printbalance();
-		System.out.print("User1 transaction summery: ");
+		System.out.print("> User1 transaction summery: ");
 		user1.individualTransactionSummary();
 		user2.creditamt(14000);
 		user2.creditamt(18957);
@@ -62,7 +67,7 @@ public class Bankingsystem {
 		user2.debitamt(5000);
 		System.out.print("Printing user2 ");
 		user2.printbalance();
-		System.out.print("User2 transaction summery: ");
+		System.out.print("> User2 transaction summery: ");
 		user2.individualTransactionSummary();
 		allTransactionSummary() ;
 	}
