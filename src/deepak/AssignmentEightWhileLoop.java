@@ -34,16 +34,18 @@ public class AssignmentEightWhileLoop {
 	}
 	void printNumbersDivisibleBySevenOrThirteen(int start, int end) {
 		
-		System.out.println("Printing all numbers divisible by seven and thirteen in given range: "+ start +" TO "+ end);
+		System.out.println("Printing all numbers divisible by seven OR thirteen in given range: "+ start +" TO "+ end);
 		
 		while(start <= end) {
-			if(start %7 == 0 || start %13 == 0) {
-				if(start %7 == 0) {
-					System.out.println(start + " is divisible by "+ 7);
-				}
-				else System.out.println(start + " is divisible by "+ 13);
+			
+			if(start %7 == 0) {
+				System.out.println(start + " is divisible by "+ 7);
+			}
+			else if(start %13 ==0) {
 				
-			} start++;
+				System.out.println(start + " is divisible by "+ 13);
+			}
+			 start++;
 		}
 	}
 	
@@ -55,7 +57,7 @@ public class AssignmentEightWhileLoop {
 		assignmentEightWhileLoop.printEvenNumbers(10,15);
 		assignmentEightWhileLoop.printNumbersDivisibleByFive(10,30);
 		assignmentEightWhileLoop.printNumbersDivisibleByFiveAndThree(5,18);
-		assignmentEightWhileLoop.printNumbersDivisibleBySevenOrThirteen(5,40);
+		assignmentEightWhileLoop.printNumbersDivisibleBySevenOrThirteen(1,50);
 
 	}
 
