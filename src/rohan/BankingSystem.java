@@ -2,7 +2,7 @@ package rohan;
 
 public class BankingSystem {
 
-		static int totalBalance;
+		int totalBalance;
 		int creditCount;
 		int debitCount;
 		int printBalCount;
