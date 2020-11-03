@@ -1,8 +1,8 @@
 package prasad;
 
 class Bankingsystem {
-	
-	double accountbalance ;
+
+	double accountbalance;
 	double debitamount;
 	double creditamount;
 	int debitcount;
@@ -12,50 +12,52 @@ class Bankingsystem {
 	static int totaldebitcount;
 	static int totalcreditcount;
 	static int totalprintbalancecount;
-	
+
 	void setusername(String name) {
-		this.name=name;
+		this.name = name;
 	}
-	
+
 	void creditamt(double amt) {
-		creditamount= creditamount+ amt;
-		accountbalance = accountbalance+amt;
+		creditamount = creditamount + amt;
+		accountbalance = accountbalance + amt;
 		creditcount++;
 		totalcreditcount++;
 	}
-	
+
 	void debitamt(double amt) {
-		if(accountbalance<amt) {
-			System.out.println(name+"'s "+ "debit transaction failed due to insufficient account balance," + "current balance is " + "Rs " + accountbalance + "/-");
-		}
-		else {
-			accountbalance = accountbalance-amt;
+		if (accountbalance < amt) {
+			System.out.println(name + "'s " + "debit transaction failed due to insufficient account balance,"
+					+ "current balance is " + "Rs " + accountbalance + "/-");
+		} else {
+			accountbalance = accountbalance - amt;
 			debitcount++;
 			totaldebitcount++;
-			debitamount=debitamount+amt;
-		}	
+			debitamount = debitamount + amt;
+		}
 	}
-	
+
 	void individualTransactionSummary() {
-		System.out.print(name+"'s "+ "account summary: ");
-		System.out.println("Credit:- " + creditcount+ " times " + "; Debit:- " + debitcount+ " times " + "; Print Balance:- " + printbalance + " times");
-		System.out.println("Credit amount: " + "Rs "+ creditamount+"/-" + " ; Debit amount: " + "Rs " + debitamount + "/-");
+		System.out.print(name + "'s " + "account summary: ");
+		System.out.println("Credit:- " + creditcount + " times " + "; Debit:- " + debitcount + " times "
+				+ "; Print Balance:- " + printbalance + " times");
+		System.out.println(
+				"Credit amount: " + "Rs " + creditamount + "/-" + " ; Debit amount: " + "Rs " + debitamount + "/-");
 	}
-	
+
 	void printbalance() {
-		System.out.println(name+"'s " + "account balance:- " + "Rs " + accountbalance + "/-");
+		System.out.println(name + "'s " + "account balance:- " + "Rs " + accountbalance + "/-");
 		printbalance++;
 		totalprintbalancecount++;
 	}
-	
-    static void allTransactionSummary() {
+
+	static void allTransactionSummary() {
 		System.out.println("****Printing transaction summary for all users****");
 		System.out.println("Total credit transactions by all users: " + totalcreditcount);
-		System.out.println("Total debit transactions by all users: " + totaldebitcount );
+		System.out.println("Total debit transactions by all users: " + totaldebitcount);
 		System.out.println("Total print balance transactions by all users: " + totalprintbalancecount);
 	}
-	
-	public static void main (String[]arg) {
+
+	public static void main(String[] arg) {
 		Bankingsystem user1 = new Bankingsystem();
 		Bankingsystem user2 = new Bankingsystem();
 		user1.setusername("Tim");
@@ -73,7 +75,6 @@ class Bankingsystem {
 		user2.debitamt(5000);
 		user2.printbalance();
 		user2.individualTransactionSummary();
-		Bankingsystem.allTransactionSummary() ;
+		Bankingsystem.allTransactionSummary();
 	}
-
 }
