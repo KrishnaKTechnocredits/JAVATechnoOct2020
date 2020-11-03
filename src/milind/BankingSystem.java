@@ -58,7 +58,5 @@ public class BankingSystem {
 		bankingSystem2.printBalance("Bhairavi");
 		bankingSystem2.individualTransactionSummary("Bhairavi");
 		bankingSystem2.allTransactionSummary();
-		
 	}
-
 }
