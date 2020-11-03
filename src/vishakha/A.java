@@ -10,7 +10,7 @@ public class A {
 
 	public static void main(String[] args) {
 		A a = new A();
-		System.out.println("Calling non static method m1 of class A");
+		System.out.println("Calling non static method m1 of class A from main method");
 		a.m1();
 	}
 }
