@@ -7,32 +7,24 @@ public class Eligibility {
 	}
 
 	double average(double x, double y, double z) {
-		Eligibility eligibility = new Eligibility();
-		double avg = eligibility.sum(40, 10, 10) / 3;
+		double avg = sum( x,  y, z) / 3;
 		return avg;
 	}
 
-	static boolean isAnswerAboveExpectation() {
-		Eligibility eligibility = new Eligibility();
-		double value = eligibility.average(10, 20, 30);
+	static boolean isAnswerAboveExpectation(double value) {
 		if (value > 50)
 			return true;
 		else
 			return false;
 	}
 
-	static boolean isEligible() {
-		Eligibility eligibility = new Eligibility();
-		double value = eligibility.average(10, 20, 30);
-		double ans = 0;
-		if (value > 50 || ans == value / 2)
+	static boolean isEligible(double value) {
+		if (value > 50 || value % 2 ==0)
 			return true;
 		return false;
 	}
 
-	static boolean getYourgrade() {
-		Eligibility eligibility = new Eligibility();
-		double value = eligibility.average(10, 20, 30);
+	static boolean getYourgrade(double value) {
 		if (value > 80) 
 			return true;
 		 else 
@@ -49,19 +41,19 @@ public class Eligibility {
 		double ans = eligibility.average(10, 20, 30);
 		System.out.println("Average is: " + ans);
 		
-		boolean ans1 = isAnswerAboveExpectation();
+		boolean ans1 = isAnswerAboveExpectation(ans);
 		if (ans1 == true)
 			System.out.println("Above expectation");
 		else
 			System.out.println("Not upto the mark");
 		
-		boolean answer = isEligible();
+		boolean answer = isEligible(ans);
 		if (answer == true)
 			System.out.println("Is eligible");
 		else
 			System.out.println("Not eligible");
 		
-		boolean answer1 = getYourgrade();
+		boolean answer1 = getYourgrade(ans);
 		if (answer1 == true)
 			System.out.println("Received grade is :A grade");
 		else
