@@ -9,6 +9,7 @@ public class Grade {
 	}
 	double average(double physics, double chemistry, double maths) {
 		double average = sum(90,85,95)/3;
+		System.out.println("Average Marks of Student :: "+average);
 		return average;
 	}
 	static boolean isAnswerAboveExpecation(double average) {
