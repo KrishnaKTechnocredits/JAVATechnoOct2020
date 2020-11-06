@@ -23,8 +23,10 @@ public class Example6 {
 	    	flag = false;
 		}
 		
-		if(!flag) // if(!flag)
+		if(!flag) { // if(!flag){
 			System.out.println("We have successfully processed student data");
+			System.out.println("We have successfully processed student data2");
+		}
 	}
 	
 	public static void main(String[] args) {
