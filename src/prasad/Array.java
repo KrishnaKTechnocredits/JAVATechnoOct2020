@@ -12,6 +12,12 @@ public class Array {
 				System.out.println(arg[index]);
 		}
 	}
+	void displayreverse(int[]arg) {
+		System.out.println("Printing array of numbers in reverse order:- ");
+		for(int index=arg.length-1;index>=0;index--) {
+				System.out.println(arg[index]);
+		}
+	}
 	float arraysum(int[]num) {
 		float sum=0;
 		for(int index=0;index<num.length;index++) {
@@ -56,6 +62,7 @@ public class Array {
 		System.out.println("Average of array: " + avg);
 		int[] array1 = {9,10,-1,80,12};
 		arrayvar.display(array1);
+		arrayvar.displayreverse(array1);
 		float max =arrayvar.max(array1);
 		System.out.println("Max number out of given array: "+ max);
 		float min = arrayvar.min(array1);
