@@ -1,3 +1,14 @@
+/*Assignment - 12 : 7th Oct'2020 
+write a single program having different methods.
+ 
+a) To find Min number from given array
+b) To find Max number from given array
+c) To find Avg of all numbers from give array
+d) To display all numbers [0 to length]
+e) To display all numbers [length to 0]
+g) Method to find average of min and max number from array.
+*/
+
 package shrutiS;
 
 public class MathWithArray {
