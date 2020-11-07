@@ -49,7 +49,6 @@ public class ArrayExample {
 	}
 	double findAvgOfMinMax(int[]num) {
 		return (findMinNumber(num)+findMaxNumber(num))/2;
-		
 	}
 	public static void main(String[] args) {
 		ArrayExample arrayExample = new ArrayExample();
