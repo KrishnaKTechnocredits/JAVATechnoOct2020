@@ -66,11 +66,13 @@ public class Array {
 		
 		int[] input = {25, -3, 50, 122, 78, 99, 130, 299, -6};
 		Array array = new Array();
-		System.out.println("Minimum number from Array is : " + array.minNumberFromArray(input));
-		System.out.println("Maximum number from Array is : " + array.maxNumberFromArray(input));
+		int minimumNumber = array.minNumberFromArray(input);
+		int maximumNumber = array.maxNumberFromArray(input);
+		System.out.println("Minimum number from Array is : " + minimumNumber);
+		System.out.println("Maximum number from Array is : " + maximumNumber);
 		System.out.println("Average of Array is : " + array.arrayAvg(input));
 		array.printArray(input);
 		array.printReverseArray(input);
-		System.out.println("Average of " + array.minNumberFromArray(input) +" and " + array.maxNumberFromArray(input) +" is : " +array.averageOfMinAndMax(array.minNumberFromArray(input), array.maxNumberFromArray(input)));
+		System.out.println("Average of " + minimumNumber +" and " + maximumNumber +" is : " + array.averageOfMinAndMax(minimumNumber, maximumNumber));
 	}
 }
