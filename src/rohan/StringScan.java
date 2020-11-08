@@ -32,11 +32,10 @@ public class StringScan {
 	
 	void displayEvenChar(String str) {
 		System.out.println("Display Characters at odd index: ");
-		for(int i=0;i<str.length();i++) {
+		for(int i=1;i<str.length();i++) {
 			if(!(i%2==0))
 				System.out.println(str.charAt(i));
 		}
-			
 	}
 	
 	public static void main(String[] args) {
@@ -53,6 +52,5 @@ public class StringScan {
 		String maxStr = stringScan.getMaxLength(strArray);
 		//System.out.println(maxStr);
 		stringScan.displayEvenChar(maxStr);
-		
 	}
 }
