@@ -1,5 +1,7 @@
 package milind;
 
+import java.util.Scanner;
+
 public class Exam_1 {
 	
 	String maxLengthName(String[] arr) {
@@ -25,10 +27,19 @@ public class Exam_1 {
 	}
 	
 	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("Enter how many records you want :" );
+		int arrayLength = scanner.nextInt();
+		String[] array = new String[arrayLength];
 		
-		String[] name = {"Milind", "Chavhan", "milindBhairavi", "Bhairavi", "Patil"};
+		for(int index = 0; index < arrayLength; index++) {
+			System.out.println("Enter " + (index+1) + " name :" );
+			array[index] = scanner.next();
+		}
+		
+		//String[] name = {"Milind", "Chavhan", "milindBhairavi", "Bhairavi", "Patil"};
 		Exam_1 exam_1 = new Exam_1();
-		String maxLengthName = exam_1.maxLengthName(name);
+		String maxLengthName = exam_1.maxLengthName(array);
 		exam_1.displayEvencharFromName(maxLengthName);
 	}
 
