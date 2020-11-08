@@ -11,6 +11,7 @@ public class Exam1 {
 				firstName=arr[index];
 		}	
 		System.out.println("Name having Max length is:"+firstName);
+		System.out.println("Length of name is "+firstName.length());
 		display(firstName);
 		return firstName;
 	}
