@@ -6,13 +6,13 @@ public class StringArray {
 
 	String getMaxLengthName(String[] name) {
 
-		int maxStringlength = name[0].length();
+		//int maxStringlength = name[0].length();
 		String maxname = name[0];
 
 		for (int index = 0; index < name.length; index++) {
 
-			if (maxStringlength < name[index].length()) {
-				maxStringlength = name[index].length();
+			if (maxname.length() < name[index].length()) {
+				//maxname.length() = name[index].length();
 				maxname = name[index];
 			}
 		}
