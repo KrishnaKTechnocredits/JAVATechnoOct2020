@@ -11,17 +11,13 @@ public class JavaTest1 {
 			for (int index = 0; index < arr.length; index++) {
 				if (max.length() < arr[index].length()) {
 					max = arr[index];
-
 				}
-
 			}
 			return max;
-
 		}
 	}
 
 	void display(String name) {
-
 		for (int index = 0; index < name.length(); index++) {
 			if (index % 2 == 0) {
 				System.out.println(name.charAt(index));
@@ -42,7 +38,6 @@ public class JavaTest1 {
 		String max = exam.getMaxLengthName(name);
 		System.out.println("Maximim char staring is :" + max);
 		System.out.println("Maximim char staring lengh is :" + max.length());
-
 		exam.display(max);
 
 	}
