@@ -23,7 +23,7 @@ public class JavaTest1 {
 	void display(String name) {
 
 		for (int index = 0; index < name.length(); index++) {
-			if (index % 2 != 0) {
+			if (index % 2 == 0) {
 				System.out.println(name.charAt(index));
 			}
 		}
