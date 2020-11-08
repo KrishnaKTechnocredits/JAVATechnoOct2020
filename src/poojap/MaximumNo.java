@@ -60,8 +60,8 @@ public class MaximumNo {
 		
 		MaximumNo maximumNo=new MaximumNo();
 		int[] arr={20,30,10,40};
-		int maxnum=maximumNo.minimumNo(arr);
-		int mininum=maximumNo.maximunNo(arr);
+		int maxnum=maximumNo.maximunNo(arr);
+		int mininum=maximumNo.minimumNo(arr);
 		int avg1=maximumNo.avgOfNum(arr);
 		System.out.println("Maximum No is " +maxnum);
 		System.out.println("Minimum No is " +mininum);
