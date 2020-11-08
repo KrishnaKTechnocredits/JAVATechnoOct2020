@@ -18,7 +18,7 @@ public class Exam1 {
 	}
 	
 	static void printAllEvenChar(String maxLengthName, int arrLength){
-		for(int index=0; index>arrLength; index++){
+		for(int index=0; index<maxLengthName.length(); index++){
 			if(index%2 != 0)
 				System.out.println(maxLengthName.charAt(index));
 		}
@@ -26,7 +26,6 @@ public class Exam1 {
 
 
 	public static void main(String[] args) {
-		Exam1 exam1 = new Exam1();
 		Scanner scanner = new Scanner(System.in);
 		System.out.println("How many names you want to enter ? ");
 		int arrLength = scanner.nextInt();
