@@ -18,22 +18,16 @@ package ankita;
 
 public class FindMaximumWord {
 	String findMaxWord(String[] arr) {
-		int max =0;
 		String maxWord=arr[0];
-		for(int index=0;index<arr.length;index++) {
-			String name = arr[index];
-			int cnt=0;
-			for(int i =0;i<name.length();i++) {
-				cnt = cnt +1;
-			}
-			if(max<cnt) {
-				max=cnt;
+		for(int index=1;index<arr.length;index++) {
+			if(maxWord.length()<arr[index].length()) {
 				maxWord=arr[index];
 			}
 		}
 		return maxWord;
 	}
 	void displayEvenCharacter(String name) {
+		System.out.print("Even character of name having maximum length:");
 		for(int i =0;i<name.length();i++) {
 			if(i%2!=0)
 				System.out.print(name.charAt(i));
@@ -43,7 +37,7 @@ public class FindMaximumWord {
 		FindMaximumWord findMaximumWord=new FindMaximumWord();
 		String[] name= {"Harsh","maulik","Technocredits","Krishna"};
 		String maximumWord= findMaximumWord.findMaxWord(name);
-		System.out.println("Maximum word :" + maximumWord);
+		System.out.println("Name having maximum length :" + maximumWord);
 		findMaximumWord.displayEvenCharacter(maximumWord);
 	}
 }
