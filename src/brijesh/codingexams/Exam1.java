@@ -8,23 +8,21 @@ import javax.xml.ws.Dispatch;
 public class Exam1 {
 
 	String getMaxLengthName(String[] arr) {
-		int max=arr[0].length();
 		String maxString=arr[0];
-		for(int i=1; i<arr.length;i++) {
-			if(arr[i].length()>max) {
-				max=arr[i].length();
-				maxString=arr[i];
+		for(int index=1; index<arr.length;index++) {
+			if(arr[index].length()>maxString.length()) {
+				maxString=arr[index];
 			}
 		}
-		System.out.println("String which has maximum length\n"+maxString+" ----> "+max);
+		System.out.println("String which has maximum length\n"+maxString+" ----> "+maxString.length());
 		return maxString;
 	}
 
 	void display(String name) {
 		System.out.println("Even characters of name "+name);
-		for(int i=0; i<name.length();i++) {
-			if(i%2 != 0)
-				System.out.print(name.charAt(i));
+		for(int index=0; index<name.length();index++) {
+			if(index%2 != 0)
+				System.out.print(name.charAt(index));
 		}
 	}
 
