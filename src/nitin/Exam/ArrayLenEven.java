@@ -7,14 +7,15 @@ public class ArrayLenEven {
 		String maxname=name[0];
 		for(int index=0;index<name.length;index++) {
 			if(maxnumber<name[index].length())
-				maxname=name[index];
+					maxname=name[index];
 		}
 		return maxname;
 	}
 	void display(String name) {
-		for(int index=0;index>name.length();index++) {
+		System.out.println("Even Characters in name "+name+" is !!");
+		for(int index=0;index<name.length();index++) {
 			if(index%2 !=0)
-				System.out.println(name.charAt(index));
+				System.out.print(name.charAt(index));
 		}
 	}
 	public static void main(String[] args) {
