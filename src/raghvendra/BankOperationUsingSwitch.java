@@ -21,7 +21,7 @@ public class BankOperationUsingSwitch {
 	static double debitAmount;
 	static double totalBalance;
 	public void bankSetInitialBalance() {
-		System.out.println("Enter HDFC Initial amount");
+		System.out.println("\r\n"+"Enter HDFC Initial amount");
 		Scanner sc = new Scanner(System.in);
 		hdfcAmount=sc.nextDouble();
 		System.out.println("Enter ICICI Initial amount");
@@ -50,7 +50,6 @@ public class BankOperationUsingSwitch {
 	
 
 	public void bankSwitch(String bankName,String operation,double creditAmount,double debitAmount) {
-		//givenBankName=givenBankName.equalsIgnoreCase("bankName");
 		switch(bankName.toLowerCase()){
 		case "hdfc":
 			if(operation.equalsIgnoreCase("Credit"))
@@ -77,59 +76,57 @@ public class BankOperationUsingSwitch {
 				bankCredit(bankName,creditAmount);
 			else if (operation.equalsIgnoreCase("Debit"))
 				bankDebit(bankName,debitAmount);
-			
 			}
 		}
 	
 	void bankCredit(String bankname,double amount ) {
-		if (bankname.equalsIgnoreCase("HDFC")&&amount>0) {
+		if (bankname.equalsIgnoreCase("HDFC")) {
 			hdfcAmount=hdfcAmount+amount;
 			creditCount++;
 			hdfcCreditCount++;
 			System.out.println("HDFC Credit transaction:" +hdfcCreditCount);
 		}
-		else if ((bankname.equalsIgnoreCase("icici")&&amount>0)) {
+		else if (bankname.equalsIgnoreCase("icici")) {
 			iciciAmount+=amount;
 			creditCount++;
 			iciciCreditCount++;
 			System.out.println("ICICI Credit transaction:" +iciciCreditCount);
-
 		}
-		else if ((bankname.equalsIgnoreCase("bob")&&amount>0)) {
+		else if (bankname.equalsIgnoreCase("bob")) {
 			bobAmount+=amount;
 			creditCount++;
 			bobCreditCount++;
 			System.out.println("BOB Credit transaction:" +bobCreditCount);
 		}
-		else if ((bankname.equalsIgnoreCase("SBI")&&amount>0)) {
+		else if (bankname.equalsIgnoreCase("SBI")) {
 			sbiAmount+=amount;
 			creditCount++;
 			sbiCreditCount++;
-			System.out.println("SBI Credit transaction:" +bobCreditCount);
-		}
+			System.out.println("SBI Credit transaction:" +sbiCreditCount);
+			}
 	}
 	
 	void bankDebit(String bankname,double amount ) {
 	
-		if (bankname.equalsIgnoreCase("HDFC")&&hdfcAmount>0) {
+		if (bankname.equalsIgnoreCase("HDFC") && hdfcAmount>0) {
 			hdfcAmount=hdfcAmount-amount;
 			debitCount++;
 			hdfcDebitCount++;
 			System.out.println("HDFC Bank Debit transaction:"+hdfcDebitCount);
 		}
-		else if ((bankname.equalsIgnoreCase("icici")&&iciciAmount>0)) {
+		else if ((bankname.equalsIgnoreCase("icici") && iciciAmount>0)) {
 			iciciAmount=iciciAmount-amount;
 			debitCount++;
 			iciciDebitCount++;
 			System.out.println("ICICI Bank Debit transaction:"+iciciDebitCount);
 		}
-		else if ((bankname.equalsIgnoreCase("BOB")&&bobAmount>0)) {
+		else if (bankname.equalsIgnoreCase("BOB") && bobAmount>0) {
 			bobAmount=bobAmount-amount;
 			debitCount++;
 			bobDebitCount++;
 			System.out.println("ICICI Bank Debit transaction:"+bobDebitCount);
 		}
-		else if ((bankname.equalsIgnoreCase("sbiAmount")&&sbiAmount>0)) {
+		else if (bankname.equalsIgnoreCase("sbiAmount") && sbiAmount>0) {
 			sbiAmount=sbiAmount-amount;
 			debitCount++;
 			sbiDebitCount++;
@@ -152,8 +149,5 @@ public class BankOperationUsingSwitch {
 		bankOperationUsingSwitch.bankSetInitialBalance();
 		BankOperationUsingSwitch bankOperationUsingSwitch1=new BankOperationUsingSwitch();
 		bankOperationUsingSwitch1.bankSetInitialBalance();
-
 	}
-
-	
 }
