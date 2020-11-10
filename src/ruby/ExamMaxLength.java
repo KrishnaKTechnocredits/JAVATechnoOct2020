@@ -5,17 +5,17 @@ import java.util.Scanner;
 public class ExamMaxLength {
 	
 	String getMaxLength(String[] arr){
-		int maxLenIndex=0;
+		String nameMax=arr[0];
 		int length = arr[0].length();
 		for (int index=0; index<arr.length;index++) {
 			if (length <  arr[index].length()) {
 				length = arr[index].length();
-				maxLenIndex = index;
+				nameMax = arr[index];
 			}
 		} 
 		System.out.println("Lenth of Longest name is "+ length);
-		System.out.println("Longest name is "+arr[maxLenIndex]);
-		return arr[maxLenIndex];
+		System.out.println("Longest name is "+nameMax);
+		return nameMax;
 	}
 	
 	void display(String name) {
@@ -25,13 +25,13 @@ public class ExamMaxLength {
 		}	
 	}
 
+	@SuppressWarnings("resource")
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
 		System.out.println("How many name you would like to compare. ");
 		int length = scan.nextInt();
 		String[] name = new String[length];
-		
-		for(int index=0; index<length;index++) {
+				for(int index=0; index<length;index++) {
 			System.out.println("Enter name "+(index+1));
 			name[index]=scan.next();		
 		}
