@@ -171,8 +171,21 @@ public class PersonalBanking {
 		personalBanking.bankOperation("Debit", 10, "HDFC");
 		personalBanking.displayTotalBalance("HDFC");
 		personalBanking.bankOperation("Credit", 157, "BOB");
+		personalBanking.bankOperation("Credit", 157, "BOB");
 		personalBanking.displayTotalBalance("BOB");
 		personalBanking.bankOperation("Debit", 300, "BOB");
+		personalBanking.displayTotalBalance("BOB");
+		personalBanking.totalCreditDebit("ICICI");
+		personalBanking.totalCreditDebit("SBI");
+		personalBanking.totalCreditDebit("HDFC");
+		personalBanking.totalCreditDebit("BOB");
+		personalBanking.individualCredit("ICICI");
+		personalBanking.individualCredit("SBI");
+		personalBanking.individualCredit("HDFC");
+		personalBanking.individualCredit("BOB");
+		personalBanking.individualDebit("ICICI");
+		personalBanking.individualDebit("HDFC");
+		personalBanking.individualDebit("SBI");
+		personalBanking.individualDebit("BOB");		
 		}
-
 }
