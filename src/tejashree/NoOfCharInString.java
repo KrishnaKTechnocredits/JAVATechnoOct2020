@@ -10,16 +10,33 @@ class NoOfCharInString {
 				cnt++;
 			}
 		}
-		System.out.println("char" + "'" + ch + "'" + "is repeated " + cnt + " times");
+		if(cnt>0) 
+			System.out.println("char" + "'" + ch + "'" + "is repeated " + cnt + " times");
+		else
+			System.out.println("character is not present in a string");
 	}
 	public static void main(String[] args) {
 		NoOfCharInString noOfCharInString = new NoOfCharInString();
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter a string");
 		String userInput = sc.next();
+		
 		System.out.println("Enter character");
-		char ch = sc.next().charAt(0);
-		noOfCharInString.findFrequency(userInput, ch);
+		String temp=sc.next();
+		int count=1;
+		while(temp.length()!=1 && count<3) {
+			System.out.println("you have entered wrong character..please re-enter");
+			System.out.println("attemptsleft"+(3-count));
+			temp=sc.next();
+			count++;
+		}
+		if(temp.length()!=1)
+			System.out.println("Try sometime later");
+		else {
+			char ch = temp.charAt(0);
+			System.out.println("char is "+ch);
+			noOfCharInString.findFrequency(userInput, ch);
+		}
 	}
 
 }
