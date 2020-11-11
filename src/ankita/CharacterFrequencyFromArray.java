@@ -1,5 +1,4 @@
 /*
- * 1.42-1.57  3-3.19 3.20-352
  * Find the frequency of character from a given String array. [Estimated time: 15-20 mins]
 sample input array : { "technocredits","elephant","earthear"} and char is 'e'
 output : technocredits -> 2
@@ -7,7 +6,6 @@ output : technocredits -> 2
               earth -> 1
               Total occurrence of e -> 5
  */
-
 package ankita;
 
 import java.util.Scanner;
