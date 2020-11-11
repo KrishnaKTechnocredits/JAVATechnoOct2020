@@ -17,7 +17,7 @@ public class NumberFrequency {
 		System.out.println("How many numbers you want to store ");
 		int num = sc.nextInt();
 		int[] number = new int[num];
-		for (int i = 1; i < num; i++) {
+		for (int i = 0; i < num; i++) {
 			System.out.println("Enter number");
 			number[i] = sc.nextInt();
 		}
