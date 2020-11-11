@@ -1,5 +1,5 @@
 package nitin;
-
+//Assignment 13 - Switch case use
 public class BankSwitch {
 	static int iBal, sBal, hBal, kBal, totalBalance;
 	static int iDebitCount, sDebitCount, hDebitCount, kDebitCount, iCreditCount, sCreditCount, hCreditCount, kCreditCount;
