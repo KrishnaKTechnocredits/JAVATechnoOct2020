@@ -10,7 +10,7 @@ public class CharacterFrequency {
 	void countFrequency(String word, char ch) {
 		int count = 0;
 		for (int index = 0; index < word.length(); index++) {
-			if (word.charAt(index) == ch);
+			if (word.charAt(index) == ch)
 			count++;
 		}
 		System.out.println("In word " + word + "'" + ch + "letter is occuring " + count + "times");
