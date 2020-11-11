@@ -30,8 +30,8 @@ public class PositiveNegativeNumberInArray {
 		if (positiveCnt > 0)
 			System.out.println(positiveCnt + " positive Number present");
 		if (negativeCnt > 0)
-			System.out.println(negativeCnt + " positive Number present");
+			System.out.println(negativeCnt + " negative Number present");
 		if (zeroCnt > 0)
-			System.out.println(zeroCnt + " positive Number present");
+			System.out.println(zeroCnt + " Zero present");
 	}
 }
