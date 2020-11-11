@@ -1,14 +1,6 @@
 package suvela;
 
 public class Assignment13 {
-	static int icicicreditcounter=0;
-	static int hdfccreditcounter=0;
-	static int bobcreditcounter=0;
-	static int sbicreditcounter=0;
-	static int icicidebitcounter=0;
-	static int hdfcdebitcounter=0;
-	static int bobdebitcounter=0;
-	static int sbidebitcounter=0;
 	static int ibalance;
 	static int hbalance;
 	static int bbalance;
@@ -38,25 +30,25 @@ public class Assignment13 {
 		switch (bankname) {
 			case "icici":
 				ibalance = ibalance +amount;
-				icicicreditcounter++;
+				
 				icreditcounter++;
 				
 				break;
 			case "bob":
 				bbalance = bbalance+amount;
-				bobcreditcounter++;
+				;
 				bcreditcounter++;
 				
 				break;
 			case "sbi":
 				sbalance = sbalance+amount;
-				sbicreditcounter++;
+				
 				screditcounter++;
 				
 				break;
 			case "hdfc":
 				hbalance= hbalance +amount;
-				hdfccreditcounter++;
+				
 				hcreditcounter++;
 				
 				break;
@@ -68,7 +60,7 @@ public class Assignment13 {
 					if(ibalance <amount)
 						System.out.println("Insufficient balance");
 					ibalance = ibalance - amount;
-					icicidebitcounter++;
+					
 					idebitcounter++;
 					
 					break;
@@ -76,7 +68,7 @@ public class Assignment13 {
 					if(bbalance <amount)
 						System.out.println("Insufficient balance");
 					bbalance = bbalance- amount;
-					bobdebitcounter++;
+					
 					bdebitcounter++;
 					
 					break;
@@ -85,7 +77,7 @@ public class Assignment13 {
 					if(sbalance <amount)
 						System.out.println("Insufficient balance");
 					sbalance = sbalance- amount;
-					sbidebitcounter++;
+					
 					sdebitcounter++;
 					
 					break;
@@ -94,7 +86,7 @@ public class Assignment13 {
 					if(hbalance <amount)
 						System.out.println("Insufficient balance");
 					hbalance= hbalance - amount;
-					hdfcdebitcounter++;
+					
 					hdebitcounter++;
 					
 					break;
@@ -103,11 +95,11 @@ public class Assignment13 {
 				
 	}
 		int totalcreditcounter() {
-			int totalcreditcounter = icicicreditcounter + bobcreditcounter + hdfccreditcounter + sbicreditcounter;
+			int totalcreditcounter = icreditcounter + bcreditcounter + hcreditcounter + screditcounter;
 			return totalcreditcounter;
 		}
 		int totaldebitcounter() {
-			int totaldebitcounter = icicidebitcounter + bobdebitcounter+ hdfcdebitcounter+ sbidebitcounter;
+			int totaldebitcounter = idebitcounter + bdebitcounter+ hdebitcounter+ sdebitcounter;
 			return totaldebitcounter;
 		}
 		
