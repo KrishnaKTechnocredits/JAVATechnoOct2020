@@ -1,6 +1,12 @@
 package nagendra;
 
 import java.util.Scanner;
+/*
+Create a class where user will provide int array. *[ideal Expected Time : 15 mins, Max 
+Time : 25 mins]*
+A) User can provide any positive and negative number
+B) You need to find out how many positive, negative numbers and zeros are there in array 
+*/
 
 public class ArrayNumbers {
 	
