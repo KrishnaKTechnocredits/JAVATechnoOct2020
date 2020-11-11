@@ -6,7 +6,6 @@ public class Array {
 		int min = num[0];
 		for (int index = 0; index < num.length; index++) {
 			if (min > num[index])
-				;
 			min = num[index];
 		}
 		return min;
@@ -16,7 +15,6 @@ public class Array {
 		int max = num[0];
 		for (int index = 0; index < num.length; index++) {
 			if (max < num[index])
-				;
 			max = num[index];
 		}
 		return max;
