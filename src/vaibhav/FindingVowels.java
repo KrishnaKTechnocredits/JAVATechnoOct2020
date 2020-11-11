@@ -1,5 +1,8 @@
 package vaibhav;
 
+//Program 5 : [ Compulsory ]
+//Java Program to Count the Number of Vowels in user defined string.
+
 import java.util.Scanner;
 
 public class FindingVowels {
