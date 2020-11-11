@@ -42,7 +42,7 @@ public class FindingVowels {
 			else {
 					System.out.println("below vowels are present in your string");
 					for (int i =0;i<vowel.length;i++)
-					System.out.println(vowel[i]);				
+					System.out.print(" "+vowel[i]);				
 				}
 	}
 	
