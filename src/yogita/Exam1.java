@@ -1,6 +1,7 @@
 package yogita;
 
-class Exam1 {
+
+class A {
 
 	static String maximumLength(String[] arr) {
 		String max = arr[0];
@@ -18,12 +19,12 @@ class Exam1 {
 
 	void odd(String name) {
 		for (int index = 0; index < name.length(); index++)
-			if (index % 2== 0)
+			if (index % 2 == 0)
 				System.out.println(name.charAt(index));
 	}
 
 	public static void main(String[] args) {
-		Exam1 exam1 = new Exam1();
+		A exam1 = new A();
 		String[] array = { "Harsh", "Krishna", "Maulik", "Ritesh", "Pooja" };
 		String maxLength = maximumLength(array);
 		System.out.println("Maximum character string  " + maximumLength(array));
@@ -33,4 +34,5 @@ class Exam1 {
 		System.out.println("Maximum Length's Odd Position Character:");
 		exam1.odd(maxLength);
 	}
+
 }
