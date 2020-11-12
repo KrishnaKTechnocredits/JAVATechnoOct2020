@@ -15,7 +15,7 @@ public class CharacterFrequency {
 			if (word.charAt(index) == ch)
 				frequency++;
 		}
-		System.out.println("In word " + word + " '" + ch + "' letter is coming " + frequency + " times");
+		System.out.println("In the word '" + word + "' letter '" + ch + "' is coming " + frequency + " times");
 	}
 
 	public static void main(String[] a) {
@@ -34,7 +34,7 @@ public class CharacterFrequency {
 		if (tempWord.length() != 1)
 			System.out.println("Try again later");
 		else {
-			char ch = tempWord.charAt(0);
+			char ch = tempWord.toLowerCase().charAt(0);
 			characterFrequency.calculateFrequency(word, ch);
 		}
 	}
