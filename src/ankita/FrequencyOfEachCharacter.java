@@ -10,7 +10,7 @@ public class FrequencyOfEachCharacter {
 		for (int i = 0; i < str.length(); i++) {
 			int cnt = 0;
 			for (int j = 0; j < str.length(); j++) {
-				if (str.charAt(j) == str.charAt(i))
+				if (Character.toUpperCase(str.charAt(j)) == Character.toUpperCase(str.charAt(i)))
 					cnt++;
 			}
 			System.out.println(str.charAt(i) + " present " + cnt + " times ");
