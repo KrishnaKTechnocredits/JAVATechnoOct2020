@@ -36,7 +36,7 @@ public class FreqCharOfStrArray {
 		int arraySize = sc.nextInt();
 		String strArray[] = new String[arraySize];
 		for(int i=0;i<arraySize;i++) {
-			System.out.println("Enter String"+i+1);
+			System.out.println("Enter String "+(i+1));
 			strArray[i] = sc.next();
 		}
 		System.out.println("Enter the character to identify frequency in given array: ");
