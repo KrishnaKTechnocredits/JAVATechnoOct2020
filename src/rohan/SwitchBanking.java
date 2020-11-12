@@ -71,7 +71,7 @@ public class SwitchBanking {
 							iDebitCnt++;
 						}
 						else
-							printMessage("ICICI", "Debit");
+							printMessage(bankName, "Debit");
 						break;
 			case "HDFC":
 						if(amount<hdfcTotalBalance) {
@@ -79,7 +79,7 @@ public class SwitchBanking {
 							hDebitCnt++;
 						}
 						else
-							printMessage("HDFC", "Debit");
+							printMessage(bankName, "Debit");
 						break;
 			case "BOB":
 						if(amount>bobTotalBalance) {
@@ -87,7 +87,7 @@ public class SwitchBanking {
 							bDebitCnt++;
 						}
 						else
-							printMessage("BoB", "Debit");
+							printMessage(bankName, "Debit");
 						break;
 			case "SBI":
 						if(amount<sbiTotalBalance) {
@@ -95,7 +95,7 @@ public class SwitchBanking {
 							sDebitCnt++;
 						}
 						else
-							printMessage("SBI", "Debit");
+							printMessage(bankName, "Debit");
 						break;
 			default: System.out.println("Invalid bank name specified");	
 			}
