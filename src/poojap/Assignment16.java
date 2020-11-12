@@ -1,3 +1,6 @@
+
+/*Find the frequency of each character from user given word.*/
+
 package poojap;
 
 import java.util.Scanner;
