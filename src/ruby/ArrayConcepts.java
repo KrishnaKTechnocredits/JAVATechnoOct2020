@@ -58,7 +58,7 @@ public class ArrayConcepts {
 	
 	int findMax(int[] num){
 		int max= num[0];
-		for(int index=0; index<num.length; index++) {
+		for(int index=1; index<num.length; index++) {
 			if(num[index] > max)
 				max = num[index];
 			}
@@ -68,7 +68,7 @@ public class ArrayConcepts {
 	
 	int findMin(int[] num){
 		int min= num[0];
-		for(int index=0; index<num.length; index++) {
+		for(int index=1; index<num.length; index++) {
 			if(num[index] < min)
 				min = num[index];
 			}

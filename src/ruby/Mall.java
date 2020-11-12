@@ -43,8 +43,8 @@ public class Mall {
 		this.bill = bill;
 	}
 
-	void haveCarryBag(boolean CarryBag) {
-		this.bill = bill;
+	void haveCarryBag(boolean carryBag) {
+		this.carryBag = carryBag;
 	}
 
 	void displayCutomerInfo() {
