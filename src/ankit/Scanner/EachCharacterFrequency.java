@@ -1,5 +1,5 @@
 package ankit;
-
+//Assignment16: To find the frequency of each character from user given word.
 import java.util.Scanner;
 
 public class EachCharacterFrequency {
@@ -24,7 +24,7 @@ public class EachCharacterFrequency {
 		int length = word.length();
 		EachCharacterFrequency eachCharacterFrequency = new EachCharacterFrequency();
 		eachCharacterFrequency.scannerOperation(word, length);
-		
+		scanner.close();
 
 	}
 
