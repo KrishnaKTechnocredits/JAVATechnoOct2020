@@ -62,6 +62,7 @@ public class ArrayAssignment {
 		System.out.println("Average of array element is: "+avg);
 		arrayAssignment.displayAsc(num);
 		arrayAssignment.displayDesc(num);
-			
+		float avgMinMax = (max+min)/2f;
+		System.out.println("average of Minimum and Maximum nos from array is: "+avgMinMax);
 	}
 }
