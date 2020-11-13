@@ -20,7 +20,6 @@ public class StringFunctions {
 					   lowerCharCount++;
 				}
 			else specialCharCount++;
-			
 		}
 		System.out.println("letters count: "+letterCount);
 		System.out.println("Digits count: "+digitCount);
@@ -28,9 +27,7 @@ public class StringFunctions {
 		System.out.println("Lowercase letters count: "+lowerCharCount);
 		System.out.println("Spcial Characters count: "+specialCharCount);
 		System.out.println("--------------------");
-
-
-	}
+}
 
 	public static void main(String[] args) {
 		StringFunctions stringFunctions=new StringFunctions();
