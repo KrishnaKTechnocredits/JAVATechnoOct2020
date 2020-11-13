@@ -1,7 +1,28 @@
 package tejashree;
 
 import java.util.Scanner;
+/*
+1) boolean isDigit(char ch)
+Character.isDigit('z'); false
+Character.isDigit('_'); false
 
+2) boolean isLetter(char ch)
+Character.isLetter('p'); true
+Character.isLetter('_'); false
+
+3) boolean isUpperCase(char ch)
+Character.isUpperCase('z'); false
+
+4) boolean isLowerCase(char ch)
+Character.isLowerCase('A'); false   
+-------------------------------------------------------
+Exam 2 : WAP for below given requirement. [30][45]
+input : teCh@N12JCR#iT8s_B
+output : letters -> 12
+     uppercase -> 7
+     lowercase -> 5
+     digit -> 3
+     special char -> 3   	*/
 public class CharacterMethods {
 
 	void findFrequency(String word) {
@@ -22,7 +43,7 @@ public class CharacterMethods {
 				specCount++;
 		}
 		System.out.println("Letters count in a given word is:" + letterCount);
-		System.out.println("UpperCase count in a given word is:"+ upperCount);
+		System.out.println("UpperCase count in a given word is:" + upperCount);
 		System.out.println("LowerCase count in a given word is:" + lowerCount);
 		System.out.println("Digit count in a given word is:" + digitCount);
 		System.out.println("Special count in a given word is:" + specCount);
