@@ -14,14 +14,7 @@ public class Coading_Exam_2 {
 	}
 
 	void upperCase(String str1) {
-
-		// System.out.print("Please give a string: ");
-		/*
-		 * int count=0; for (int i = 0; i < str.length(); i++) { if
-		 * (Character.isUpperCase(str.charAt(i))) System.out.print(str.charAt(i) + " ");
-		 * 
-		 * }
-		 */
+		
 		int upperCase = 0;
 		char[] ch = str1.toCharArray();
 		for (char chh : ch) {
