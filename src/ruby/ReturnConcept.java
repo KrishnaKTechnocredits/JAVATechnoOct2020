@@ -1,26 +1,39 @@
 package ruby;
+/*Design to test static, non static, return type concepts.
+
+1) Method sum(), accept 3 parameters of type double & return answer
+2) Method average(), accept 3 parameters of type double & return answer
+3) Method isAnswerAboveExpecation(), take one parameter (answer which you received from average method) and 
+return true if value is more then 50 else false.
+4) Method isEligible(),take one parameter (answer which you received from average method) 
+return true if value is more then 50 or divisible by 2. Eligibility will be printed in main method. 
+5) Method getYourGrade(),take one parameter (answer which you received from average method) 
+return "A Grade" if average is more then 80 else "B grade", main method will print grade received from getYourGrade() method.
+
+Rules : a) From main method, you will call average() and average() method will call sum() method.
+               Main method will not directly call sum method. 
+	    b) average() & sum() should be non static method.
+	    c) isAnswerAboveExpecation(), isEligible(), getYourGrade() method should be static method and      called from main method.
+            d) Class should not have any instance variable.*/
 
 public class ReturnConcept {
 	
 	double average(double num1, double num2, double num3) {
-		double ans = sum(num1,num2,num3)/3;
-		return ans;
+		return sum(num1,num2,num3)/3;
 	}
 	
 	double sum(double num1, double num2,double num3) {
-		double ans= num1+num2+num3;
-		return ans;
+		return num1+num2+num3;
 	}
 	
 	static boolean isAnswerAboveExpecation(double num){
-		if(num < 50)
+		if(num > 50)
 			return true;
-		else
-			return false;		
+		return false;		
 	}
 	
 	static boolean isEligible(double num) {
-		if (num > 50 && num%2==0)
+		if (num > 50 || num%2==0)
 			return true;
 		else
 			return false;
@@ -29,8 +42,7 @@ public class ReturnConcept {
 	static String getYourGrade(double num) {
 		if(num > 80)
 			return "A Grade";
-		else
-			return "B Grade";				
+		return "B Grade";				
 	}
 	
 	public static void main(String[] a) {
@@ -46,10 +58,6 @@ public class ReturnConcept {
 		else
 			System.out.println("You are NOT eligible");
 		
-		String grade = ReturnConcept.getYourGrade(ans);
-		if(grade.equalsIgnoreCase("A Grade"))
-			System.out.println("You got Grade A");
-		else 
-			System.out.println("You got grade B");		
+		System.out.println("You got "+ReturnConcept.getYourGrade(ans));			
 	}
 }
