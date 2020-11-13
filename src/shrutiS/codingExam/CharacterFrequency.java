@@ -12,17 +12,16 @@ public class CharacterFrequency {
 		int digitCount = 0;
 		for (int i = 0; i < word.length(); i++) {
 			char ch = word.charAt(i);
-			if (Character.isLetter(ch))
-			{
+			if (Character.isLetter(ch)) {
 				letterCount++;
 				if (Character.isUpperCase(ch))
 					UpperCount++;
-				else 
+				else
 					lowerCount++;
-			
-			}else if (Character.isDigit(ch))
+
+			} else if (Character.isDigit(ch))
 				digitCount++;
-			else 
+			else
 				specialCount++;
 		}
 		System.out.println("\nTotal Letter in " + word + " is :" + letterCount);
