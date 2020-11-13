@@ -1,4 +1,4 @@
-//Find the frequency of each character from user given word.
+
 package priya;
 
 import java.util.Scanner;
