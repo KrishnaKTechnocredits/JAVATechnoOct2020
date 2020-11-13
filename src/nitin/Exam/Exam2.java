@@ -1,11 +1,7 @@
 package nitin.Exam;
 import java.util.Scanner;
 public class Exam2 {
-	/* letters -> 12
-         uppercase -> 7
-         lowercase -> 5
-         digit -> 3
-         special char -> 3 */
+
 	void findCount(String word) {
 		int letterCount=0,upperCount=0,lowerCount=0,digitCount=0,specialCount=0;
 		for(int index=0;index<word.length();index++) {
@@ -24,7 +20,6 @@ public class Exam2 {
 		}
 		System.out.println(" Digit : "+digitCount+",\n Letter :"+letterCount+",\n UpperCase Characters : "+upperCount+",\n LowerCase Characters : "+lowerCount+"\n and SpecialCase Characters : "+specialCount);
 	}
-	
 	public static void main(String[] args) {
 		Exam2 exam2 = new Exam2();
 		Scanner sc = new Scanner(System.in);
