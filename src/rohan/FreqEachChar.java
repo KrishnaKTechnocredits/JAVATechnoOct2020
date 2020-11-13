@@ -2,6 +2,7 @@ package rohan;
 
 import java.util.Scanner;
 
+/*Program to give input as string and find the occurence of each character in the string*/
 public class FreqEachChar {
 
 	void freqOfEachChar(String str) {
@@ -11,7 +12,8 @@ public class FreqEachChar {
 				if(str.charAt(j)==str.charAt(i))
 					cnt++;
 			}
-			System.out.println("Occurence of Character is "+str.charAt(i)+" "+cnt+" times");
+			//if(indexOf(str.charAt(i))==i)
+				System.out.println("Occurence of Character is "+str.charAt(i)+" "+cnt+" times");
 		}
 	}
 	
