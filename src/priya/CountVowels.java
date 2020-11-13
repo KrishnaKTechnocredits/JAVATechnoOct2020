@@ -1,3 +1,6 @@
+//Java Program to Count the Number of Vowels in user defined string.
+//output : vowels are e , o, i 
+
 package priya;
 
 import java.util.Scanner;
