@@ -20,8 +20,8 @@ public class SingleOccurance {
 	}
 
 	public static void main(String[] args) {
-		String str = "vaibhav";
-		String givenString=str.toUpperCase();
+		String str = "TEchnocredits";
+		String givenString=str.toUpperCase();//converting string to upper case,so if incase user inputs word in lower case it will be capitalised 
 		SingleOccurance.findFrequency(givenString);		
 	}
 }
