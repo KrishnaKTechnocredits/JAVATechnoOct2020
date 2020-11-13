@@ -1,4 +1,4 @@
-package sessionPractice;
+package ankit.Scanner;
 
 import java.util.Scanner;
 

@@ -1,4 +1,4 @@
-package ankit;
+package ankit.Scanner;
 
 //Assignment15: To scan the character occurrence in user given string array.
 import java.util.Scanner;
