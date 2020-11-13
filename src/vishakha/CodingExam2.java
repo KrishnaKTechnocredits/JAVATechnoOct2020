@@ -33,6 +33,7 @@ public class CodingExam2 {
 	int letterCount;
 	int lowerCount;
 	int upperCount;
+	int specialCharCount;
 	
 	void findCharType(String word){
 		for(int index=0; index<word.length(); index++){
@@ -45,12 +46,15 @@ public class CodingExam2 {
 					lowerCount++;
 				else
 					upperCount++;
-			}
+			}else
+				specialCharCount++;
+				
 		}
 		System.out.println("There are "+digitCount+ " digits in the word "+word);
 		System.out.println("There are "+letterCount+ " letters in the word "+word);
 		System.out.println("There are "+lowerCount+ " lower case letters in the word "+word);
 		System.out.println("There are "+upperCount+ " upper case letters in the word "+word);
+		System.out.println("There are "+specialCharCount+ " special characters in the word "+word);
 	}
 
 	public static void main(String[] args) {
