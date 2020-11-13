@@ -10,23 +10,25 @@ output : letters -> 12
 public class Exam2 {
 	
 	void checkCharType(String word) {
-		int letterCnt=0,upperCaseCnt=0, lowerCaseCnt=0,digitCnt=0;
+		int letterCnt=0,upperCaseCnt=0, lowerCaseCnt=0,digitCnt=0,specialCnt=0;
 		for(int index=0;index<word.length();index++) {
 			char ch= word.charAt(index);
-			if (Character.isLetter(ch))
+			if (Character.isLetter(ch)) {
 				letterCnt++;
-			if(Character.isUpperCase(ch)) 
-				upperCaseCnt++;
-			if(Character.isLowerCase(ch))
-				lowerCaseCnt++;
-			if(Character.isDigit(ch))
+				if(Character.isUpperCase(ch)) 
+					upperCaseCnt++;
+				else 
+					lowerCaseCnt++;
+			}else if(Character.isDigit(ch)) {
 				digitCnt++;
+			}else
+				specialCnt++;
 		}
 		System.out.println("Letters: "+letterCnt);
 		System.out.println("Number of Upper Case character: "+upperCaseCnt);
 		System.out.println("Number of Lower Case character: "+lowerCaseCnt);
 		System.out.println("Number of digits: "+digitCnt);
-		System.out.println("Number of Special characters: "+(word.length()-(letterCnt+digitCnt)));
+		System.out.println("Number of Special characters: "+specialCnt);
 	}
 
 	public static void main(String[] args) {
