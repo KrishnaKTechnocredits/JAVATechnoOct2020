@@ -1,4 +1,4 @@
-package ankit;
+package ankit.Scanner;
 
 //Assignment14: To scan the vowels in string
 import java.util.Scanner;

@@ -1,4 +1,4 @@
-package ankit;
+package ankit.arrayConcepts;
 
 public class SimpleCalculation {
 	int index = 0;
