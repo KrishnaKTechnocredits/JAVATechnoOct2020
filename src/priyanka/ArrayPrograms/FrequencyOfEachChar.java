@@ -7,16 +7,21 @@ import java.util.Scanner;
 public class FrequencyOfEachChar {
 
 	void findOccurence(String word) {
+		System.out.println("String is :" + word);
 		for (int i = 0; i < word.length(); i++) {
-			int count = 0;
-			for (int j = 0; j < word.length(); j++) {
-				char ch = word.charAt(j);
-				if (ch == word.charAt(i))
-					count++;
+			char ch = word.charAt(i);
+			int index = word.indexOf(word.charAt(i));
+			if (i == index) {
+				int cnt = 0;
+				for (int j = 0; j < word.length(); j++) {
+					if (word.charAt(i) == word.charAt(j))
+						cnt++;
+				}
+				System.out.println(ch + " ---->" + cnt + " times");
 			}
-			System.out.println(word.charAt(i) + " -->" + count);
 		}
 	}
+
 	public static void main(String[] args) {
 		FrequencyOfEachChar frequencyOfEachChar = new FrequencyOfEachChar();
 		Scanner scanner = new Scanner(System.in);
