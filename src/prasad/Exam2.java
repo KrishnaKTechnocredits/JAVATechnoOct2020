@@ -12,16 +12,16 @@ public class Exam2 {
 			char ch = word.charAt(index);
 			if(Character.isDigit(ch))
 				isdigit++;
-			else if(Character.isLetter(ch))
+			else if(Character.isLetter(ch)) {
 				isletter++;
-			else if(Character.isUpperCase(ch))
+			 if(Character.isUpperCase(ch))
 				isupper++;
-			else if(Character.isLowerCase(ch))
+			else 
 				islower++;
-			else
+			}else
 				isspecial++;
 		}
-		
+		System.out.println(word);
 		System.out.println("Letters: " + isletter);
 		System.out.println("Digits: " + isdigit);
 		System.out.println("Upper case: " + isupper);
