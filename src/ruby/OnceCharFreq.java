@@ -10,17 +10,17 @@ public class OnceCharFreq {
 
 	public static void main(String[] args) {		
 		OnceCharFreq onceCharFreq = new OnceCharFreq();
-		String word = "aakanksha";
+		String word = "aakkanshaa";
 		onceCharFreq.charFreq(word);	
 	}
 	
 	void charFreq(String word) {	
 		for(int index=0;index<word.length();index++) {
-		char ch1 = Character.toLowerCase(word.charAt(index));
+		char ch1 = word.charAt(index);
 		int count=0;
 			if(index == word.indexOf(ch1))
 				for(int j=0; j<word.length();j++) {
-				char ch2=Character.toLowerCase(word.charAt(j));
+				char ch2=word.charAt(j);
 				if(ch2 == ch1)
 					count++;
 				}
