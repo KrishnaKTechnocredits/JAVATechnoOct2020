@@ -11,6 +11,7 @@ public class MaxRepeatingWordWithFreq {
 		String[] strArr = input.split(" ");
 		int max = 0;
 		String maxWord = "";
+		System.out.println("Entered String : " +input);
 		for (int i = 0; i < strArr.length; i++) {
 			String word = strArr[i];
 			int cnt = 0;
@@ -27,7 +28,7 @@ public class MaxRepeatingWordWithFreq {
 				}
 			}
 		}
-		System.out.println(maxWord + "->" + max);
+		System.out.println("Maximum frequency word :" + maxWord + "->" + max);
 	}
 
 	public static void main(String[] args) {
