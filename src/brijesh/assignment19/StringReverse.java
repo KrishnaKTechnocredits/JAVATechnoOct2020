@@ -1,5 +1,9 @@
 package brijesh.assignment19;
 
+/*WAP to print Reverse a given String.
+input : This is technocredits
+output : stiderconhcet si sihT  */
+
 import java.util.Scanner;
 
 public class StringReverse {

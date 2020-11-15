@@ -1,5 +1,9 @@
 package brijesh.assignment19;
 
+/*reverse given string array.
+input : {"Credits", "Techno","From","Diwali","Happy"}
+output : {"Happy","Diwali","From","Techno","Credits"}*/
+
 import java.util.Arrays;
 
 public class ArrayReverse {
