@@ -48,5 +48,4 @@ public class StringConcatination {
 		String output=digit+upparCase+loweCase;
 		System.out.println(output);
 	}
-
 }
