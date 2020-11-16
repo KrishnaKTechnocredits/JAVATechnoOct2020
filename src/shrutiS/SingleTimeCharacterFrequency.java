@@ -27,6 +27,8 @@ public class SingleTimeCharacterFrequency {
 
 	public static void main(String[] args) {
 		SingleTimeCharacterFrequency charFrequency = new SingleTimeCharacterFrequency();
-		charFrequency.singleCharFrequency("aakanksha");
+		String input = "aakanksha";
+		System.out.println("Input:"+input);
+		charFrequency.singleCharFrequency(input);
 	}
 }
