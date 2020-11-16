@@ -1,5 +1,12 @@
 package vaibhav;
 
+/*Assignment-18 : 14th Nov'2020 
+Program : 1
+max repeating word with its freq.
+input : Hi Hello Hi Techno Hello Hi
+output : Hi -> 3*/
+
+
 public class MaxOccuranceWord {
 	
 	static void occuranceWord(String str) {

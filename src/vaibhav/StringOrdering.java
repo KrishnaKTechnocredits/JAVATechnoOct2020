@@ -1,5 +1,9 @@
 package vaibhav;
 
+/*Program : 2 
+String input = "hmPZ23i9Ws"
+output = "239PZWhmis";*/
+
 public class StringOrdering {
 	
 	public static void order(String order) {
