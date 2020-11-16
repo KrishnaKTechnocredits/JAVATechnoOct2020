@@ -5,21 +5,26 @@ output : Hi -> 3*/
 package shrutiS.assignment18;
 
 public class MaxFrequencyCharacter {
-
+	int maxFrequency;
+	String word;
 	void maxFrequencyCharCount(String input) {
 		String[] arr = input.split(" ");
 		for (int index = 0; index < arr.length; index++) {
-			String word = arr[index];
+		    word = arr[index];
 			int count = 0;
 			if (input.contains(word)) {
 				for (int innerIndex = 0; innerIndex < arr.length; innerIndex++) {
-					if (word.equals(arr[innerIndex]))
+					if (word.equals(arr[innerIndex])) {
 						count++;
+					}
 				}
-				System.out.println(word + " occurs " + count + " times");
+				//System.out.println(word + " occurs " + count + " times");
 				input = input.replace(word, "");
+				if (maxFrequency < count)
+					maxFrequency = count;
 			}
 		}
+		System.out.println("Word with maximum occurance is '"+word+"' of frequency "+maxFrequency);
 	}
 
 	public static void main(String[] args) {
