@@ -9,8 +9,7 @@ public class StringOrdering {
 	public static void order(String order) {
 		String number = "";
 		String capital = "";
-		String small = "";
-		
+		String small = "";		
 		for (int index = 0;index < order.length();index++) {
 			char ch= order.charAt(index);
 			if(Character.isDigit(ch))
