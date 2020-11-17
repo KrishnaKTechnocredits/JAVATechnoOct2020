@@ -1,5 +1,19 @@
 package brijesh.assignment21;
 
+/*
+ WAP to find given 2 arrays are identical or not. 
+int[] arr1 = {10,12,55,32,17};
+int[] arr2 = {10,12,55,32,17}};
+output : Identical
+--------------------------------------------
+int[] arr1 = {10,12,55,32,17,99};
+int[] arr2 = {10,12,55,32,17}};
+output : Not identical
+------------------------------------
+int[] arr1 = {10,12,55,32,17};
+int[] arr2 = {10,12,99,32,17}};
+output : Not Identical
+ */
 public class Identical {
 	
 	boolean isIdential(int[] numberArr1, int numberArr2[]) {
