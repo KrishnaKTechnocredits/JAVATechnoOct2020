@@ -1,30 +1,35 @@
 package prasad;
 
-/*Accepts a string and prints reverse of given string*/
-import java.util.Scanner;
+/*String input = "hmPZ23i9Ws"
+output = "239PZWhmis"; */
 
-public class Reversestr {	
-	
-	String reversestring(String word) {
-		String reverseword = "";
-		for(int index=word.length()-1;index>=0;index--) {
+public class Reversestr {
+
+	void compare(String word) {
+		int[] numbers = new int[word.length()];
+		String digits = "";
+		String uppercaseletters = "";
+		String lowercaseletters = "";
+		for (int index = 0; index < word.length(); index++) {
 			char ch = word.charAt(index);
-			reverseword = reverseword+ch;
+			if (Character.isDigit(ch)) {
+				digits = digits + ch;
+			} else if (Character.isLetter(ch)) {
+				if (Character.isUpperCase(ch)) {
+					uppercaseletters = uppercaseletters + ch;
+				} else if (Character.isLowerCase(ch)) {
+					lowercaseletters = lowercaseletters + ch;
+				} else
+					continue;
+			}
 		}
-		return reverseword;
+		System.out.println("Output string:- " + digits + uppercaseletters + lowercaseletters);
 	}
-	String inputstring() {
-		Scanner scanner = new Scanner(System.in);
-		System.out.println("Enter word(s)");
-		String word = scanner.nextLine();
-		return word;
-	}
-	
-	public static void main(String[]arg) {
+
+	public static void main(String[] arg) {
 		Reversestr reversestr = new Reversestr();
-		String word = reversestr.inputstring();
-		String revword = reversestr.reversestring(word);
-		System.out.println("Reverse of given word:- " + revword);
-		
+		String word = "hmPZ23i9Ws";
+		System.out.println("Input string:- " + word);
+		reversestr.compare(word);
 	}
 }
