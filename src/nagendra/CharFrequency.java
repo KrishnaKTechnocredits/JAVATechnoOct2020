@@ -4,7 +4,6 @@ import java.util.Scanner;
 
 /*
 Find the frequency of each character from user given word.
-
 */
 public class CharFrequency {
 
