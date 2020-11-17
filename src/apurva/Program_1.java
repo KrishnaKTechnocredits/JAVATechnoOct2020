@@ -1,33 +1,23 @@
 package apurva;
-/*Max repeating word with its frequency.
-input: Hi Hello Hi Techno Hello Hi
-output: Hi -> 3*/
 
+import java.util.Scanner;
+
+/*WAP to print Reverse a given String
+input = This is technocredits
+output = stiderconhcet si sihT.*/
 public class Program_1 {
-	void displayCount(String str) {
-		int max = 0, maxWord = 0;
-		String[] strArray = str.split(" ");
-		for (int i = 0; i < strArray.length; i++) {
-			String word = strArray[i];
-			int count = 0;
-			if (str.contains(word)) {
-				for (int j = 0; j < strArray.length; j++) {
-					if (word.equals(strArray[j])) {
-						count++;
-					}
-					if (count > max) {
-						max = count;
-						maxWord = i;
-					}
-					str = str.replace(word, "");
-				}
-			}
+	void reverseWord(String word) {
+		for (int i = word.length() - 1; i >= 0; i--) {
+			System.out.print(word.charAt(i));
 		}
-		System.out.println(" Word with its frequency " + strArray[maxWord] + "->" + max);
 	}
 
 	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
 		Program_1 program_1 = new Program_1();
-		program_1.displayCount(" Hi Hello Hi Techno Hello Hi ");
+		System.out.println("Enter the string: ");
+		String output = scanner.nextLine();
+		program_1.reverseWord(output);
+		scanner.close();
 	}
 }
