@@ -1,4 +1,4 @@
-package codingExams;
+package ankit.CodingExams;
 
 import java.util.Scanner;
 
