@@ -8,7 +8,7 @@ Output : Given number 33 is not present in predefined array.
 Input : Number to be check -> 3
 output : Given number 3 is present in predefined array with frequency 2.*/
 
-package shrutiS.assignment_15;
+package shrutiS.assignment15;
 
 import java.util.Scanner;
 

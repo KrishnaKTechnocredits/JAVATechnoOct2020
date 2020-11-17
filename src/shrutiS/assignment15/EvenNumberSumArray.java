@@ -6,7 +6,7 @@
      Input : {10,5,7,3,1,5,9,30}
      Output: 40*/
 
-package shrutiS.assignment_15;
+package shrutiS.assignment15;
 
 import java.util.Scanner;
 

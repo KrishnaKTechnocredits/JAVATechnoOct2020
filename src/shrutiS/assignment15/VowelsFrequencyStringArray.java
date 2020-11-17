@@ -4,7 +4,7 @@ Java Program to Count the Number of Vowels in user defined string.
 Input : technocredits
 output : vowels are e , o, i */
 
-package shrutiS.assignment_15;
+package shrutiS.assignment15;
 
 import java.util.Scanner;
 

@@ -5,7 +5,7 @@
     A) User can provide any positive and negative number
     B) You need to find out how many positive, negative numbers and zeros are there in array */
 
-package shrutiS.assignment_15;
+package shrutiS.assignment15;
 
 import java.util.Scanner;
 
