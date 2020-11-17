@@ -1,3 +1,7 @@
+/*swap 2 numbers with using 3rd variable
+  swap 2 numbers without using 3rd variable
+  swap 2 String with using 3rd variable
+  swap 2 String without using 3rd variable*/
 package anjaliS;
 
 public class Swapping {
