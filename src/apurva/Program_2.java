@@ -2,7 +2,7 @@ package apurva;
 
 /*Reverse given string array.
  *input: {"Credits ", "Techno ", "From ", "Diwali ", "Happy "}
- *output: {"Happy", "Diwali", "From", "Techno", "Credits"} */
+ output: {"Happy", "Diwali", "From", "Techno", "Credits"} /
 public class Program_2 {
 	void reverseArray(String[] string) {
 		for (int index = string.length - 1; index >= 0; index--) {
