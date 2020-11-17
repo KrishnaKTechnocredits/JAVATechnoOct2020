@@ -13,7 +13,7 @@ package ritika;
 
 public class Coding_Exam_3 {
 
-	void findDuplicateValueInArray(String[] arr) {
+	void findDuplicateWordInArray(String[] arr) {
 		for (int i = 0; i < arr.length; i++) {
 			int count = 0;
 				for (int j = 0; j < arr.length; j++) {
@@ -26,9 +26,25 @@ public class Coding_Exam_3 {
 			}
 		}
 	}
+	void findDuplicateIntInArray (int [] arr) {
+		for (int i = 0; i < arr.length; i++) {
+			int count = 0;
+				for (int j = 0; j < arr.length; j++) {
+					if (arr[i] == (arr[j]))
+						count++;
+				}
+			if (count > 1) {
+				System.out.println(arr[i]);
+				arr[i] = 0;
+			}
+		}
+	}
 	public static void main(String[] args) {
-		String[] input = { "Techno", "Credits", "Techno", "Hi", "Hello", "Hi" };
+		String[] inputString = { "Techno", "Credits", "Techno", "Hi", "Hello", "Hi" };
+		int[] inputInt = {10,12,55,32,17,12,32};
 		Coding_Exam_3 exam3 = new Coding_Exam_3();
-		exam3.findDuplicateValueInArray(input);
+		exam3.findDuplicateWordInArray(inputString);
+		System.out.println("======================================");
+		exam3.findDuplicateIntInArray(inputInt);
 	}
 }
