@@ -8,12 +8,19 @@ output : a -> 4
               s -> 1
               h -> 1
  */
+=======
+/*Assignment 16 : 12th nov'2020 
+
+
+Find the frequency of each character from user given word */
+
 
 package kajol;
 
 import java.util.Scanner;
 
 public class FrequencyOfEachCharInUserGivenWord {
+
 		void findfrequencyOfChar(String inputString) {
 			for(int index=0;index<inputString.length();index++) {
 				int charFrequency=0;
@@ -35,5 +42,3 @@ public class FrequencyOfEachCharInUserGivenWord {
 			scanner.close();
 		}
 }
-
-
