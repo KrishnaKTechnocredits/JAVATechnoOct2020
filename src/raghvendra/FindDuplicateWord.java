@@ -17,7 +17,7 @@ public class FindDuplicateWord {
 					}
 				}
 			if(count>1) 
-			System.out.println("Duplicate numbers are: "+outerString[index]);
+			System.out.println("Duplicate Strings are: "+outerString[index]);
 			}
 		}
 	}
