@@ -1,4 +1,5 @@
 package ruby;
+
 /*Exam3: find duplicate from given array.
 input : int[] arr = {10,12,55,32,17,12,32};
 output : 12
@@ -12,29 +13,21 @@ public class Exam3 {
 
 	void duplicateNum(int[] num) {
 		for (int i = 0; i < num.length; i++) {
-			int count = 0;
-			for (int j = 0; j < num.length; j++) {
+			for (int j = i + 1; j < num.length; j++) {
 				if (num[i] == num[j]) {
-					count++;
+					System.out.println(num[i]);
 				}
 			}
-			if (count > 1)
-				System.out.println(num[i]);
 		}
 	}
 
 	void duplicateWord(String[] input) {
 		for (int i = 0; i < input.length; i++) {
-			int count = 0;
-			for (int j = 0; j < input.length; j++) {
-				if (input[i].equals(input[j])) {
-					count++;
-				}
+			for (int j = i + 1; j < input.length; j++) {
+				if (input[i].equals(input[j]))
+					System.out.println(input[i]);
 			}
-			if (count > 1)
-				System.out.println(input[i]);
 		}
-
 	}
 
 	public static void main(String[] args) {
