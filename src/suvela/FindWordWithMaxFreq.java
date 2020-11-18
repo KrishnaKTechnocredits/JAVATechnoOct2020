@@ -26,7 +26,7 @@ public class FindWordWithMaxFreq {
 						}
 					}
 				}
-				
+
 				words = words.replace(word, "");
 			}
 		}
