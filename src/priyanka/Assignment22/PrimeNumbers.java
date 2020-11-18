@@ -27,7 +27,7 @@ public class PrimeNumbers {
 		Scanner scanner = new Scanner(System.in);
 		System.out.println("Enter the start number");
 		int startNum = scanner.nextInt();
-		System.out.println("Enter the start number");
+		System.out.println("Enter the end number");
 		int endNum = scanner.nextInt();
 		System.out.println("The Prime Numbers from " + startNum + " to " + endNum + " are :");
 		primeNumbers.primeNo(startNum, endNum);
