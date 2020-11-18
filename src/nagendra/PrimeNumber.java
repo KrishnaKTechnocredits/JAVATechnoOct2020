@@ -1,5 +1,8 @@
 package nagendra;
 
+/*
+Print all prime numbers between 2 to 100.
+*/
 
 public class PrimeNumber {
 	
