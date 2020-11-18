@@ -1,3 +1,11 @@
+
+/*Assignment-19 : 
+
+Program : 1 
+WAP to print Reverse a given String.
+input : This is technocredits
+output : stiderconhcet si sihT  
+*/
 package suvela;
 
 public class ReverseString {
