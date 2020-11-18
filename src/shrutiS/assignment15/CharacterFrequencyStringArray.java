@@ -6,7 +6,7 @@ output : technocredits -> 2
               earth -> 1
               Total occurrence of e -> 5*/
 
-package shrutiS.assignment_15;
+package shrutiS.assignment15;
 
 import java.util.Scanner;
 
