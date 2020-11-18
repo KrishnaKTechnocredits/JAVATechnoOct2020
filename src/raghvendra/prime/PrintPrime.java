@@ -1,5 +1,6 @@
 package raghvendra.prime;
-
+/*Assignment-22 : 18th Nov'2020 
+Print all prime numbers between 2 to 100*/
 public class PrintPrime {
 	void printPrimeFromTwo() {
 		System.out.println("Prime Numbers are");
