@@ -36,7 +36,7 @@ public class ArrayIdentical {
 	public static void main(String[] args) {
 		ArrayIdentical arr = new ArrayIdentical();
 		int numArr1[] = {10,20,30,40};
-		int numArr2[] = {10,20,20,40};
+		int numArr2[] = {10,20,30,40};
 		arr.arrayIdentical(numArr1, numArr2);
 	}
 }
