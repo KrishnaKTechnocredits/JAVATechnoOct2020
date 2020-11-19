@@ -3,8 +3,6 @@ Print all prime numbers between 2 to 100.
 */
 package ankita;
 
-import java.util.Arrays;
-
 public class PrimeNumberFromTwoToHundred {
 	int[] getPrimeNumberFromTwoToHundred(int num1, int num2) {
 		System.out.println("Prime Numbers between : " + num1 +" & " +num2);
