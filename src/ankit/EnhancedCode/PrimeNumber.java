@@ -6,7 +6,7 @@ public class PrimeNumber {
 
 	void primeNumberVerification(int number) {
 			int count = 0;
-			for (int index = 1; index <= number; index++) {
+			for (int index = 2; index <= number; index++) {
 				if (number % index == 0) {
 					count++;
 					}
