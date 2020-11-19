@@ -5,13 +5,14 @@ import java.util.Scanner;
 public class PrimeNumber {
 
 	void primeNumberVerification(int number) {
-			int count = 0;
-			for (int index = 2; index <= number; index++) {
+			boolean flag = false;
+			for (int index = 2; index < number; index++) {
 				if (number % index == 0) {
-					count++;
+					flag=true;
+					break;
 					}
 				}
-			if (count == 2)
+			if (!flag)
 				System.out.println("Number " + number + " -> is prime number");
 		}
 
