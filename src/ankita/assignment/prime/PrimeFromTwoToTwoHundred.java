@@ -1,4 +1,5 @@
-// Find count,sum & avg of prime number from 2-200.
+/*Find count,sum & avg of prime number from 2-200.*/
+
 package ankita.assignment.prime;
 
 public class PrimeFromTwoToTwoHundred {
