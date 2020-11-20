@@ -1,4 +1,4 @@
-package prasad;
+package prasad.Stringandarray;
 
 /*swap 2 String without using 3rd variable
 Hint : use SubString method of String class*/

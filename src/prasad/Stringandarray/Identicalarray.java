@@ -1,4 +1,4 @@
-package prasad;
+package prasad.Stringandarray;
 /*WAP to find given 2 arrays are identical or not. 
 int[] arr1 = {10,12,55,32,17};
 int[] arr2 = {10,12,55,32,17}};

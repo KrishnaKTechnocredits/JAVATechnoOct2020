@@ -1,4 +1,4 @@
-package prasad;
+package prasad.Stringandarray;
 
 import java.util.Scanner;
 
