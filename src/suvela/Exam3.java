@@ -14,7 +14,7 @@ public class Exam3 {
 				}
 
 			}
-			if (count > 1 && arr[i] == 0)
+			if (count > 1)
 				System.out.println("Duplicate elements are:" + no);
 		}
 	}
@@ -24,12 +24,12 @@ public class Exam3 {
 			count = 0;
 			String s1 = s[i];
 			for (int j = 0; j < s.length; j++) {
-				if (s1 == s[j]) {
+				if (s1.equals(s[j])) {
 					count++;
 					s[i] = null;
 				}
 			}
-			if (count > 1 && s[i] == null)
+			if (count > 1)
 				System.out.println("Duplicate elements are:" + s1);
 		}
 	}
