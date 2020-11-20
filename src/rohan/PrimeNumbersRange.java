@@ -12,7 +12,7 @@ public class PrimeNumbersRange {
 			for(int index=startRange;index<=endRange;index++) {
 				//int cnt=0;
 				boolean flag = true;
-				for(int innerIndex=2;innerIndex<(index/2);innerIndex++) {
+				for(int innerIndex=2;innerIndex<index;innerIndex++) {
 					if(index%innerIndex==0) {
 						flag=false;
 						break;
@@ -29,5 +29,4 @@ public class PrimeNumbersRange {
 		PrimeNumbersRange primeNumbersRange = new PrimeNumbersRange();
 		primeNumbersRange.identifyPrimeNumbers(2,100);
 	}
-	
 }
