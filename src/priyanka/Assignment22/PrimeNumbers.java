@@ -7,17 +7,24 @@ Print all prime numbers between 2 to 100.
 */
 public class PrimeNumbers {
 
-	void primeNo(int startNum, int endNum) {
+	void verifyPrimeNo(int number) {
 
-		for (int index = startNum; index <= endNum; index++) {
-			int count = 0;
-			for (int innerIndex = 1; innerIndex <= endNum; innerIndex++) {
-				if (index % innerIndex == 0) {
-					count++;
-				}
+		boolean flag = true;
+		for (int index = 2; index <= Math.sqrt(number); index++) {
+			if (number % index == 0) {
+				flag = false;
+				break;
 			}
-			if (count == 2)
-				System.out.print(" " + index + " ");
+		}
+		if (flag)
+			System.out.print(" " + number + " ");
+	}
+
+	void getPrimeNo(int startNum, int endNum) {
+
+		System.out.println("The Prime Numbers from " + startNum + " to " + endNum + " are :");
+		for (int index = startNum; index < endNum; index++) {
+			verifyPrimeNo(index);
 		}
 	}
 
@@ -29,7 +36,6 @@ public class PrimeNumbers {
 		int startNum = scanner.nextInt();
 		System.out.println("Enter the end number");
 		int endNum = scanner.nextInt();
-		System.out.println("The Prime Numbers from " + startNum + " to " + endNum + " are :");
-		primeNumbers.primeNo(startNum, endNum);
+		primeNumbers.getPrimeNo(startNum, endNum);
 	}
 }
