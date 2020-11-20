@@ -10,9 +10,7 @@ package kajol.String.Array.Programs;
 import java.util.Arrays;
 
 public class ReverseArray {
-	
 	String[] reverseArray(String[] inputArray) {
-		
 		String[] reverseArray= new String[inputArray.length];
 		int reverseIndex=0;
 		for(int index=inputArray.length-1;index>=0;index--) {

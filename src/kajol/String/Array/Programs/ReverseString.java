@@ -10,14 +10,12 @@ package kajol.String.Array.Programs;
 import java.util.Scanner;
 
 public class ReverseString {
-	
 	String reverseUserDefinedString(String inputString) {
 		String reverseString="";
 		for(int index=inputString.length()-1;index>=0;index--) {
 			reverseString+=inputString.charAt(index);
 		}
-		return reverseString;
-		
+		return reverseString;	
 	}
 	
 	public static void main(String[] args) {
