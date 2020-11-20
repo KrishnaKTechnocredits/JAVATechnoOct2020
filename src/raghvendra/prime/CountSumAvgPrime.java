@@ -18,7 +18,7 @@ public class CountSumAvgPrime {
 			sum=sum+index;
 			}
 		}
-		System.out.println("Count of Primr numbers:"+count);
+		System.out.println("Count of Primr numbers from 2 to 200:"+count);
 		System.out.println("Sum of Primr numbers:"+sum);
 		System.out.println("Average of Primr numbers:"+(sum/count));
 	}
