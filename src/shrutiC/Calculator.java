@@ -42,6 +42,5 @@ public class Calculator {
 		System.out.println("Is average above expectation : " + isAnswerAboveExpecation(average));
 		System.out.println("Is Candidate eligible : " + isEligible(average));
 		System.out.println("Grade : " + getYourGrade(average));
-	}
-
+}
 }
