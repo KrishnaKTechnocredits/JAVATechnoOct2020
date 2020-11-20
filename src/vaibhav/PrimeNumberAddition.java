@@ -1,5 +1,7 @@
 package vaibhav;
 
+//This program will find prime array and sum and average of all elements
+
 public class PrimeNumberAddition {
 	
 	static double finalCount=0;
