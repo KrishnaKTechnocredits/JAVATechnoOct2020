@@ -1,4 +1,4 @@
-package prasad;
+package prasad.Stringandarray;
 
 public class Array {
 	void setData(int[]num) {

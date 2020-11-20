@@ -1,4 +1,4 @@
-package prasad;
+package prasad.Stringandarray;
 
 import java.util.Scanner;
 /*Prints occurance of each char in string but prints the count for char only once even if it has occured multiple times in the string*/

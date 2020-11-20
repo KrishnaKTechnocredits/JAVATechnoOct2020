@@ -1,4 +1,4 @@
-package prasad;
+package prasad.Stringandarray;
 
 /*Prints occurance of each char in the same word eg. sam ; S: times,A:times.M: times */ 
 import java.util.Scanner;

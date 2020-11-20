@@ -1,4 +1,4 @@
-package prasad;
+package prasad.Stringandarray;
 
 import java.util.Scanner;
 /*Program 2: Search for pre-defined number in pre-defined array and then search for user entered number in pre-defined array*/

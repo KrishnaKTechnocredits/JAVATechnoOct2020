@@ -1,4 +1,4 @@
-package prasad;
+package prasad.Stringandarray;
 
 /*String input = "hmPZ23i9Ws"
 output = "239PZWhmis"; */
