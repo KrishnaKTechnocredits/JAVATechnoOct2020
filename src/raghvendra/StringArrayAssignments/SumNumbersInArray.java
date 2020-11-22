@@ -5,7 +5,6 @@ output : 123 + 9 + 8 = 140*/
 public class SumNumbersInArray {
 	void SumDigitsInString(String st){
 		String st1="";
-		int b=1;
 		int sum=0;
 		for(int index=0;index<st.length();index++) {
 			char ch=st.charAt(index);
