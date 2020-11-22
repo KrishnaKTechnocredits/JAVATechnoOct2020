@@ -15,11 +15,12 @@ public class SumNumbersInArray {
 				st1="";
 			}
 		}
+		sum+=Integer.parseInt(st1);
 		System.out.println("Sum of numbers in string: "+st+" is:"+sum);
 	}
 
 	public static void main(String[] args) {
 		SumNumbersInArray sumDigitsInArray=new SumNumbersInArray();
-		sumDigitsInArray.SumDigitsInString("10te123ch9kj8");
+		sumDigitsInArray.SumDigitsInString("10te123ch9kj850");
 	}
 }
