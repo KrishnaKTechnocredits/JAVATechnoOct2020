@@ -14,7 +14,7 @@ public class SumOfAllNumbers {
 			while (Character.isDigit(str.charAt(i))) {
 				str1 += Character.toString(str.charAt(i));
 				flag = true;
-				if(i == str.length()-1) 
+				if (i == str.length() - 1)
 					break;
 				else
 					i++;
