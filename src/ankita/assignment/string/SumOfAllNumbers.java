@@ -10,7 +10,6 @@ public class SumOfAllNumbers {
 		String str1 = "";
 
 		for (int i = 0; i < str.length(); i++) {
-			boolean flag = false;
 			if(Character.isDigit(str.charAt(i))) {
 				str1 += Character.toString(str.charAt(i));
 			}
