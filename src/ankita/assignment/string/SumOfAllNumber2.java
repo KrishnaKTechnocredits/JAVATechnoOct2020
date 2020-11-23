@@ -24,19 +24,13 @@ public class SumOfAllNumber2 {
 					flag1 = true;
 					break;
 				}
-				while (Character.isDigit(str2.charAt(j))) {
-					temp = temp + Character.toString(str2.charAt(j));
-					flag = true;
-					if (j == str2.length() - 1)
-						break;
-					else
-						j++;
+				if(Character.isDigit(str.charAt(i))) {
+					temp += Character.toString(str2.charAt(i));
 				}
-				if (flag) {
+				else if(temp!= "") {
 					sum1 = sum1 + Integer.parseInt(temp);
 					temp = "";
-				}
-			}
+				}		}
 			if (!flag1)
 				sum += sum1;
 		}
