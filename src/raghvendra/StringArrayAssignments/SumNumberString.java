@@ -23,12 +23,16 @@ public class SumNumberString {
 				}
 			}
 		}
+		if(sum!="") {
+		total+=Integer.parseInt(sum);
+		System.out.println("Sum of all numbers:"+total);
+		}
 		System.out.println("Sum of all numbers:"+total);
 	}
 
 	public static void main(String[] args) {
 	SumNumberString sumNumberString=new SumNumberString();
-	String st="I have 15 years and 2 months and 8 days of experience.";
+	String st="I have 15 years and 2 months and 8 days of experience 1.";
 	sumNumberString.sumAllNumberString(st);
 	}
 }
