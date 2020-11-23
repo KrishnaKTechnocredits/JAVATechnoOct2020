@@ -1,3 +1,10 @@
+/*
+ * Program : 1
+max repeating word with its freq.
+input : Hi Hello Hi Techno Hello Hi
+output : Hi -> 3
+ * */
+
 package milind;
 
 public class MaxRepeatingWordFromArrayWithFrequency {
