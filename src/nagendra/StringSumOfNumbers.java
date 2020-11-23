@@ -12,25 +12,16 @@ public class StringSumOfNumbers {
 		String number = "0";
 		int sum = 0;
 		for (int i = 0; i < word.length(); i++) {
-			if (Character.isDigit(word.charAt(i))) {
-				if (Character.isDigit(word.charAt(i)) && (i != word.length() - 1) && Character.isDigit(word.charAt(i + 1))) {
-					for(int j=i;j<word.length();j++){
-						if(Character.isDigit(word.charAt(j))){
-						number += word.charAt(j);
-						i++;
-						}
-						else{
-							break;
-						}
-					}
-					sum+=Integer.parseInt(number);
-					number="0";
-				} else {
-					sum += Character.getNumericValue(word.charAt(i));
-				}
+			if (Character.isDigit(word.charAt(i))  ) {
+				number += word.charAt(i);	
+
+			}else{
+				sum+=Integer.parseInt(number);
+				number = "0";
 			}
 		}
-		System.out.println("sum of all numbers in String " + word + " is -> " +sum);
+		sum+=Integer.parseInt(number);
+		System.out.println("Sum of all Numbers in a given string "+word+" : "+sum);
 	}
 
 	public static void main(String[] args) {
