@@ -4,9 +4,13 @@ output : techno
 */
 package ankita.assignment.string;
 
+import java.util.Arrays;
+
 public class WordsWithoutDigit {
 
 	void getWordsWithoutDigit(String[] str) {
+		System.out.println("Input :" + Arrays.toString(str));
+		System.out.print("Output :");
 		for (int i = 0; i < str.length; i++) {
 			String str1 = str[i];
 			boolean flag = false;
@@ -17,7 +21,7 @@ public class WordsWithoutDigit {
 				}
 			}
 			if (!flag)
-				System.out.println(str1 + ",");
+				System.out.print(str1 + ", ");
 		}
 	}
 
