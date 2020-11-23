@@ -19,4 +19,4 @@ public class Program_1 {
 	public static void main(String[] args) {
 		new Program_1().sumOfDigitFromString("te1ch9kj8");
 	}
-}
+} 

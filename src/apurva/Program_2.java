@@ -26,4 +26,4 @@ public class Program_2 {
 	public static void main(String[] args) {
 		new Program_2().sumOfNumFromString("te123ch9kj8");
 	}
-}
+} 
