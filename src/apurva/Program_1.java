@@ -1,23 +1,22 @@
 package apurva;
 
-import java.util.Scanner;
-
-/*WAP to print Reverse a given String
-input = This is technocredits
-output = stiderconhcet si sihT.*/
+/*sum of all digits from a given string  
+input: te1ch9kj8 
+output:= 18*/
 public class Program_1 {
-	void reverseWord(String word) {
-		for (int i = word.length() - 1; i >= 0; i--) {
-			System.out.print(word.charAt(i));
+	void sumOfDigitFromString(String input) {
+		int sum = 0;
+		for (int index = 0; index < input.length(); index++) {
+			char ch = input.charAt(index);
+			if (Character.isDigit(ch)) {
+				sum = sum + Character.getNumericValue(ch);
+			}
 		}
+		System.out.println("String Input: " + input);
+		System.out.println("Sum of Digits: " + sum);
 	}
 
 	public static void main(String[] args) {
-		Scanner scanner = new Scanner(System.in);
-		Program_1 program_1 = new Program_1();
-		System.out.println("Enter the string: ");
-		String output = scanner.nextLine();
-		program_1.reverseWord(output);
-		scanner.close();
+		new Program_1().sumOfDigitFromString("te1ch9kj8");
 	}
-}
+} 
