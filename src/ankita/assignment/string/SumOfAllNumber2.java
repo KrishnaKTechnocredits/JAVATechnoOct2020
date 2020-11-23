@@ -16,25 +16,28 @@ public class SumOfAllNumber2 {
 		for (int i = 0; i < str1.length; i++) {
 			String temp = "";
 			int sum1 = 0;
+
 			String str2 = str1[i];
-			boolean flag1 = false;
+			boolean flag = false;
 			for (int j = 0; j < str2.length(); j++) {
-				boolean flag = false;
 				if (Character.isLetter(str2.charAt(j))) {
-					flag1 = true;
+					flag = true;
 					break;
-				}
-				if(Character.isDigit(str.charAt(i))) {
-					temp += Character.toString(str2.charAt(i));
-				}
-				else if(temp!= "") {
+				} else if (Character.isDigit(str2.charAt(j))) {
+					temp += Character.toString(str2.charAt(j));
+				} else if (temp != "") {
 					sum1 = sum1 + Integer.parseInt(temp);
 					temp = "";
-				}		}
-			if (!flag1)
+				}
+			}
+			if (temp != "")
+				sum1 = sum1 + Integer.parseInt(temp);
+
+			if (!flag)
 				sum += sum1;
 		}
-		System.out.println("Input : " +  str);
+
+		System.out.println("Input : " + str);
 		System.out.println("Sum of Numbers : " + sum);
 	}
 
