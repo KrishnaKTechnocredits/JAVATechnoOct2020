@@ -27,4 +27,4 @@ public class FrequencyOFEachCharInString {
 		FrequencyOFEachCharInString.occuranceOfEachChar(input);
 		scanner.close();
 	}
-} 
+}

@@ -1,8 +1,8 @@
-package deepak.Asgmt_17;
+package deepak;
 
 import java.util.Scanner;
 
-public class FrequencyOFEachCharInString {
+public class FreqOfEachChar {
 
 	public static void occuranceOfEachChar(String word) {
 		for (int i = 0; i < word.length(); i++) {
@@ -24,7 +24,7 @@ public class FrequencyOFEachCharInString {
 		System.out.println("Please enter a word");
 		Scanner scanner = new Scanner(System.in);
 		String input = scanner.next();
-		FrequencyOFEachCharInString.occuranceOfEachChar(input);
+		FreqOfEachChar.occuranceOfEachChar(input);
 		scanner.close();
 	}
-} 
+}
