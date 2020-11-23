@@ -11,19 +11,16 @@ public class SumOfAllNumbers {
 
 		for (int i = 0; i < str.length(); i++) {
 			boolean flag = false;
-			while (Character.isDigit(str.charAt(i))) {
+			if(Character.isDigit(str.charAt(i))) {
 				str1 += Character.toString(str.charAt(i));
-				flag = true;
-				if (i == str.length() - 1)
-					break;
-				else
-					i++;
 			}
-			if (flag) {
+			else if(str1!= "") {
 				sum = sum + Integer.parseInt(str1);
 				str1 = "";
 			}
 		}
+		if(str1!="")
+			sum = sum + Integer.parseInt(str1);		
 		System.out.println("Input : " + str);
 		System.out.println("Sum of All numbers : " + sum);
 	}
