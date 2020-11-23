@@ -8,12 +8,12 @@ public class FindPrimeNos {
 	
 	void findPrimeNos(int startIndex, int endIndex){
 		for(int i=startIndex; i<=endIndex; i++){
-			int count = 0;
-			for(int innerIndex=1; innerIndex<=endIndex; innerIndex++){
+			boolean flag = true;
+			for(int innerIndex=2; innerIndex<(Math.sqrt(i)); innerIndex++){
 				if(i%innerIndex == 0)
-					count++;
+					flag = false;
 			}
-			if(count==2)
+			if(flag)
 				System.out.print(" "+i);
 		}
 	}
