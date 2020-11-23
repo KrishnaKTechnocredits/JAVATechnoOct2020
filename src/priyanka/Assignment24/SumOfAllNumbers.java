@@ -7,30 +7,27 @@ output : 123 + 9 + 8 = 140
 
 public class SumOfAllNumbers {
 
-	void getSumOfAllNumbers(String str) {
-
-		String temp = "0";
+	void sumDigitsInString(String str) {
+		String temp = "";
 		int sum = 0;
-
 		for (int index = 0; index < str.length(); index++) {
 			char ch = str.charAt(index);
-			if (Character.isDigit(ch)) {
-				temp = temp + str.charAt(index);
-			} else {
+			if (Character.isDigit(ch))
+				temp = temp + ch;
+			else if (temp != "") {
 				sum = sum + Integer.parseInt(temp);
-				temp = "0";
+				temp = "";
 			}
-			if (index == str.length() - 1 && temp != "")
-				sum = sum + Integer.parseInt(temp);
 		}
-		System.out.println("The sum of all numbers in a give string " + sum);
+		sum = sum + Integer.parseInt(temp);
+		System.out.println("Sum of numbers in string is:" + sum);
 	}
 
-	public static void main(String[] arg) {
+	public static void main(String[] args) {
 		SumOfAllNumbers sumOfAllNumbers = new SumOfAllNumbers();
-		String str = "te123ch9kj8";
-		System.out.println("The sum of all numbers in a give string " + str);
-		sumOfAllNumbers.getSumOfAllNumbers(str);
+		String str = "te123ch9kj8dh5";
+		System.out.println("The Given string is:" + str);
+		sumOfAllNumbers.sumDigitsInString(str);
 	}
 
 }
