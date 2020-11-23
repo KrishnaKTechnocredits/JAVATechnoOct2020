@@ -1,4 +1,4 @@
-package deepak;
+package deepak.Asgmt_17;
 
 import java.util.Scanner;
 
@@ -27,4 +27,4 @@ public class FrequencyOFEachCharInString {
 		FrequencyOFEachCharInString.occuranceOfEachChar(input);
 		scanner.close();
 	}
-}
+} 
