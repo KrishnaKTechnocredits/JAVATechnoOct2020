@@ -1,3 +1,7 @@
+/*program 2 : sum of all numbers in a give string 
+input: te123ch9kj8 
+output : 123 + 9 + 8 = 140*/
+
 package kajol;
 
 import java.util.Scanner;
