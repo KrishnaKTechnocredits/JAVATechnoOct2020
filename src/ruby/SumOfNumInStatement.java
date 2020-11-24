@@ -38,7 +38,5 @@ public class SumOfNumInStatement {
 	public static void main(String[] args) {
 		SumOfNumInStatement sum = new SumOfNumInStatement();
 		sum.sumOfNum("I have 15 years and 2 months of experience 3");
-
 	}
-
 }
