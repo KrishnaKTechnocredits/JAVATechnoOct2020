@@ -2,6 +2,7 @@ package tejashree;
 /*convert all capital letters to small and small to capitial.
 String msg = "tE1GfrEsT";
 output : Te1gFReSt*/
+
 public class Assignment26 {
 	public static void main(String[] args) {
 		String msg = "tE1GfrEsT";
