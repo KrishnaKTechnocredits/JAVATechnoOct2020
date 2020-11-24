@@ -33,7 +33,7 @@ public class PrintDigitWithWords {
 	public static void main(String[] args) {
 
 		PrintDigitWithWords object = new PrintDigitWithWords();
-		String[] input = {"Masgj3Pw", "r4fsjk","techno","sfjk44lk"};
+		String[] input = {"Ma1s3gj3Pw", "r4f3sjk","te3ch2no9","sfjk4p4plpk"};
 		System.out.println(" words with digit sum is > 10 ");
 		object.wordsWithoutDigit(input);
 	}
