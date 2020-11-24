@@ -1,5 +1,10 @@
 package vaibhav;
 
+/*program 2 : sum of all numbers in a give string
+input: te123ch9kj8
+output : 123 + 9 + 8 = 140*/
+
+
 public class GetAllDigitFromString {
 	
 	void getAllDigit(String str) {
