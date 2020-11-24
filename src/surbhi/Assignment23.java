@@ -43,7 +43,7 @@ public class Assignment23 {
 
 	public static void main(String[] args) {
 		Assignment23 assignment23 = new Assignment23();
-		System.out.println(assignment23.primeSum(2, 100));
+		System.out.println(assignment23.primeSum(2, 200));
 		System.out.println(assignment23.avgPrimeSum(2, 200));
 	}
 }
