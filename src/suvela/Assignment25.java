@@ -24,7 +24,7 @@ public class Assignment25 {
 				}
 			}
 		}
-		System.out.println(sum);
+		System.out.println("The sum of digits is :" +sum);
 	}
 
 	public static void main(String[] args) {
