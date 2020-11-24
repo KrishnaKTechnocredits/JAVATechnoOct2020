@@ -27,7 +27,6 @@ public class SumOfNumbersFromString {
 			}
 		}
 		System.out.println(sum);
-		
 	}
 	
 	public static void main(String[] args) {
