@@ -1,5 +1,10 @@
 package raghvendra.StringArrayAssignments;
+/*convert all capital letters to small and small to capitial.
 
+String msg = "tE1GfrEsT";
+output : Te1gFReSt
+
+Hint : isUpperCase(), isLowerCase(), toUpperCase(), toLowerCase()*/
 public class ChangeCase {
 	void changeCaseString(String st) {
 		String store="";
