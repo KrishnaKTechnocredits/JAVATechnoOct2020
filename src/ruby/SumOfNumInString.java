@@ -16,11 +16,12 @@ public class SumOfNumInString {
 			char ch = word.charAt(index);
 			if (Character.isDigit(ch)) {
 				str += ch;
-			} else if (str != "") {
+			} else if (!str.equals("")) {
 				sum += Integer.parseInt(str);
 				str = "";
 			}
 		}
+		if (!str.equals(""))
 		sum += Integer.parseInt(str);
 		System.out.println("Sum of all digits in a given string: " + sum);
 	}
