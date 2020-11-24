@@ -15,10 +15,11 @@ public class Sumofdigitsfrlongstr {
 		int sum=0;
 		String temp="";
 		for(int index=0;index<text.length();index++) {
-			if(Character.isDigit(text.charAt(index))) {
+			char ch = text.charAt(index);
+			if(Character.isDigit(ch)) {
 				temp = temp+text.charAt(index);
 			}
-			else if(Character.isLetter(text.charAt(index))) {
+			else if(Character.isLetter(ch)|| !Character.isLetterOrDigit(ch)) {
 				if(temp.length()>0) {
 					sum=sum+Integer.parseInt(temp);;
 					temp="";
@@ -29,14 +30,14 @@ public class Sumofdigitsfrlongstr {
 			sum=sum+Integer.parseInt(temp);
 		}
 	
-		return sum;
+		return sum;	
 	}
+		
 	
 	public static void main(String[]arg) {
 		Sumofdigitsfrlongstr sumofdigitsfrlongstr = new Sumofdigitsfrlongstr();
-		String msg = "I have 15 years and 2 months of experience";
+		String msg = "I have 15 years and 100 2 months of experience";
 		int sum = sumofdigitsfrlongstr.sumOfDigits(msg);
 		System.out.println("Sum of all digits in given msg: " + msg + " : "+ sum);
 	}
 }
-
