@@ -7,8 +7,10 @@ public class PrimeNumbers {
 		for (int index=start; index <= end; index++) {
 			boolean flag=true;
 			for(int innerIndex=2; innerIndex<=Math.ceil(Math.sqrt(index));innerIndex++) {
-				if(index%innerIndex==0)
+				if(index%innerIndex==0) {
 					flag=false;
+					break;
+				}
 			}
 			if(flag)
 				System.out.print(index+" ");
