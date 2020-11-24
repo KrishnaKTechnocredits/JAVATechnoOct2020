@@ -29,7 +29,8 @@ public class SumOfAllNumbersFromGivenSentence {
 					}
 				}
 			}	
-		}
+		}   
+		
 		if(temp.length()>0)
 			sum+=Integer.parseInt(temp);
 			System.out.println("Given String is: "+inputString);
