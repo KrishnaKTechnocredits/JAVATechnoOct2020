@@ -1,4 +1,4 @@
-package ritika;
+package ritika.Assignments;
 /*Assignment 21 : 17th Nov'2020
 
 WAP to find given 2 arrays are identical or not.

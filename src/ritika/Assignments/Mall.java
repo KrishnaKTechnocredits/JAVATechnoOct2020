@@ -20,7 +20,7 @@ Expectations:
 Hint: itemAddedToCart method have int parameter, paymentDoneUsing() method have String parameter, needBill() have Boolean parameter & haveCarryBag have Boolean parameter
 
 */
-package ritika;
+package ritika.Assignments;
 
 class Mall {
 	int numberOfItems;

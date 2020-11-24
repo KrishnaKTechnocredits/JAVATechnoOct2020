@@ -1,4 +1,4 @@
-package ritika;
+package ritika.Assignments;
 
 /* Assignment_23 : 20th Nov'2020
 

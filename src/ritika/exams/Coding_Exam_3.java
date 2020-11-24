@@ -9,7 +9,7 @@ output : Techno
 Hi
 */
 
-package ritika;
+package ritika.exams;
 
 public class Coding_Exam_3 {
 

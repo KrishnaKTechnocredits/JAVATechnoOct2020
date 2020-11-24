@@ -1,4 +1,4 @@
-package ritika;
+package ritika.Assignments;
 
 /* 2. Create a class named as Student, which have methods like below
 a. studentName()

@@ -1,4 +1,4 @@
-package ritika;
+package ritika.exams;
 /* Exam 2 : WAP for below given requirement. [30][45]
 input : teCh@N12JCR#iT8s_B
 output : letters -> 12

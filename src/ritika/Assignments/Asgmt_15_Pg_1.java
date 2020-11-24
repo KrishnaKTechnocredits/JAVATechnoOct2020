@@ -1,4 +1,4 @@
-package ritika;
+package ritika.Assignments;
 
 /*Program 1 : [ Compulsory ]
 Find the frequency of character from a given String array. [Estimated time: 15-20 mins]
