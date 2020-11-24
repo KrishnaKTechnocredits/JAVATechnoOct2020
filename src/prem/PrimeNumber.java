@@ -21,7 +21,7 @@ public class PrimeNumber {
 	
 	public static void main(String[] args) {
 		PrimeNumber primeNumber = new PrimeNumber();
-		for (int j=0; j<=200; j++) {
+		for (int j=2; j<=200; j++) {
 		primeNumber.findPrimeNumber(j);
 		}
 	}
