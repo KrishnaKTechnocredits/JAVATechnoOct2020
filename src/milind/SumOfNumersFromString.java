@@ -8,7 +8,7 @@ public class SumOfNumersFromString {
 		for(int index = 0; index < input.length(); index++) {
 			char ch = input.charAt(index);
 			if(Character.isDigit(ch)) {
-					str = str + input.charAt(index);
+					str = str + ch;
 			}else if(Character.isLetter(ch)){
 				if(str.length() > 0 ) {
 				numberSum = numberSum + Integer.parseInt(str);
