@@ -12,15 +12,18 @@ public class DigitSumInString {
 		int sum = 0;
 		for (int index = 0; index < input.length(); index++) {
 			char ch = input.charAt(index);
-			if (Character.isDigit(ch))
+			if (Character.isDigit(ch)) {
+				System.out.print(ch+"+");
 				sum = sum + Character.getNumericValue(ch);
+			}
 		}
-		System.out.println("sum of all digits from a given string : " + sum);
+		System.out.println(" = "+sum);
 	}
 
 	public static void main(String[] args) {
 		DigitSumInString digitSum = new DigitSumInString();
 		String input = "te1ch9kj8 ";
+		System.out.println("sum of all digits from a given string : "+input);
 		digitSum.findSumOfAllDigit(input);
 	}
 }

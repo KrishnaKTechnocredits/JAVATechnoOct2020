@@ -13,8 +13,9 @@ public class NumberSumInString {
 		for (int index = 0; index < input.length(); index++) {
 			char ch = input.charAt(index);
 			if (Character.isDigit(ch)) {
-				number = number + ch;
-			} else if (Character.isLetter(ch)) {
+				number= number+ch;
+			}
+			else if (Character.isLetter(ch)) {
 				if (number.length() > 0) {
 					sum = sum + Integer.parseInt(number);
 					number = "";
@@ -25,7 +26,7 @@ public class NumberSumInString {
 			sum = sum + Integer.parseInt(number);
 			number = "";
 		}
-		System.out.println("Sum of all numbers in a give string " + input + " : " + sum);
+		System.out.println("Sum of all numbers in a give string "+input+" :\n 123+9+8 = "+sum);
 	}
 
 	public static void main(String[] args) {
