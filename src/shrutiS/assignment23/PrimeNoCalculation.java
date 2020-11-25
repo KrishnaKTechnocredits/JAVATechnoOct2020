@@ -36,7 +36,7 @@ public class PrimeNoCalculation {
 					count++;
 			}
 			if (count == 1)
-				sum = sum + index;
+				sum = sum + index; 
 		}
 		System.out.println("Total sum of all prime numbers between 2-100 : " + sum);
 		return sum;
