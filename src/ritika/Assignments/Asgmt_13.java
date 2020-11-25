@@ -23,7 +23,7 @@ HDFC bank Debit Operation - 2
 SBI
  */
 
-package ritika;
+package ritika.Assignments;
 
 import java.util.Scanner;
 

@@ -1,4 +1,4 @@
-package ritika;
+package ritika.Assignments;
 
 /*Program 5 : [ Compulsory ]
 Java Program to Count the Number of Vowels in user defined string.

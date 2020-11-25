@@ -1,4 +1,4 @@
-package ritika;
+package ritika.Assignments;
 
 public class SumAndAverage {
 

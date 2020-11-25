@@ -1,4 +1,4 @@
-package ritika;
+package ritika.Assignments;
 
 /*Program 2: [ Optional ]
 Create a class where you need to check given number is there in predefined array or not, if present then print frequency of the number. [Estimated time: 15 mins]

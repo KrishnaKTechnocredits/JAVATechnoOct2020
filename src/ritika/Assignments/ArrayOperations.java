@@ -10,7 +10,7 @@ e) To display all numbers [length to 0]
 g) Method to find average of min and max number from array.
 */
 
-package ritika;
+package ritika.Assignments;
 
 public class ArrayOperations {
 

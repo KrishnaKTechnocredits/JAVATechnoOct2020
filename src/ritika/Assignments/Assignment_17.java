@@ -10,7 +10,7 @@ s -> 1
 h -> 1
 */
 
-package ritika;
+package ritika.Assignments;
 
 import java.util.Scanner;
 

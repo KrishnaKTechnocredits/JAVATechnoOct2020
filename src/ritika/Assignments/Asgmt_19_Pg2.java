@@ -1,4 +1,4 @@
-package ritika;
+package ritika.Assignments;
 /*
 Assignment 19
 Program : 2

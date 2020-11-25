@@ -1,4 +1,4 @@
-package ritika;
+package ritika.Assignments;
 
 /* 
 Create a system (Shop) which maintains each item's quantity.

@@ -15,7 +15,7 @@ void display(String name){
 
 }
  */
-package ritika;
+package ritika.exams;
 
 public class Exam1 {
 
