@@ -7,7 +7,7 @@
 package shrutiS.assignment23;
 
 public class PrimeNoCalculation {
-	int sum;
+	float sum;
 	int finalCount;
 	int count;
 
@@ -28,7 +28,7 @@ public class PrimeNoCalculation {
 		return finalCount;
 	}
 
-	int findSumOfPrimeNo() {
+	float findSumOfPrimeNo() {
 		for (int index = 2; index <= 100; index++) {
 			int count = 0;
 			for (int innerIndex = 1; innerIndex <= index / 2; innerIndex++) {
@@ -42,14 +42,14 @@ public class PrimeNoCalculation {
 		return sum;
 	}
 
-	void findAverageOfPrimeNo(int sum, int totalCount) {
+	void findAverageOfPrimeNo(float sum, int totalCount) {
 		System.out.println("Average of all prime numbers between 2-100 : "+(sum/totalCount));
 	}
 
 	public static void main(String[] args) {
 		PrimeNoCalculation primeNo = new PrimeNoCalculation();
 		int totalCount= primeNo.findCountOfPrimeNo();
-		int sum= primeNo.findSumOfPrimeNo();
+		float sum= primeNo.findSumOfPrimeNo();
 		primeNo.findAverageOfPrimeNo(sum,totalCount);
 
 	}
