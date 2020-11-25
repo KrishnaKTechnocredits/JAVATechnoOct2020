@@ -11,7 +11,7 @@ public class WordFromArrayMaxSumOfNumber {
 			for(int innerIndex = 0; innerIndex < word.length(); innerIndex++) {
 				char ch = word.charAt(innerIndex);
 				if(Character.isDigit(ch)) {
-					sum = sum + ch;
+					sum = sum + Character.getNumericValue(ch);
 				}
 			}
 			if(maxSum < sum) {
@@ -23,7 +23,7 @@ public class WordFromArrayMaxSumOfNumber {
 	}
 	
 	public static void main(String[] args) {
-		String[] input = {"Ma1s3gj3Pw", "r4f3sjk","te3ch2no9","sfjk4p4plpk","sajd","123456789","jsjasdjhs"};
+		String[] input = {"Ma1s3gj3Pw", "r4f3sjk","te3ch2no9","sfjk4p4plpk","sajd","jsjasdjhs"};
 		WordFromArrayMaxSumOfNumber wordFromArrayMaxSumOfNumber = new WordFromArrayMaxSumOfNumber();
 		wordFromArrayMaxSumOfNumber.printWordHavingMaxSumOfNumber(input);
 	}
