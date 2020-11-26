@@ -16,23 +16,16 @@ public class TripletWithMaxSum {
 		int sum = 0;
 		int max = 0;
 		int maxIndex = 0;
+		int cnt = 0;
 		System.out.println("Input Array : " + Arrays.toString(arr));
-		for (int i = 0; i < arr.length; i = i + 3) {
-			for (int j = i + 1; j < arr.length; j++) {
-				for (int k = j + 1; k < arr.length; k++) {
-					sum = arr[i] + arr[j] + arr[k];
-					/*
-					 * System.out.println("1:" +arr[i] + " 2:"+arr[j]+" 3:"+arr[k]);
-					 * System.out.println("sum :"+ sum);
-					 */ break;
-				}
-				break;
-			}
+		for (int i = 0; i < arr.length && cnt < (arr.length / 3); i = i + 3) {
+			sum = arr[i] + arr[i + 1] + arr[i + 2];
+
 			if (max < sum) {
 				max = sum;
-				sum = 0;
 				maxIndex = i;
 			}
+			cnt++;
 		}
 		System.out.println(
 				"Triplet with maximum Sum :" + arr[maxIndex] + " " + arr[maxIndex + 1] + " " + arr[maxIndex + 2]);
@@ -40,7 +33,7 @@ public class TripletWithMaxSum {
 	}
 
 	public static void main(String[] args) {
-		int[] arr = { 10, 12, 8, 20, 18, 22, 15, 13, 17 };
+		int[] arr = { 10,12,8,20,18,22,15,13,17};
 		new TripletWithMaxSum().getTripletWithMaxSum(arr);
 	}
 }
