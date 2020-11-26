@@ -8,8 +8,7 @@ public class Assignment26 {
 			if (Character.isLowerCase(str1.charAt(i))) {
 				updatedString += Character.toUpperCase(str1.charAt(i));
 			} else if (Character.isUpperCase(str1.charAt(i))) {
-
-				updatedString += Character.toLowerCase(str1.charAt(i));
+                updatedString += Character.toLowerCase(str1.charAt(i));
 			} else
 				updatedString += str1.charAt(i);
 		}
