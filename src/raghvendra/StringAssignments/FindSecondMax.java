@@ -5,7 +5,6 @@ public class FindSecondMax {
 	void findSecondMaxInArray(int[] arr) {
 		int max=arr[0];
 		int secondMax=arr[1];
-		int maxIndex[]=new int[arr.length];
 		for(int index=2;index<arr.length;index++) {
 			if(arr[index]>max) {
 				secondMax=max;
