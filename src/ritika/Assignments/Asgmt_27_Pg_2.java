@@ -1,4 +1,4 @@
-package ritika;
+package ritika.Assignments;
 /*Assignment - 27: 23rd Nov'2020
 
 Program 2: print all the words where digit sum is > 10.

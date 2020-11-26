@@ -1,4 +1,4 @@
-package ritika;
+package ritika.Assignments;
 
 import java.util.Arrays;
 

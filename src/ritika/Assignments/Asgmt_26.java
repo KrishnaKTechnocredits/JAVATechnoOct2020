@@ -1,4 +1,4 @@
-package ritika;
+package ritika.Assignments;
 
 /* Assignment - 26: 23rd Nov'2020
 convert all capital letters to small and small to capitial.

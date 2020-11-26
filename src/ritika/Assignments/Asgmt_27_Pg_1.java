@@ -1,4 +1,4 @@
-package ritika;
+package ritika.Assignments;
 /*Assignment - 27: 23rd Nov'2020
 
 Program 1: print all the words which does't have any digit.
