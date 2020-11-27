@@ -13,13 +13,12 @@ package tejashree;
 public class CompareTwoArrays {
 
 	public void compareArrays(int []a1, int []a2) {
+		boolean flag=false;
 		for(int index=0;index<a1.length;index++) {
-			for(int innerIndex=0;innerIndex<a2.length;innerIndex++) {
-				if(a1[index]==a2[innerIndex]) {
+				if(a1[index]==a2[index]) {
 					System.out.print(a1[index]+" ");
 				}
 			}
-		}
 		}
 	
 	public static void main(String[] args) {
