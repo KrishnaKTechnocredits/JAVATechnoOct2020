@@ -26,12 +26,13 @@ public class DuplicateElementArray3 {
 	void duplicateElementString(String[] input) {
 		for(int index=0; index<input.length; index++) {
 			for(int innerIndex=0; innerIndex< input.length; innerIndex++) {
-				if(input[index]==input[innerIndex])
+				if(input[index].equals(input[innerIndex])) {
 					if(index<innerIndex) {
 						System.out.println(input[index]+" is Duplicate");
 						break;
 					}else if(innerIndex<index)
 						break;
+				}
 			}
 		}
 	}
