@@ -10,13 +10,14 @@ output: 1 7
 
 public class CodingExam4 {
 
-	
 	void getCommonElement(int[] input,int[] input2) {
 		for(int i=0;i<input.length;i++){
 			for(int j=0;j<input2.length;j++){
-				if(input[i]==input2[j]){
+				if(input[i]==input2[j]  ){
 					System.out.println("Common :"+input[i]);
+					break;
 				}
+				
 			}
 		}
 	}

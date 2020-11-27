@@ -15,14 +15,11 @@ public class CodingExam4A {
 	
 	void getIdenticalString(String userInput, String input) {
 		boolean flag = true;
-		char[] input1=userInput.toLowerCase().toCharArray();
-		char[] input2=input.toLowerCase().toCharArray();
-       for(int i=0;i<input1.length;i++){
-    	   for(int j=i;j<=i;j++){
-    		   if(input1[i]!=input2[j]){
-    			   flag=false;
-    		   }
-    	   }
+		String input1=userInput.toLowerCase();
+		String input2=input.toLowerCase();
+       for(int i=0;i<input1.length();i++){
+    		 if(input1.charAt(i)!=input2.charAt(i))
+    			   flag=false;	       	   
        }
    	if (flag)
 		System.out.println("Both String are Identical");
@@ -34,9 +31,7 @@ public class CodingExam4A {
 	public static void main(String[] args) {
 		CodingExam4A object = new CodingExam4A();
 		String s1 = "technoCredits";
-		String s2 = "teChnoCreditS";
+		String s2 = "tEChnoCreditS";
 		object.getIdenticalString(s1, s2);
-		
 	}
-
 }
