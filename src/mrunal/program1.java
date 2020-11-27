@@ -1,23 +1,39 @@
-package mrunal;
-/*------Assignment19 ----prog1-----
- * to print Reverse a given String.
-	input : This is technocredits
-	output : stiderconhcet si sihT  */
+/* Exam 4 : Program 1: WAP to Find Common Element Between Two Arrays
 
-public class program1 
-{
-	static void reverseWord(String word)
-	{
-		for(int index =word.length()-1; index >=0 ;index--)
-	    System.out.print(word.charAt(index));
+input: 
+
+int array1 [] = [1, 2, 5, 5, 8, 9, 7, 10]
+int array2 [] = [1, 0, 6, 15, 6, 4, 7, 0]
+
+output: 1 7
+*/
+
+package mrunal;
+
+public class program1 {
+
+	void getIdenticalNumbers(int array1 []  , int array2 [] ) {
+		for(int index1=0; index1<array1.length; index1++) {
+			int num=0 ; 
+			int num1=array1[index1];
+			for(int index2=0 ; index2<array2.length ; index2++) {
+				int num2=array2[index2];
+				if(num1==num2) {
+					num=num1;
+					System.out.println("Identical elements are :" + num);
+				}
+			}
+		}
 	}
 
-	public static void main(String[] args) 
-{
-	String s = ("This is technocredits");
-	System.out.println("--input string is -- " + s);
-	System.out.println("--Reverse of String is --");
-	program1.reverseWord(s);
-}
-	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int array1 [] = {1, 2, 5, 5, 8, 9, 7, 10};
+		int array2 [] = {1, 0, 6, 15, 6, 4, 7, 0};
+
+		program1 Program1 = new program1();
+		Program1.getIdenticalNumbers(array1, array2);
+
+	}
+
 }
