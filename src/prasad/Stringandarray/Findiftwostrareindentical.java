@@ -1,4 +1,4 @@
-package prasad;
+package prasad.Stringandarray;
 
 public class Findiftwostrareindentical {
 	
@@ -22,8 +22,8 @@ public class Findiftwostrareindentical {
 	
 	public static void main(String []arg) {
 		Findiftwostrareindentical findiftwostrareindentical = new Findiftwostrareindentical();
-		String input1 = "technoCredits";
-		String input2 = "technocredits";
+		String input1 = "prasad chitale";
+		String input2 = "Prasad Chitale";
 		boolean output = findiftwostrareindentical.scanStr(input1, input2);
 		if(output)
 			System.out.println("Two strings are indentical");
