@@ -16,8 +16,7 @@ public class CodingExam4 {
 				if(input[i]==input2[j]  ){
 					System.out.println("Common :"+input[i]);
 					break;
-				}
-				
+				}	
 			}
 		}
 	}
