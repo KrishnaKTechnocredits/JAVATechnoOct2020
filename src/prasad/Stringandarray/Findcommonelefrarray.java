@@ -18,10 +18,10 @@ public class Findcommonelefrarray {
 				int count=0;
 				int count1=0;
 				if(runningindex!=0) {               			 // Here when we selected element from array1 for comparison and it is not the first element. 
-					int compareAllPreviousElements=runningindex;//Then we compare selected element from array1 with all preceding elements from same array.
-					while(compareAllPreviousElements>0) {		// If any match is found then we do not pass that element to next for loop for comparision with elements from array2.
-						compareAllPreviousElements--;
-						if(array1[runningindex]==array1[compareAllPreviousElements])
+					int previousIndex=runningindex;//Then we compare selected element from array1 with all preceding elements from same array.
+					while(previousIndex>0) {		// If any match is found then we do not pass that element to next for loop for comparision with elements from array2.
+						previousIndex--;
+						if(array1[runningindex]==array1[previousIndex])
 							count1++;
 					}
 				}
@@ -42,8 +42,8 @@ public class Findcommonelefrarray {
 
 	public static void main(String []arg) {
 		Findcommonelefrarray findcommonelefrarray = new Findcommonelefrarray();
-		int[]inputarray1 = {1, 2, 0, 5, 7, 9, 11, 10};
-		int[]inputarray2 = {1, 0, 6, 15, 6, 4, 7, 0};
+		int[]inputarray1 = {1, 2, 1, 0, 7, 9, 7, 10};
+		int[]inputarray2 = {1, 0, 6, 15, 6, 4, 7, 10};
 		findcommonelefrarray.scanArray(inputarray1, inputarray2);
 	}
 }
