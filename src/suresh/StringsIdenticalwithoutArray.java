@@ -1,6 +1,6 @@
 package suresh;
 
-public class StringsIdentical {
+public class StringsIdenticalwithoutArray {
 
 		void identicalStringFinder() {
 			/*String s1 = "technoCredits";
@@ -16,7 +16,7 @@ public class StringsIdentical {
 		}
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		StringsIdentical stringidentical = new StringsIdentical();
+		StringsIdenticalwithoutArray stringidentical = new StringsIdenticalwithoutArray();
 		stringidentical.identicalStringFinder();
 
 	}

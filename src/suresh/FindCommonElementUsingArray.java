@@ -1,6 +1,6 @@
 package suresh;
 
-public class FindCommonElement {
+public class FindCommonElementUsingArray {
 	
 	void commonElementinArray() {
 		int[] numArray1 = {1, 2, 5, 5, 8, 9, 7, 10};
@@ -18,7 +18,7 @@ public class FindCommonElement {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		FindCommonElement commonelement = new FindCommonElement ();
+		FindCommonElementUsingArray commonelement = new FindCommonElementUsingArray ();
 		commonelement.commonElementinArray();
 	}
 
