@@ -11,7 +11,7 @@ output: 1 7
 package mrunal;
 
 public class program1 {
-	
+
 	void getIdenticalNumbers(int array1 []  , int array2 [] ) {
 		for(int index1=0; index1<array1.length; index1++) {
 			int num=0 ; 
@@ -30,13 +30,10 @@ public class program1 {
 		// TODO Auto-generated method stub
 		int array1 [] = {1, 2, 5, 5, 8, 9, 7, 10};
 		int array2 [] = {1, 0, 6, 15, 6, 4, 7, 0};
-		
+
 		program1 Program1 = new program1();
 		Program1.getIdenticalNumbers(array1, array2);
-		
-		
 
-		
 	}
 
 }
