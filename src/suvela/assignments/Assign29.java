@@ -21,6 +21,7 @@ public class Assign29 {
 			if(num>max) {
 				secondMax=max;
 				max=num;
+				num=0;
 			}else if(secondMax<num && num<max)
 				secondMax=num;
 			
@@ -29,7 +30,7 @@ public class Assign29 {
 	}
 
 	public static void main(String[] args) {
-		int[] array = { 10, 40, 30, 50,120,45,70 };
+		int[] array = { 400,200,150,250,350,700 };
 		new Assign29().findSecondMax(array);
 
 	}
