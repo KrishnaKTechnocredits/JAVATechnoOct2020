@@ -5,7 +5,7 @@ public class StudentMarks {
 	int marks;
 	Boolean flag;
 	
-	void studentName(String name , int marks) {
+	void studentDetails(String name , int marks) {
 		studentName = name;
 		this.marks = marks;
 	}
@@ -32,7 +32,7 @@ public class StudentMarks {
 	
 	public static void main (String[] arg) {
 		StudentMarks studentmarks = new StudentMarks();
-		studentmarks.studentName("Alan", 92);
+		studentmarks.studentDetails("Alan", 82);
 		studentmarks.gainedMarks();
 	}
 }
