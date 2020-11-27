@@ -13,23 +13,28 @@ output 2: both string are identical
 
 public class CodingExam4A {
 	
-	void getIdenticalString(String userInput, String input2) {
-		boolean flag = false;
+	void getIdenticalString(String userInput, String input) {
+		boolean flag = true;
+		char[] input1=userInput.toLowerCase().toCharArray();
+		char[] input2=input.toLowerCase().toCharArray();
+       for(int i=0;i<input1.length;i++){
+    	   for(int j=i;j<=i;j++){
+    		   if(input1[i]!=input2[j]){
+    			   flag=false;
+    		   }
+    	   }
+       }
+   	if (flag)
+		System.out.println("Both String are Identical");
+	else {
+		System.out.println("Both String are Not identical");
 
-		if (userInput.equalsIgnoreCase(input2)) {
-			flag = true;
-		}
-
-		if (flag)
-			System.out.println("Both String are Identical");
-		else {
-			System.out.println("Both String are Not identical");
 		}
 	}
 	public static void main(String[] args) {
 		CodingExam4A object = new CodingExam4A();
-		String s1 = "pgne";
-		String s2 = "pune";
+		String s1 = "technoCredits";
+		String s2 = "teChnoCreditS";
 		object.getIdenticalString(s1, s2);
 		
 	}
