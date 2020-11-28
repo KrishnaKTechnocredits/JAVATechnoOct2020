@@ -4,7 +4,7 @@ public class Assignment29 {
 	void findSecondMaxInArray(int[] arr) {
 		int max=arr[0];
 		int secondMax=0;		
-		for(int index=2;index<arr.length;index++) {
+		for(int index=0;index<arr.length;index++) {
 			if(arr[index]>max) {
 				secondMax=max;
 				max=arr[index];
