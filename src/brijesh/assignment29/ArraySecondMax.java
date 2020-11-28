@@ -19,6 +19,13 @@ public class ArraySecondMax {
 				} else if (input[index] > secondMax && input[index] != max)
 					secondMax = input[index];
 			}
+			if(input.length==2) {
+				if(secondMax>max) {
+					int temp = max;
+					max= secondMax;
+					secondMax=temp;
+				}
+			}
 			System.out.println("Second Max: " + secondMax);
 			System.out.println("**************************************************");
 		} else {
