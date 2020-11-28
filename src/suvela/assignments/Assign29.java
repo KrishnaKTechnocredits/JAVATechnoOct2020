@@ -14,7 +14,7 @@ public class Assign29 {
 			secondMax = array[1];
 		} else {
 			max = array[1];
-			secondMax = array[2];
+			secondMax = array[0];
 		}
 		for (int i = 2; i < array.length; i++) {
 			int num = array[i];
