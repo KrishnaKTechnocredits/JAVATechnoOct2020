@@ -22,14 +22,14 @@ public class WordWithNoDigit {
 				}
 			}
 			if (!flag)
-				System.out.println(" The words which does't have any digit :  " + word);
+				System.out.println(" The words that does't have any digit :  " + word);
 		}
 	}
 
 	public static void main(String[] arg) {
 		WordWithNoDigit wordWithNoDigit = new WordWithNoDigit();
 		String[] arr = { "Masgj3Pw", "r4fsjk", "techno", "sfjk44lk" };
-		System.out.println(" The Given Array is :  " + Arrays.toString(arr));
+		System.out.println(" The Array is :  " + Arrays.toString(arr));
 		wordWithNoDigit.printWordWithNoDigit(arr);
 	}
 }

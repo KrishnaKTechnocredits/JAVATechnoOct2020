@@ -10,7 +10,7 @@ output : maximum sum triplet 20,18,22 --> 60
 
 public class ArrayOpsTriplates {
 	void tripletWithMaximumSum(int[] input) {
-		System.out.println("Given Array: "+Arrays.toString(input)+"\nLength of Array: "+input.length);
+		System.out.println("Array: "+Arrays.toString(input)+"\nLength of Array: "+input.length);
 		int max=0,maxIndex=0;
 		for(int index=0; index<input.length; index=index+3) {
 			int sum=0;
