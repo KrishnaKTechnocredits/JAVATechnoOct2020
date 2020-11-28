@@ -21,7 +21,7 @@ public class Assign29 {
 			if (num > max) {
 				secondMax = max;
 				max = num;
-			} else if (secondMax < num && num < max)
+			} else if (num < max)
 				secondMax = num;
 
 		}
