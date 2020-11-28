@@ -10,7 +10,7 @@ public class Program2 {
 		String lowerCaseChar = "";
 		String symbols = "";
 		String strOutput = "";
-
+		System.out.print("Rearranged word - ");
 		for (int index = 0; index < input.length(); index++) {
 			char ch = input.charAt(index);
 			if (Character.isDigit(ch))
