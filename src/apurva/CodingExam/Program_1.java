@@ -11,19 +11,13 @@ output: 1 7*/
 public class Program_1 {
 	void commonElement(int[] array1, int[] array2) {
 		for (int index = 0; index < array1.length; index++) {
-			int num = 0;
-			int num1 = array1[index];
 			for (int j = 0; j < array2.length; j++) {
 				if (array1[index] == array2[j]) {
-					int num2 = array2[j];
-					if (num1 == num2) {
-						num = num1;
-						System.out.print("Output: "+num + " ");
+					System.out.print("Output: "+array1[index] + " ");
 					}
 				}
 			}
 		}
-	}
 
 	public static void main(String[] args) {
 		int[] input1 = { 1, 2, 5, 5, 8, 9, 7, 10 };
