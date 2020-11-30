@@ -1,39 +1,26 @@
-/* Exam 4 : Program 1: WAP to Find Common Element Between Two Arrays
-
-input: 
-
-int array1 [] = [1, 2, 5, 5, 8, 9, 7, 10]
-int array2 [] = [1, 0, 6, 15, 6, 4, 7, 0]
-
-output: 1 7
-*/
-
 package mrunal;
-
+/*Assignment - 24 : 22nd Nov'2020
+ 
+program 1: sum of all digits from a given string
+input: te1ch9kj8
+output:= 18
+*/
 public class program1 {
 
-	void getIdenticalNumbers(int array1 []  , int array2 [] ) {
-		for(int index1=0; index1<array1.length; index1++) {
-			int num=0 ; 
-			int num1=array1[index1];
-			for(int index2=0 ; index2<array2.length ; index2++) {
-				int num2=array2[index2];
-				if(num1==num2) {
-					num=num1;
-					System.out.println("Identical elements are :" + num);
-				}
+	void sumOfDigitsFromString(String input) {
+		int sum=0;
+		for (int i=0; i<input.length(); i++) {
+			char ch = input.charAt(i);
+			if (Character.isDigit(ch)) {
+				int num = Character.getNumericValue(ch);
+				sum =sum+num;
 			}
 		}
+		System.out.println("Sum of all digits in given string is: " +sum);
 	}
-
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		int array1 [] = {1, 2, 5, 5, 8, 9, 7, 10};
-		int array2 [] = {1, 0, 6, 15, 6, 4, 7, 0};
-
-		program1 Program1 = new program1();
-		Program1.getIdenticalNumbers(array1, array2);
-
+		String input = "te1ch9kj8";
+		program1 stringOperations = new program1();
+		stringOperations.sumOfDigitsFromString(input);
 	}
-
-}
+} 
