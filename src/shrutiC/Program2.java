@@ -1,5 +1,6 @@
 package shrutiC;
 
+
 import java.util.Scanner;
 
 public class Program2 {
