@@ -23,4 +23,4 @@ public class program1 {
 		program1 stringOperations = new program1();
 		stringOperations.sumOfDigitsFromString(input);
 	}
-}
+} 

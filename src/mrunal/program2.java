@@ -31,4 +31,4 @@ public class program2 {
 		program2 program2 = new program2();
 		program2.sumOfNumbersFromString(input);
 	}
-}
+} 
