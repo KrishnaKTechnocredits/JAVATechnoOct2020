@@ -1,44 +1,44 @@
 package shrutiC;
 
-import java.util.Scanner;
-
 /*
- * program 2 : sum of all numbers in a give string 
-	input: te123ch9kj8 
-	output : 123 + 9 + 8 = 140*/
+	Program 2: print all the words where digit sum is > 10. 
+	String[] input = {"Ma1s3gj3Pw", "r4f3sjk","te3ch2no9","sfjk4p4plpk"};
+	output : te3ch2no9
+*/
 
 public class Program2 {
 
-	void findSumOfNumbers(String string) {
+	void displayWordsWithSum(String[] array) {
 
-		int sum = 0;
-		String num = "0";
+		String str = "";
+		int sumOfDigits = 0;
 
-		for (int index = 0; index < string.length(); index++) {
-
-			char ch = string.charAt(index);
-			if (Character.isDigit(ch)) {
-				num += ch;
-			} else {
-				if (num.length() > 0) {
-					sum += Integer.parseInt(num);
-					num = "";
-				}
+		System.out.print("Input array : { ");
+		for (int i = 0; i < array.length; i++) {
+			System.out.print(array[i] + " , ");
+			sumOfDigits = getSum(array[i]);
+			if (sumOfDigits > 10) {
+				str += array[i];
 			}
 		}
-		if (num.length() > 0)
-			sum += Integer.parseInt(num);
-		System.out.println("Sum of numbers in " + string + " is : " + sum);
+		System.out.println(" }");
+		System.out.println("Words with digit having sum>10 : " + str);
+	}
+
+	int getSum(String str) {
+		int sum = 0;
+		for (int i = 0; i < str.length(); i++) {
+			if (Character.isDigit(str.charAt(i)))
+				sum += Integer.parseInt(String.valueOf(str.charAt(i)));
+		}
+		return sum;
 	}
 
 	public static void main(String[] args) {
 
 		Program2 object = new Program2();
-		Scanner scanner = new Scanner(System.in);
-
-		System.out.println("Enter a word containing digits in it : ");
-		String string = scanner.next();
-		object.findSumOfNumbers(string);
+		String[] inputArray = { "Ma1s3gj3Pw", "r4f3sjk", "te3ch2no9", "sfjk4p4plpk" };
+		object.displayWordsWithSum(inputArray);
 	}
 
 }

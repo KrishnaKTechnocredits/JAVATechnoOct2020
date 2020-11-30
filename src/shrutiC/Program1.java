@@ -1,35 +1,41 @@
 package shrutiC;
 
-import java.util.Scanner;
-
 /*
- * program 1: sum of all digits from a given string  
-	input: te1ch9kj8 
-	output:= 18
+	Assignment - 27: 23rd Nov'2020  
+	
+	Program 1: print all the words which does't have any digit. 
+	String[] input = {"Masgj3Pw", "r4fsjk","techno","sfjk44lk"};
+	output : techno
 */
-
 public class Program1 {
 
-	// Sum of all digits from a given string - te1ch9kj8
-	void findSumOfDigits(String string) {
+	void displayWordWithoutDigit(String[] array) {
 
-		int sum = 0;
-		for (int index = 0; index < string.length(); index++) {
-
-			char ch = string.charAt(index);
-			if (Character.isDigit(ch))
-				sum += Integer.parseInt(String.valueOf(ch));
+		String str = "";
+		System.out.print("Input array : { ");
+		for (int i = 0; i < array.length; i++) {
+			System.out.print(array[i]+" , ");
+			if (!isDigit(array[i]))
+				str += array[i] + " ";
 		}
-		System.out.println("Sum of digits in "+string+" is : "+sum);
+		System.out.println(" }");
+		System.out.println("Words without digit are : " + str);
+	}
+
+	boolean isDigit(String str) {
+
+		for (int i = 0; i < str.length(); i++) {
+			if (Character.isDigit(str.charAt(i)))
+				return true;
+		}
+		return false;
 	}
 
 	public static void main(String[] args) {
-		Program1 object = new Program1();
-		Scanner scanner = new Scanner(System.in);
 
-		System.out.println("Enter a word containing digits in it : ");
-		String string = scanner.next();
-		object.findSumOfDigits(string);
+		Program1 object = new Program1();
+		String[] inputArray = { "Masgj3Pw", "r4fsjk", "techno", "sfjk44lk" };
+		object.displayWordWithoutDigit(inputArray);
 	}
 
 }
