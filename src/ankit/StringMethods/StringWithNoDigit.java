@@ -1,4 +1,4 @@
-package ankit;
+package ankit.StringMethods;
 
 import java.util.Scanner;
 
