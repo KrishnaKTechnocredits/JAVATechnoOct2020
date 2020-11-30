@@ -17,26 +17,19 @@ public class Program_2 {
 	void isIdentical(String s1, String s2) {
 		System.out.println("Given strings s1 = " + s1);
 		System.out.println("Given strings s2 = " + s2);
-		boolean flag = false;
-		for (int i = 0; i < s1.length(); i++) {
-			char ch = s1.charAt(i);
-			for (int j = 0; j < s2.length(); j++) {
-				char character = s2.charAt(j);
-				if (s1.length() != s2.length())
-					System.out.println("String length is not match");
-				else if (Character.isLowerCase(ch) == Character.isLowerCase(character)
-						&& Character.isUpperCase(ch) == Character.isUpperCase(character))
-					flag = true;
-				else
+		boolean flag = true;
+		if (s1.length() == s2.length()) {
+			for (int index = 0; index < s1.length(); index++) {
+				if (s1.charAt(index) != s2.charAt(index)) {
+					System.out.println("both strings are not identical");
 					flag = false;
+					break;
+				}
 			}
-
-		}
-		if (flag)
-			System.out.println("both strings are identical");
-		else
+			if (flag)
+				System.out.println("both strings are identical");
+		} else
 			System.out.println("both strings are not identical");
-
 	}
 
 	public static void main(String[] args) {
