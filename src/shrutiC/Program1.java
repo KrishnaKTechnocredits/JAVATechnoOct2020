@@ -2,43 +2,34 @@ package shrutiC;
 
 import java.util.Scanner;
 
+/*
+ * program 1: sum of all digits from a given string  
+	input: te1ch9kj8 
+	output:= 18
+*/
+
 public class Program1 {
 
-	void getCharFrequencyInArray(String[] nameArray, char character) {
+	// Sum of all digits from a given string - te1ch9kj8
+	void findSumOfDigits(String string) {
 
-		int totalCharCount = 0;
+		int sum = 0;
+		for (int index = 0; index < string.length(); index++) {
 
-		for (int index = 0; index < nameArray.length; index++) {
-			int charCount = 0;
-			String name = nameArray[index];
-			for (int i = 0; i < name.length(); i++) {
-				if (name.charAt(i) == character) {
-					charCount++;
-					totalCharCount++;
-				}
-			}
-			System.out.println(name + " - " + charCount);
+			char ch = string.charAt(index);
+			if (Character.isDigit(ch))
+				sum += Integer.parseInt(String.valueOf(ch));
 		}
-		System.out.println("Total occurrence of e - " + totalCharCount);
+		System.out.println("Sum of digits in "+string+" is : "+sum);
 	}
 
 	public static void main(String[] args) {
-
-		Program1 program = new Program1();
-		System.out.println("Enter the number of data to be entered : ");
+		Program1 object = new Program1();
 		Scanner scanner = new Scanner(System.in);
-		int num = scanner.nextInt();
-		String[] array = new String[num];
 
-		for (int index = 0; index < num; index++) {
-			System.out.println("Enter name " + (index + 1));
-			array[index] = scanner.next();
-		}
-
-		System.out.println("Enter the character whose frequency is to be found : ");
-		char c = scanner.next().charAt(0);
-
-		program.getCharFrequencyInArray(array, c);
+		System.out.println("Enter a word containing digits in it : ");
+		String string = scanner.next();
+		object.findSumOfDigits(string);
 	}
 
 }
