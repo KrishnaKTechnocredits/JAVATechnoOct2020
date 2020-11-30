@@ -18,7 +18,7 @@ public class MissingNumberInArray {
 				break;
 			}	
 		}
-		System.out.println(missing);
+		System.out.println("Missing number is :"+ missing);
 	}
 	
 	public static void main(String[] args) {
