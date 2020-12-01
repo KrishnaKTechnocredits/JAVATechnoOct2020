@@ -7,11 +7,18 @@ package shrutiS.assignment30;
 
 public class DuplicateNumber {
 	
+	void getInputArray(int[] input) {
+		System.out.print("Input array = ");
+		for (int index = 0; index < input.length; index++) {
+			System.out.print(input[index] + " ");
+		}
+	}
+	
 	void findDuplicateNumber(int[] input) {
 		for(int index =0; index<input.length; index++) {
 			for(int innerIndex = index+1; innerIndex<input.length; innerIndex++) {
 				if(input[index] == input[innerIndex])
-					System.out.println("Duplicate number is "+input[index]);
+					System.out.println("\nDuplicate number is "+input[index]);
 			}
 		}
 	}
@@ -19,6 +26,7 @@ public class DuplicateNumber {
 	public static void main(String[] args) {
 		DuplicateNumber duplicateNumber = new DuplicateNumber();
 		int[] input= {0,3,1,2,3};
+		duplicateNumber.getInputArray(input);
 		duplicateNumber.findDuplicateNumber(input);
 	}
 	
