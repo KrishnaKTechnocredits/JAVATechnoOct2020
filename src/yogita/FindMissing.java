@@ -12,27 +12,23 @@ import java.util.Arrays;
 public class FindMissing {
 	void findMissingNumber(int[] array) {
 
-		int[] input = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
 		System.out.println("Arrays is:" + Arrays.toString(array));
-
-		for (int i = 0; i < input.length; i++) {
-			boolean flag = true;
-			for (int j = 0; j < array.length; j++) {
-				if (input[i] != array[j])
-					continue;
-				else {
-					flag = false;
-					break;
-				}
+		int temp = 0;
+		boolean flag = false;
+		for (int i = 0; i < array.length; i++) {
+			if (i + 1 != array[i]) {
+				flag = true;
+				temp = i + 1;
+				break;
 			}
-			if (flag)
-				System.out.print("Missing Number:" + input[i] + "");
 		}
+		if (flag)
+			System.out.print("Missing Number:" + temp + "");
 	}
 
 	public static void main(String[] args) {
 		FindMissing missingNumber = new FindMissing();
-		int[] array = { 1, 5, 6, 7, 2, 4, 8, 9, 10 };
-		missingNumber.findMissingNumber(array);
+		int[] input = { 1,2,4,5,6,7,8,9,10};
+		missingNumber.findMissingNumber(input);
 	}
 }
