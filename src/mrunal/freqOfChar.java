@@ -1,55 +1,45 @@
 package mrunal;
+
+
+/* Program 1  :  [ Compulsory ]
+Find the frequency of character from a given String array. [Estimated time: 15-20 mins]
+sample input array : { "technocredits","elephant","earthear"} and char is 'e'
+output :technocredits -> 2
+		elephant -> 2
+		earth -> 1
+		Total occurrence of e -> 5 */
 import java.util.Scanner;
 public class freqOfChar {
-	
-
-
-
-		void frequencyCheck(String userString, char ch) 
-		{
-			int counter = 0;
-			for(int index = 0; index < userString.length(); index++)
-				{
-					if(userString.charAt(index) == ch) 
-						{
-							counter++;
-						}
-				}
-			System.out.println("Frequency of "+ ch +" is : " +counter);
-		}
-
-		public static void main(String[] args) 
-		{
-			Scanner scanner = new Scanner(System.in);
-			freqOfChar fq = new freqOfChar();
-			
-			System.out.println("Enter String  : ");
-			String userString = scanner.next();
-			
-			System.out.println("Enter Char to check frequency of String : ");
-			String temp = scanner.next();
-			
-			int count = 1;
-			
-			while(temp.length() != 1 && count < 3)
-				{
-					System.out.println("Please Enter only char : ");
-					temp = scanner.next();
+	void freqOfChar(String[] array,char ch) {	
+		int totalcount=0;
+		String word = array[0]; 
+		for(int index=0;index<array.length;index++) {
+			int count=0;
+			for(int index1=0 ;index1 < word.length() ;index1++) {
+				word = array[index];
+				if(word.charAt(index1)==ch) {
 					count++;
-				}
-			
-			if(temp.length() != 1)
-				{
-					System.out.println("Tried multiple invalid attempt");
-				}
-			else 
-				{
-					char ch = temp.charAt(0);
-					System.out.println(ch);
-					fq.frequencyCheck(userString, ch);
-				}
-			
+				    totalcount++;
+			  }
+		 }
+			System.out.println("Count of " + ch + " in " + array[index] + " is --> " + count);
 		}
-
+		System.out.println("Total occurance of " + ch + " --> " + totalcount);
 	}
+	public static void main(String[]arr) {
+		freqOfChar program1 = new freqOfChar();
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("How many words do you wish to enter: ");
+
+		int count = scanner.nextInt();
+		String[] words = new String[count];
+		for (int index = 0; index < count; index++) {
+			System.out.println("Please enter your word :");
+			words[index] = scanner.next();
+		}
+		System.out.println("Please enter which char you want to search in above entered words : ");
+		char chr = scanner.next().charAt(0);
+		program1.freqOfChar(words, chr);
+	}
+}
 
