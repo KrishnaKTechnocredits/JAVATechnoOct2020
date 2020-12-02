@@ -1,5 +1,4 @@
 package mrunal;
-/*Assignment 27 -
  * Program 1: print all the words which does't have any digit. 
 String[] input = {"Masgj3Pw", "r4fsjk","techno","sfjk44lk"};
 output : techno */
@@ -30,3 +29,4 @@ public class prog1 {
 		}
 
 	}
+

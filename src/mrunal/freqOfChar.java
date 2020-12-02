@@ -1,5 +1,6 @@
 package mrunal;
 
+
 /* Program 1  :  [ Compulsory ]
 Find the frequency of character from a given String array. [Estimated time: 15-20 mins]
 sample input array : { "technocredits","elephant","earthear"} and char is 'e'
@@ -41,3 +42,4 @@ public class freqOfChar {
 		program1.freqOfChar(words, chr);
 	}
 }
+
