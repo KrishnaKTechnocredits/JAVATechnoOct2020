@@ -1,34 +1,35 @@
 package mrunal;
-/*Assignment - 24 : 22nd Nov'2020
-program 2 : sum of all numbers in a give string
-input: te123ch9kj8
-output : 123 + 9 + 8 = 140
-*/
-public class program2 {
+/*
+	 Assignment 31 :  2nd Dec 2020
+	Program 1: 
+	Convert UpperCase into a LowerCase using ASCII 
+	Given String = "TechnoCreditS"
+	Expected String = "technocredits"
+	 
+	*/
 
-	void sumOfNumbersFromString(String input) {
-		int sum = 0;
-		String temp = "";
-		for (int i = 0; i < input.length(); i++) {
-			char ch = input.charAt(i);
-			if (Character.isDigit(ch))
-				temp = temp + ch;
-			else if (Character.isLetter(ch)) {
-				if (temp.length() > 0) {
-					sum = sum + Integer.parseInt(temp);
+public class program1 {
+
+	void convertUpperToLower(String name) {
+			String temp = "";
+			char ch1;
+			for (int i = 0; i < name.length(); i++) {
+				char ch = name.charAt(i);
+				int num = ch;
+				if (num >= 65 && num <= 90) {
+					ch1 = (char) (ch + 32);
+					temp += ch1;
 				}
-				temp = "";
+				if (num >= 97 && num <= 122) {
+					ch1 = (char) (ch - 32);
+					temp += ch1;
+				}
 			}
+			System.out.println("\n" + "Converting UPPER to LOWER using ASCII is :" +"\n" +  temp);
 		}
-		if (temp.length() > 0) {
-			sum = sum + Integer.parseInt(temp);
-		}
-		System.out.println("Sum of all numbers in given string is: " + sum);
-	}
 
-	public static void main(String[] args) {
-		String input = "te123ch9kj8";
-		program2 program2 = new program2();
-		program2.sumOfNumbersFromString(input);
-	}
-} 
+		public static void main(String[] args) {
+			String input = "TECHNOcreditsTECHNO";
+			System.out.println("String is:" + input);
+			new program1().convertUpperToLower(input);
+	} 
