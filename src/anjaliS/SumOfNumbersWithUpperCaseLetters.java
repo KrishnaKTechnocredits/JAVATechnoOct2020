@@ -21,7 +21,8 @@ public class SumOfNumbersWithUpperCaseLetters {
 		for (int index = 0; index < word.length(); index++) {
 			char ch = word.charAt(index);
 			if (ch >= 97 && ch <= 122) {
-				ch = (char) (ch - 32);
+				total = ch-32;
+				ch = (char) (total);
 				s += ch;
 			}
 		}
