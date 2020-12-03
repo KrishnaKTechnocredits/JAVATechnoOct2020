@@ -34,10 +34,13 @@ public class Program3 {
 
 		Program3 object = new Program3();
 
-		System.out.println("ASCII value of A - " + object.getAsciiValue('A')+"\n");
-		System.out.println("Char having ASCII value 66 - " + object.getChar(66)+"\n");
+		System.out.println("ASCII value of A - " + object.getAsciiValue('A') + "\n");
+		System.out.println("Char having ASCII value 66 - " + object.getChar(66) + "\n");
 
+		System.out.println("ASCII values of lowercase letters : ");
 		object.printASCIIValueOfLowerCaseChar();
+
+		System.out.println("\nASCII values of Upercase letters : ");
 		object.printASCIIValueOfUpperCaseChar();
 	}
 
