@@ -32,10 +32,10 @@ public class Checkupperandlowercasecount {
 		boolean flag = checkupperandlowercasecount.isUppercaseCountmore(input);
 		if(flag) {
 			System.out.println("Is upper case count more than lower case count?:- True");
-			System.out.println("Count of chars in upper case:- " +checkupperandlowercasecount.upperCount + " ; " + "Count of chars in upper case:- " +checkupperandlowercasecount.lowerCount);
+			System.out.println("Count of chars in upper case:- " +checkupperandlowercasecount.upperCount + " ; " + "Count of chars in lower case:- " +checkupperandlowercasecount.lowerCount);
 		}else {
 			System.out.println("Is upper case count more than lower case count?:- False" );
-		    System.out.println("Count of chars in upper case:- " +checkupperandlowercasecount.upperCount + " ; " + "Count of chars in upper case:- " +checkupperandlowercasecount.lowerCount);
+		    System.out.println("Count of chars in upper case:- " +checkupperandlowercasecount.upperCount + " ; " + "Count of chars in lower case:- " +checkupperandlowercasecount.lowerCount);
 		}
 	}
 
