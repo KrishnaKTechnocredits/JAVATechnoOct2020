@@ -1,5 +1,14 @@
 package vaibhav.assignment32;
 
+/*Program 2:  print Hi when you find 3 consecutive numbers.
+1,2,3,5,8,9,11,12,13,14,15,18,19,20
+output :1,2,3 -> Hi
+11,12,13 -> Hi
+12,13,14 -> Hi
+13,14,15 -> Hi
+18,19,20 -> Hi*/
+
+
 public class FindConsecutiveNumbers {
 	
 	static public void getConsecutive(int [] array) {
