@@ -7,15 +7,15 @@ public class Exam3 {
 		for (int i = 0; i < arr.length; i++) {
 			count = 0;
 			int no = arr[i];
-			for (int j = 0; j < arr.length; j++) {
-				if (no == arr[j]) {
+			for (int j = i+1; j < arr.length; j++) {
+				if (no == arr[j] && arr[i]!=-1) {
 					count++;
-					arr[i] = 0;
+					arr[j] = -1;
 				}
 
 			}
-			if (count > 1)
-				System.out.println("Duplicate elements are:" + no);
+			if (count > 0 && arr[i]!=-1)
+				System.out.println("Duplicate element is:" + no);
 		}
 	}
 
@@ -23,20 +23,20 @@ public class Exam3 {
 		for (int i = 0; i < s.length; i++) {
 			count = 0;
 			String s1 = s[i];
-			for (int j = 0; j < s.length; j++) {
-				if (s1.equals(s[j])) {
+			for (int j = i+1; j < s.length; j++) {
+				if (s1.equals(s[j])&& s[i]!="") {
 					count++;
-					s[i] = null;
+					s[j] ="";
 				}
 			}
-			if (count > 1)
-				System.out.println("Duplicate elements are:" + s1);
+			if (count > 0 && s[i]!="")
+				System.out.println("Duplicate element is:" + s1);
 		}
 	}
 
 	public static void main(String[] args) {
-		int[] arr = { 10, 12, 55, 32, 17, 12, 32 };
-		String[] s = { "Techno", "Credits", "Techno", "Hi", "Hello", "Hi" };
+		int[] arr = { 10, 12, 55, 32, 17, 12, 32,12,32 };
+		String[] s = { "Techno", "Credits", "Techno", "Hi", "Hello", "Hi","Credits","Credits" };
 		Exam3 exam = new Exam3();
 		exam.duplicateElement(arr);
 		exam.duplicateString(s);
