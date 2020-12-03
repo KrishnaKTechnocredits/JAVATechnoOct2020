@@ -23,7 +23,5 @@ public class ReverseNumber {
 		ReverseNumber object = new ReverseNumber();
 		int number = 1234;
 		object.getReverseNumber(number);
-
 	}
-
 }
