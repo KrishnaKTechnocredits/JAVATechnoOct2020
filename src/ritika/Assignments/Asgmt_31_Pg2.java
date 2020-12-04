@@ -16,7 +16,7 @@ public class Asgmt_31_Pg2 {
 		for (int i = 0; i < input.length(); i++) {
 			int chAscii = input.charAt(i);
 			if (chAscii >= 48 && chAscii <= 57) {
-				int temp = Integer.parseInt(String.valueOf(input.charAt(i)));
+				int temp = chAscii-48;
 				sum = sum + temp;
 			} else if (chAscii >= 65 && chAscii <= 90) {
 				chAscii = chAscii + 32;
