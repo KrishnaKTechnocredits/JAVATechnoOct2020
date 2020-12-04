@@ -14,9 +14,9 @@ public class FindNumberPalindrom {
 			}
 		}
 		if(flag)
-			System.out.println(number+" is not palindrom string");
+			System.out.println(number+" is not palindrom number");
 		else
-			System.out.println(number+" is palindrom string");
+			System.out.println(number+" is palindrom number");
 	}
 	public static void main(String[] args) {
 		FindNumberPalindrom findNumberPalindrom=new FindNumberPalindrom();
