@@ -12,7 +12,7 @@ public class Assignment32_Program2 {
 
 	public void threeConsecutiveNumbers(int[] arr) {
 		for (int i = 0; i < arr.length-2; i++)
-			if ((arr[i + 1] == arr[i] + 1) && (arr[i + 2] == arr[i] + 2)) {
+			if ((arr[i+ 1] == arr[i] + 1) && (arr[i + 2] == arr[i] + 2)) {
 				System.out.println(arr[i] + "," + arr[i + 1] + "," + arr[i + 2] + "-> Hi");
 			}
 		System.out.println("");
