@@ -12,7 +12,6 @@ public class ArmstrongNumberSum {
 
 	void findArmstrongNumber(int[] array) {
 		System.out.println("Array is:" + Arrays.toString(array));
-		System.out.println("Armstrong Numbers Are:");
 
 		int remainder = 0;
 		int temp = 0;
@@ -27,10 +26,9 @@ public class ArmstrongNumberSum {
 				temp = temp / 10;
 			}
 			if (array[i] == sumOfAll)
-				System.out.print(array[i] + ",");
-			sum += array[i];
+			     sum += array[i];
 		}
-		System.out.println("\nSum Of All Armstrong Numbers From Array is:" + sum);
+		System.out.println("Sum Of All Armstrong Numbers From Array is:" + sum);
 
 	}
 
