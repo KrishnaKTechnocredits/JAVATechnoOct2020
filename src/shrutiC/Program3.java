@@ -1,34 +1,47 @@
 package shrutiC;
 
-import java.util.Scanner;
-
 public class Program3 {
 
-	void findSumOfEvenNum(int[] array) {
-		int sum = 0;
-		System.out.print("Array - {");
-		for (int index = 0; index < array.length; index++) {
-			System.out.print(array[index] + " ");
-			if (array[index] % 2 == 0)
-				sum += array[index];
+	// Method which take one character and return its ascii value.
+	int getAsciiValue(char ch) {
+		int asciiValue = 0;
+		return asciiValue = (int) ch;
+	}
+
+	// Method which take one ascii and return character
+	char getChar(int asciiValue) {
+		char ch = ' ';
+		return ch = (char) asciiValue;
+	}
+
+	// write a method to print ascii values for uppercase letters [A-Z].
+	// A -> 65, B - 66....
+	void printASCIIValueOfUpperCaseChar() {
+		for (int i = 65; i <= 90; i++) {
+			System.out.println(getChar(i) + " -> " + i);
 		}
-		System.out.println("}");
-		System.out.println("Sum of all even numbers in an array is : " + sum);
+	}
+
+	// write a method to print ascii values for lowercase letter [a-z].
+	// a -> 97, b -> 98
+	void printASCIIValueOfLowerCaseChar() {
+		for (int i = 97; i <= 122; i++) {
+			System.out.println(getChar(i) + " -> " + i);
+		}
 	}
 
 	public static void main(String[] args) {
 
-		Program3 program = new Program3();
-		Scanner scanner = new Scanner(System.in);
+		Program3 object = new Program3();
 
-		System.out.println("Enter length of an array of numbers");
-		int arraySize = scanner.nextInt();
-		int[] numArray = new int[arraySize];
-		for (int index = 0; index < arraySize; index++) {
-			System.out.println("Enter num " + (index + 1));
-			numArray[index] = scanner.nextInt();
-		}
-		program.findSumOfEvenNum(numArray);
+		System.out.println("ASCII value of A - " + object.getAsciiValue('A') + "\n");
+		System.out.println("Char having ASCII value 66 - " + object.getChar(66) + "\n");
+
+		System.out.println("ASCII values of lowercase letters : ");
+		object.printASCIIValueOfLowerCaseChar();
+
+		System.out.println("\nASCII values of Upercase letters : ");
+		object.printASCIIValueOfUpperCaseChar();
 	}
 
 }
