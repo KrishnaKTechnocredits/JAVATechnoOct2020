@@ -23,13 +23,13 @@ public class Program1 {
 				lowerCaseCnt++;
 			}
 		}
-		
+
 		if(upperCaseCnt>lowerCaseCnt)
 			return true;	
 		else
 			return false;
 	}
-	
+
 	public static void main(String[] args) {
 		Program1 object = new Program1();
 		Scanner sc = new Scanner(System.in);
