@@ -1,7 +1,6 @@
 package raghvendra.NumberOperations;
 import java.util.Arrays;
 /*Assignment - 35 : 4th Dec'2020 
-
 return sum of all Armstrong number from given array.
 input : [153, 111, 124, 371]
 output : 524*/
@@ -16,7 +15,7 @@ public class FindSumOfArmstrongNumber {
 			givenNumber=givenNumber/10;
 		}
 		if(number==armstrongNumber) {
-			 sum+=armstrongNumber;
+			sum+=armstrongNumber;
 		}
 		return sum;
 	}
