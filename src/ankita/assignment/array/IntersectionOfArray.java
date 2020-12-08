@@ -6,8 +6,6 @@ Output: 10.45, 18.35
 */
 package ankita.assignment.array;
 
-import java.util.Arrays;
-
 public class IntersectionOfArray {
 	int cnt = 0;
 
@@ -23,11 +21,9 @@ public class IntersectionOfArray {
 						break;
 					} else if (i > j)
 						break;
-				}
+				}	
 			}
 		}
-		System.out.println("arr : " + Arrays.toString(arr4));
-
 		for (int i = 0; i < arr4.length; i++) {
 			for (int j = 0; j < arr2.length; j++) {
 				if (arr4[i] == arr2[j]) {

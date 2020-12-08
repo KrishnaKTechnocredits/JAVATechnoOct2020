@@ -15,17 +15,6 @@ public class UnionOfArray {
 	double[] getUnionOfArray(double[] arr1, double[] arr2) {
 		System.out.println("Input :\n" + Arrays.toString(arr1) + "\n" + Arrays.toString(arr2));
 		double[] arr3 = new double[arr1.length + arr2.length];
-		for (int i = 0; i < arr1.length; i++) {
-			for (int j = 0; j < arr1.length; j++) {
-				if (arr1[i] == arr1[j]) {
-					if (i <= j) {
-						arr3[cnt++] = arr1[i];
-						break;
-					} else if (i > j)
-						break;
-				}
-			}
-		}
 		for (int i = 0; i < arr2.length; i++) {
 
 			for (int j = 0; j < arr2.length; j++) {
