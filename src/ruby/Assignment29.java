@@ -4,23 +4,21 @@ package ruby;
 public class Assignment29 {
 
 	void findSecMax(int[] arr) {
-		int num = 0, secMax = 0;
+		int max = 0, secMax = 0;
 		for (int i = 0; i < arr.length; i++) {
-			if (num < arr[i]) {
-				num = arr[i];
-			}
+			if (max < arr[i]) {
+				secMax = max;
+				max = arr[i];
+				
+			}else if (secMax < arr[i])
+				secMax = arr[i];
 		}
-		for (int j = 0; j < arr.length; j++) {
-			if (num > arr[j] && secMax < arr[j]) {
-				secMax = arr[j];
-			}
-		}
-		System.out.println(secMax);
+		System.out.println("Second Max number in array is "+secMax);
 	}
 
 	public static void main(String[] args) {
 		Assignment29 assign = new Assignment29();
-		int[] arr = { 1, 2, 3, 4, 5, 6, 7, 8, 10, 12, 15, 16,90};
+		int[] arr = { 1, 2, 3,56,66,89};
 		assign.findSecMax(arr);
 	}
 }
