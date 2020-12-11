@@ -25,5 +25,6 @@ public class NumberIsFibonacci {
 		NumberIsFibonacci numberIsFibonacci = new NumberIsFibonacci();
 		numberIsFibonacci.isNumberFibonacci(8);
 		numberIsFibonacci.isNumberFibonacci(33);
+		numberIsFibonacci.isNumberFibonacci(102034);
 	}
 }
