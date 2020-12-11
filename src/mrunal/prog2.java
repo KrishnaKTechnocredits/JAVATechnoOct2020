@@ -25,11 +25,11 @@ public class prog2 {
 		else
 			System.out.println(number + " is Not an Armstrong number");
 	}
-	
+
 public static void main(String[] args) {
 		prog2 program2 = new prog2();
-		
+
 		program2.isNumberAsrmstrong(153);
 		program2.isNumberAsrmstrong(154);
 	}
-}
+} 

@@ -11,10 +11,10 @@ g. decideSection()
 i.e. console should print: Harsh brought 12 items and payment done using visa card in section 1B
 
 Expectations:
-• If items are less than 10 and payment done using cash, then send customer to section 1A
-• If items are more than 10 and payment done using visa card, then send customer to section 1B
-• If items are more than 10 and payment done using cash, then send customer to section 1C
-• If items are less than 10 and payment done using visa card, then send customer to section 1D
+â€¢ If items are less than 10 and payment done using cash, then send customer to section 1A
+â€¢ If items are more than 10 and payment done using visa card, then send customer to section 1B
+â€¢ If items are more than 10 and payment done using cash, then send customer to section 1C
+â€¢ If items are less than 10 and payment done using visa card, then send customer to section 1D
 Hint: itemAddedToCart method have int parameter, paymentDoneUsing() method have String parameter, needBill() have Boolean parameter & haveCarryBag have Boolean parameter*/
 
 package ruby;
@@ -26,48 +26,43 @@ public class Mall {
 	boolean bill;
 	boolean carryBag;
 	String section;
-	void itemAddedToCart(int numberOfItems){
+
+	void itemAddedToCart(int numberOfItems) {
 		this.numberOfItems = numberOfItems;
 	}
-	
+
 	void customerName(String name) {
 		this.name = name;
 	}
-	
+
 	void paymentDoneUsing(String modeOfPay) {
 		this.modeOfPay = modeOfPay;
 	}
-	
+
 	void needBill(boolean bill) {
 		this.bill = bill;
 	}
-	
+
 	void haveCarryBag(boolean carryBag) {
 		this.carryBag = carryBag;
 	}
-	
-	void displayCutomerInfo(){
-		System.out.println(name+" brought "+numberOfItems+" items and payment done using "+ modeOfPay+" in "+section);
+
+	void displayCutomerInfo() {
+		System.out.println(
+				name + " brought " + numberOfItems + " items and payment done using " + modeOfPay + " in " + section);
 	}
-	
+
 	void decisionSection() {
-		if(numberOfItems <= 10 && modeOfPay.equals("Cash"))
-		{
+		if (numberOfItems <= 10 && modeOfPay.equals("Cash")) {
 			section = "Section 1A";
-		}
-		else if(numberOfItems > 10 && modeOfPay.equals("Visa Card"))
-		{
+		} else if (numberOfItems > 10 && modeOfPay.equals("Visa Card")) {
 			section = "Section 1B";
-		}
-		else  if(numberOfItems > 10 && modeOfPay.equals("Cash"))
-		{
+		} else if (numberOfItems > 10 && modeOfPay.equals("Cash")) {
 			section = "Section 1C";
-		}
-		else if(numberOfItems <= 10 && modeOfPay.equals("Visa Card"))
-		{
+		} else if (numberOfItems <= 10 && modeOfPay.equals("Visa Card")) {
 			section = "Section 1D";
 		}
-}
+	}
 
 	public static void main(String[] args) {
 		Mall mall = new Mall();
