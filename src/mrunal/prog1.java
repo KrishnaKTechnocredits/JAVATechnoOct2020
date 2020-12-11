@@ -1,34 +1,22 @@
 package mrunal;
-/*Program 1: return true if UpperCase characters count are more
- * than lowercase else return false.
-input : TechnoCrediTS
-output : false */
+/*Program 1: return a reserve number.
+input : 1234
+output : 4321*/
 
 public class prog1 {
 
-	boolean caseCount(String input) {
-		int upCount = 0;
-		int lowCount = 0;
-		for (int i = 0; i < input.length(); i++) {
-			char ch = input.charAt(i);
-			if (Character.isUpperCase(ch))
-			upCount++;
-		else if (Character.isLowerCase(ch))
-			lowCount++;
+	int reverseNumber(int num) {
+		System.out.println("Input is " + num);
+		int revNum = 0;
+		while (num > 0) {
+			int digit = num % 10;
+			revNum = (revNum * 10) + digit;
+			num = num / 10;
 		}
-		if (upCount > lowCount)
-			return true;
-		else
-			return false;
-}
-public static void main(String[] args) {
-		String input = "TechNoCrediTS";
+		return revNum;
+	}
+	public static void main(String[] args) {
 		prog1 program1 = new prog1();
-		System.out.println("Input is: " + input);
-		System.out.println("return true if UpperCase characters count are more"
-				+ "than lowercase else return false.? -> " 
-				+ program1.caseCount(input));
-				}
-			}
-
-
+		System.out.println("Reverse Number is " + program1.reverseNumber(1234));
+	}
+}

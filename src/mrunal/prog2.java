@@ -1,27 +1,35 @@
 package mrunal;
-/*Program 2: print Hi when you find 3 consecutive numbers.
-1,2,3,5,8,9,11,12,13,14,15,18,19,20
-output :1,2,3 -> Hi
-11,12,13 -> Hi
-12,13,14 -> Hi
-13,14,15 -> Hi
-18,19,20 -> Hi
+/*Assignment 33 : [complete it before 4th Dec EOD]
+Program 1: return a reserve number.
+input : 1234
+output : 4321
+Program 2: verify number is armstrong or not.
+input : 153
+output : 153 is an armstrong number.
+input : 154
+output : 154 is not an armstrong number.
 */
-
 public class prog2 {
 
-	void display3ConsecutiveNumbers(int[] arr) {
-		for (int i = 0; i < arr.length - 2; i++) {
-			if (arr[i] + 1 == arr[i + 1] && arr[i] + 2 == arr[i + 2])
-				System.out.println("" + arr[i] + "," + 
-						arr[i + 1] + "," +
-						arr[i + 2] + " --> Hi");
+	void isNumberAsrmstrong(int number) {
+		int num = number;
+		int sum = 0;
+		int digit = 0;
+		while (num > 0) {
+			digit = num % 10;
+			sum = sum + (digit * digit * digit);
+			num = num / 10;
 		}
+		if (sum == number)
+			System.out.println(number + " is an Armstrong number");
+		else
+			System.out.println(number + " is Not an Armstrong number");
 	}
 
-	public static void main(String[] args) {
-		int[] inputArray = { 1, 2, 3, 5, 8, 9, 11, 12, 13, 14, 15, 18, 19, 20 };
+public static void main(String[] args) {
 		prog2 program2 = new prog2();
-		program2.display3ConsecutiveNumbers(inputArray);
+
+		program2.isNumberAsrmstrong(153);
+		program2.isNumberAsrmstrong(154);
 	}
-}
+} 
