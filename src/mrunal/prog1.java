@@ -1,32 +1,34 @@
 package mrunal;
- * Program 1: print all the words which does't have any digit. 
-String[] input = {"Masgj3Pw", "r4fsjk","techno","sfjk44lk"};
-output : techno */
+/*Program 1: return true if UpperCase characters count are more
+ * than lowercase else return false.
+input : TechnoCrediTS
+output : false */
 
 public class prog1 {
 
-		void sumofdigitgreaterthan10(String[] arr) {
-			for (int index = 0; index < arr.length; index++) {
-				String word = arr[index];
-				int sum = 0;
-				for (int index1 = 0; index1 < word.length(); index1++) {
-					char ch = word.charAt(index1);
-					if (Character.isDigit(ch)) {
-						sum += Character.getNumericValue(ch);
-					}
-					if (sum > 10) {
-						System.out.println("Digits in a word whose sum is greater than 10 is: " + word);
-					}
+	boolean caseCount(String input) {
+		int upCount = 0;
+		int lowCount = 0;
+		for (int i = 0; i < input.length(); i++) {
+			char ch = input.charAt(i);
+			if (Character.isUpperCase(ch))
+			upCount++;
+		else if (Character.isLowerCase(ch))
+			lowCount++;
+		}
+		if (upCount > lowCount)
+			return true;
+		else
+			return false;
+}
+public static void main(String[] args) {
+		String input = "TechNoCrediTS";
+		prog1 program1 = new prog1();
+		System.out.println("Input is: " + input);
+		System.out.println("return true if UpperCase characters count are more"
+				+ "than lowercase else return false.? -> " 
+				+ program1.caseCount(input));
 				}
 			}
-		}
 
-		public static void main(String[] args) {
-			// TODO Auto-generated method stub
-			String[] array = { "Ma1s3gj3Pw", "r4f3sjk", "te3ch2no9", "sfjk4p4plpk" };
-			prog1 printWorddigitsum = new prog1();
-			printWorddigitsum.sumofdigitgreaterthan10(array);
-		}
-
-	}
 
