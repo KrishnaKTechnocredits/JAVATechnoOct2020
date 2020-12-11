@@ -1,12 +1,11 @@
 package mrunal;
 /*Program 1: return true if UpperCase characters count are more
  * than lowercase else return false.
-
 input : TechnoCrediTS
 output : false */
 
 public class prog1 {
-	
+
 	boolean caseCount(String input) {
 		int upCount = 0;
 		int lowCount = 0;
@@ -31,6 +30,5 @@ public static void main(String[] args) {
 				+ program1.caseCount(input));
 				}
 			}
-			
 
-			
+
