@@ -25,5 +25,6 @@ public class VerifyFibonacci {
 		verifyFibonacci.FindFibonacci(number);
 		new VerifyFibonacci().FindFibonacci(10);
 		new VerifyFibonacci().FindFibonacci(8);
+		new VerifyFibonacci().FindFibonacci(13);
 	}
 }
