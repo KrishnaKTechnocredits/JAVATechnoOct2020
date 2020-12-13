@@ -1,4 +1,7 @@
 package raghvendra.Exam;
+
+import java.util.Arrays;
+
 //Find Visible tree from Array
 public class FindVisibleTree {
 	void DisplayCountOfTreeVisible(int[] arr) {
@@ -10,7 +13,7 @@ public class FindVisibleTree {
 				count++;
 			}
 		}
-		System.out.println("Number of Visible tree are:"+count);
+		System.out.println("Number of Visible tree in Array:"+Arrays.toString(arr)+" are "+count);
 	}
 	public static void main(String[] args) {
 		FindVisibleTree findVisibleTree=new FindVisibleTree();
