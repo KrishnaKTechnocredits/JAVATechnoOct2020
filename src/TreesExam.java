@@ -16,13 +16,14 @@ public class TreesExam {
 	}
 	
 	static void displayVisibileTrees(int[] arr) {
-		int tmp=arr[0];
-		System.out.print(tmp);
-		for(int index=1;index<arr.length;index++) {
+		int tmp=0,cnt=0;
+		for(int index=0;index<arr.length;index++) {
 			if(arr[index]>tmp) {
-				System.out.print(" "+arr[index]);
+				//System.out.print(" "+arr[index]);
 				tmp=arr[index];
+				cnt++;
 			}
 		}
+		System.out.println(cnt);
 	}
 }
