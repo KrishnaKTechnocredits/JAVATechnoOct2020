@@ -29,12 +29,14 @@ public class IndicesReturningTargetSum implements Manager {
 		System.out.println("Targer Sum is: "+target);
 		System.out.println("Below are the array indices whose corressponding elements are returning sum equal to "+target);
 		int indices[]=new int[2];
-		for(int index=0;index<arr.length;index++)
-			for(int innerindex=index+1;innerindex<arr.length;innerindex++)
+		for(int index=0;index<arr.length;index++) {
+			for(int innerindex=index+1;innerindex<arr.length;innerindex++) {
 				if(arr[index]+arr[innerindex]==target) {
 					indices[0]= index;
 					indices[1]=innerindex;
-				}		
+				}
+			}
+		}
 		return indices;
 	}
 	
