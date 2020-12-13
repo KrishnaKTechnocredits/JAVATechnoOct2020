@@ -26,7 +26,7 @@ public class NumberFibonacci {
 		int copyNum = num;
 		boolean flag = false;
 		System.out.print(","+temp1+","+temp2);//added this for just checking purpose
-		while (num >= 0) {
+		while (num > 0) {
 			int temp3 = temp1 + temp2;
 			if (temp3 == copyNum)
 				flag = true;
