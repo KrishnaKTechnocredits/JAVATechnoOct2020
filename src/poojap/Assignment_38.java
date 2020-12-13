@@ -24,7 +24,7 @@ public class Assignment_38 {
 		if (flag)
 			System.out.println("\n" + num + " Is a Element of Fibonacci Series");
 		else
-			System.out.println("\n" + num + " Is a Element of Fibonacci Series");
+			System.out.println("\n" + num + " Is Not Element of Fibonacci Series");
 	}
 
 	public static void main(String[] args) {
