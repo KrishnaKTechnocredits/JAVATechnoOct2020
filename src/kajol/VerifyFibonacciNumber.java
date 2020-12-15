@@ -13,9 +13,9 @@ public class VerifyFibonacciNumber {
 			return true;
 		for(int index=2;index<number;index++) {
 			succeedingNumber=number1+number2;
-			if(succeedingNumber==number) {
+			if(succeedingNumber==number) 
 				return true;
-			}else if(succeedingNumber>number)
+			else if(succeedingNumber>number)
 				return false;			
 			number1=number2;
 			number2=succeedingNumber;			
