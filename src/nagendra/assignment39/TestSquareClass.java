@@ -14,6 +14,6 @@ public class TestSquareClass {
 
 	public static void main(String[] args) {
 		Square object = new Square(10);
-		object.areaOfSquare(20);
+		object.areaOfSquare();
 	}
 }
