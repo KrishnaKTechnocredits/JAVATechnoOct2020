@@ -1,4 +1,4 @@
-/*Assignment  32: 3rd Dec EOD
+/*Assignment  32: 
 Program 3:  write a program having below methods.
 1) write a method which take one character and return its ascii value.
 2) write a method which take one ascii and return character.

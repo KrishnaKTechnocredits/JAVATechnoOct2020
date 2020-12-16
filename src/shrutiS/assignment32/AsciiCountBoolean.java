@@ -1,4 +1,4 @@
-/*Assignment  32: 3rd Dec EOD
+/*Assignment  32:
 Program 1:  return true if UpperCase characters count are more than lowercase else return false.
 input : TechnoCrediTS
 output : false*/
