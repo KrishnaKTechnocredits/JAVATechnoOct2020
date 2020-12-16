@@ -18,8 +18,8 @@ public class Square {
 		this.side = side;
 	}
 
-	void areaOfSquare(int side2) {
-		int area = side * side2;
+	void areaOfSquare() {
+		int area = side * side;
 		System.out.println(area);
 	}
 }
