@@ -1,53 +1,46 @@
 package shrutiC;
 
-class Calculator {
+public class Calculator {
 
-	void printEvenNos(int startIndex, int endIndex) {
-
-		System.out.println("\nEven numbers between " + startIndex + " and " + endIndex + " are :-");
-		for (int i = startIndex; i <= endIndex; i++) {
-			System.out.println(i);
-			i++;
-		}
+	double sum(double num1, double num2, double num3) {
+		double ans;
+		return ans = num1 + num2 + num3;
 
 	}
 
-	void printNumDivisibleBy5(int startIndex, int endIndex) {
+	double average(double num1, double num2, double num3) {
+		double ans = sum(num1, num2, num3) / 3;
+		return ans;
 
-		System.out.println("\nDivisible by 5, numbers between " + startIndex + " and " + endIndex + " are :-");
-		for (int i = startIndex; i <= endIndex; i++) {
-			if (i % 5 == 0)
-				System.out.println(i);
-		}
 	}
 
-	void printNumDivisibleBy5And3(int startIndex, int endIndex) {
-
-		System.out.println("\nDivisible by 5 & 3, numbers between " + startIndex + " and " + endIndex + " are :-");
-		for (int i = startIndex; i <= endIndex; i++) {
-			if (i % 5 == 0 && i % 3 == 0)
-				System.out.println(i);
-		}
+	static boolean isAnswerAboveExpecation(double average) {
+		if (average > 50)
+			return true;
+		else
+			return false;
 	}
 
-	void printNumDivisibleBy7Or13(int startIndex, int endIndex) {
+	static boolean isEligible(double average) {
+		if (average > 50 || average % 2 == 0)
+			return true;
+		else
+			return false;
+	}
 
-		System.out.println("\nDisplay numbers divisible by 7 & 13 between " + startIndex + "and " + endIndex);
-		for (int i = startIndex; i <= endIndex; i++) {
-			if (i % 7 == 0)
-				System.out.println(i + " is divisible by 7");
-			else if (i % 13 == 0)
-				System.out.println(i + " is divisible by 13");
-		}
+	static String getYourGrade(double average) {
+		if (average > 80)
+			return "A";
+		else
+			return "B";
 	}
 
 	public static void main(String[] args) {
-
-		Calculator calculate = new Calculator();
-		calculate.printEvenNos(10, 15);
-		calculate.printNumDivisibleBy5(10, 30);
-		calculate.printNumDivisibleBy5And3(5, 18);
-		calculate.printNumDivisibleBy7Or13(5, 40);
-	}
-
+		Calculator calc = new Calculator();
+		double average = calc.average(90, 80, 72);
+		System.out.println("Average marks : " + average);
+		System.out.println("Is average above expectation : " + isAnswerAboveExpecation(average));
+		System.out.println("Is Candidate eligible : " + isEligible(average));
+		System.out.println("Grade : " + getYourGrade(average));
+}
 }

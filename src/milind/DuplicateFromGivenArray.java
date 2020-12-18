@@ -1,3 +1,12 @@
+/* Exam3: find duplicate from given array.
+input : int[] arr = {10,12,55,32,17,12,32};
+output : 12
+         32
+
+String[] names = {"Techno", "Credits","Techno","Hi","Hello","Hi"};
+output : Techno
+         Hi */
+
 package milind;
 
 public class DuplicateFromGivenArray {
@@ -8,7 +17,11 @@ public class DuplicateFromGivenArray {
 			int count = 0;
 			for(int index1 = 0; index1 < arr.length; index1 ++) {
 				if(arr[index] == arr[index1]) {
-					count ++;
+					if(index1 < index) {
+						break;
+					}else {
+						count ++;
+					}
 				}
 			}
 			if(count > 1) {
@@ -23,7 +36,11 @@ public class DuplicateFromGivenArray {
 			int count = 0;
 			for(int index1 = 0; index1 < arr.length; index1 ++) {
 				if(arr[index].equals(arr[index1])) {
-					count ++;
+					if(index1 < index) {
+						break;
+					}else {
+						count ++;
+					}
 				}
 			}
 			if(count > 1) {
@@ -36,9 +53,8 @@ public class DuplicateFromGivenArray {
 		
 		DuplicateFromGivenArray duplicateFromGivenArray = new DuplicateFromGivenArray();
 		int[] intArray = {10,12,55,32,17,12,32};
-		String[] stringArray = {"Techno", "Credits","Techno","Hi","Hello","Hi"};
+		String[] stringArray = {"Techno", "Credits","Techno","Hi","Hello","Hi","Techno","Hi","Techno","Techno"};
 		duplicateFromGivenArray.duplicateFromIntArray(intArray);
 		duplicateFromGivenArray.duplicateFromStringArray(stringArray);
 	}
-
 }

@@ -1,17 +1,29 @@
 package apurva;
 
-/*Reverse given string array.
- *input: {"Credits ", "Techno ", "From ", "Diwali ", "Happy "}
- output: {"Happy", "Diwali", "From", "Techno", "Credits"} /
+/*sum of all numbers in a give string 
+input: te123ch9kj8 
+output : 123 + 9 + 8 = 140*/
 public class Program_2 {
-	void reverseArray(String[] string) {
-		for (int index = string.length - 1; index >= 0; index--) {
-			System.out.print(string[index]);
+	void sumOfNumFromString(String input) {
+		int sum = 0;
+		String str = "";
+		for (int index = 0; index < input.length(); index++) {
+			char ch = input.charAt(index);
+			if (Character.isDigit(ch))
+				str = str + ch;
+			else if (str != "") {
+				sum = sum + Integer.parseInt(str);
+				str = "";
+			}
 		}
+		if(str != "") {
+			sum = sum + Integer.parseInt(str);
+		}
+		System.out.println("String Input: " + input);
+		System.out.println("Sum of numbers in string: " + sum);
 	}
 
 	public static void main(String[] args) {
-		String[] words = {"Credits ", "Techno ", "From ", "Diwali ", "Happy "};
-		new Program_2().reverseArray(words);
+		new Program_2().sumOfNumFromString("te123ch9kj8");
 	}
-}
+} 
