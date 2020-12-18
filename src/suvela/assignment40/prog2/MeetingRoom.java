@@ -13,9 +13,6 @@ package suvela.assignment40.prog2;
 
 public class MeetingRoom {
 	String room1="Nalanda";
-	String room2="Takshashila";
-	String room3="AgraFort";
-	String room4="PratapGadh";
 	int hr=1;
 	
 	void bookMeetingRoom() {
