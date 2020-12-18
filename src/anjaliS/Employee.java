@@ -3,47 +3,60 @@ package anjaliS;
 import java.util.Scanner;
 
 public class Employee {
-	String employeeName;
-	int depId;
+	int empId;
+	String empName;
+	int yearsOfExperience;
 	int salary;
 
-	Employee(String employeeName, int depId, int salary) {
-		this.employeeName = employeeName;
-		this.depId = depId;
+	Employee(int empId, String empName, int yearsOfExperience, int salary) {
+		this.empId = empId;
+		this.empName = empName;
+		this.yearsOfExperience = yearsOfExperience;
 		this.salary = salary;
+
 	}
 
-	void compareEmpSalary(Employee employee1, Employee employee2) {
-		if (employee1.salary > employee2.salary) {
-			System.out.println(employee1.employeeName);
-			System.out.println(employee1.depId);
-			System.out.println(employee1.salary);
-		} else {
-			System.out.println(employee2.employeeName);
-			System.out.println(employee2.depId);
-			System.out.println(employee2.salary);
-		}
+	void displayEmployeeDetails() {
+		System.out.println("EmpId of employee: " + empId);
+		System.out.println("EmpName of employee: " + empName);
+		System.out.println("Experience of employee: " + yearsOfExperience);
+		System.out.println("Salary of employee: " + salary);
 
+	}
+
+	boolean isEligible() {
+		if (salary > 30000)
+			return true;
+		return false;
+	}
+
+	boolean isSwitchRequired() {
+		if (!(yearsOfExperience * 200000 < salary))
+			return true;
+		return false;
 	}
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		System.out.println("Enter the name: ");
-		String name = sc.nextLine();
-		System.out.println("Enter the depId: ");
-		int depId = sc.nextInt();
-		System.out.println("Enter the salary: ");
-		int salary = sc.nextInt();
-		sc.nextLine();
-		Employee employee1 = new Employee(name, depId, salary);
-		System.out.println("Enter the name: ");
-		name = sc.nextLine();
-		System.out.println("Enter the depId: ");
-		depId = sc.nextInt();
-		System.out.println("Enter the salary: ");
-		salary = sc.nextInt();
-		Employee employee2 = new Employee(name, depId, salary);
-		employee1.compareEmpSalary(employee1, employee2);
+		System.out.println("Enter the employee name");
+		String Name = sc.nextLine();
+		System.out.println("Enter employee Id");
+		int Id = sc.nextInt();
+		System.out.println("Enter experience: ");
+		int experience = sc.nextInt();
+		System.out.println("Enter Salary: ");
+		int empSalary = sc.nextInt();
+		Employee employee = new Employee(Id, Name, experience, empSalary);
+		employee.displayEmployeeDetails();
+		employee.isEligible();
+		if (employee.isEligible()) {
+			System.out.println("Yes employee is eligible: ");
+		}
+		employee.isSwitchRequired();
+		if (employee.isSwitchRequired()) {
+			System.out.println("Yes switch required: ");
+
+		}
 	}
 
 }
