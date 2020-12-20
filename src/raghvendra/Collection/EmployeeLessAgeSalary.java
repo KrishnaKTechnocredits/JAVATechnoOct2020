@@ -27,8 +27,7 @@ public class EmployeeLessAgeSalary {
 		for(int index=1;index<employeeList.size();index++) {
 			if(employeeList.get(index).Salary>salary && employeeList.get(index).age<age ) {
 				nameOfEmployee.add(employeeList.get(index).firstName+" "+employeeList.get(index).surnName+" "+employeeList.get(index).age+" "+employeeList.get(index).Salary);
-
-				}
+			}
 		}
 		return nameOfEmployee;
 	}
