@@ -23,7 +23,7 @@ public class Employee {
 		this.Salary=salary;
 	}
 	static void printSalary(ArrayList<Employee> employeeList) {
-		int maxIndex=1;
+		int maxIndex=0;
 		double maxSalary=employeeList.get(0).Salary;
 		for(int index=1;index<employeeList.size();index++) {
 			if(employeeList.get(index).Salary<maxSalary) {

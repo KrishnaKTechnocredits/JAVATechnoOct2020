@@ -22,10 +22,10 @@ public class EmployeeLessAgeSalary {
 		this.empDeptName=empDeptName;
 		this.Salary=salary;
 	}
-	static ArrayList<String>  filterEmployeeByAgeAndSalary(ArrayList<EmployeeLessAgeSalary> employeeList) {
+	static ArrayList<String>  filterEmployeeByAgeAndSalary(ArrayList<EmployeeLessAgeSalary> employeeList,double salary,int age) {
 		ArrayList<String> nameOfEmployee=new ArrayList<String>();
 		for(int index=1;index<employeeList.size();index++) {
-			if(employeeList.get(index).Salary>75000 && employeeList.get(index).age<30 ) {
+			if(employeeList.get(index).Salary>salary && employeeList.get(index).age<age ) {
 				nameOfEmployee.add(employeeList.get(index).firstName+" "+employeeList.get(index).surnName+" "+employeeList.get(index).age+" "+employeeList.get(index).Salary);
 
 				}
@@ -46,6 +46,6 @@ public class EmployeeLessAgeSalary {
 		employeeList.add(employee3);
 		employeeList.add(employee5);
 		employeeList.add(employee4);
-		System.out.println("List of Employee having age less than 30 and salary greater than 75000"+"\n"+EmployeeLessAgeSalary.filterEmployeeByAgeAndSalary(employeeList));
+		System.out.println("List of Employee having age less than 30 and salary greater than 75000"+"\n"+EmployeeLessAgeSalary.filterEmployeeByAgeAndSalary(employeeList,75000,30));
 	}
 }
