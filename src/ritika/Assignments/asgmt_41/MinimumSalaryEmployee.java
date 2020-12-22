@@ -42,7 +42,7 @@ public class MinimumSalaryEmployee {
 		Employee emp3 = new Employee();
 		emp3.setEmployeeDetails();
 		Employee emp4 = new Employee();
-		emp3.setEmployeeDetails();
+		emp4.setEmployeeDetails();
 		
 		employeeDetails.add(emp1);
 		employeeDetails.add(emp2);
