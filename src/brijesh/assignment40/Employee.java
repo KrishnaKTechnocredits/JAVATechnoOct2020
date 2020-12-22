@@ -1,5 +1,13 @@
 package brijesh.assignment40;
 
+/**
+Create a class called Employee, having 3 fields Employee Name, DeptId and Salary (input using
+scanner). 
+Create 3 parameterized constructor for same.
+Take data for 2 employees and write a method which takes 2 arguments (instance of both
+employees) and print all the details of employee having max salary.
+*/
+
 import java.util.Scanner;
 
 public class Employee {
