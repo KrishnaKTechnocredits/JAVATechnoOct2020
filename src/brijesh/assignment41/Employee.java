@@ -55,6 +55,7 @@ public class Employee {
 		list.add(employee2);
 		list.add(employee3);
 		list.add(employee4);
+		System.out.println("Employee details with Maximum salary:");
 		Employee.findMaxSalary(list);
 	}
 }
