@@ -9,6 +9,7 @@ Program 1 : Retains all common elements between both list.
 public class ListProgram1 {
 
 	public ArrayList<String> retainsAllCommonElements(ArrayList<String> al1, ArrayList<String> al2) {
+		System.out.println(al1+"\n"+al2);
 		al1.retainAll(al2);
 		for (int index = 0; index < al1.size(); index++) {
 			String element= al1.get(index);
@@ -33,6 +34,6 @@ public class ListProgram1 {
 		al2.add("Rahul");
 		al2.add("Prasad");
 		al2.add("Krishna");
-		System.out.println(new ListProgram1().retainsAllCommonElements(al1, al2));
+		System.out.println("Intersection of above two list: "+new ListProgram1().retainsAllCommonElements(al1, al2));
 	}
 }

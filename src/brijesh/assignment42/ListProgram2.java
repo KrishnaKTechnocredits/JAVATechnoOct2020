@@ -9,6 +9,7 @@ Program 2: Union of two list, return a list having all element one time.
 public class ListProgram2 {
 
 	public ArrayList<String> unionOfList(ArrayList<String> al1, ArrayList<String> al2) {
+		System.out.println(al1+"\n"+al2);
 		al2.removeAll(al1);
 		al1.addAll(al2);
 		for (int index = 0; index < al1.size(); index++) {
@@ -33,6 +34,6 @@ public class ListProgram2 {
 		al2.add("Krishna");
 		al1.add("Rahul");
 		al1.add("Prasad");
-		System.out.println(new ListProgram2().unionOfList(al1, al2));
+		System.out.println("Union of above two list: "+new ListProgram2().unionOfList(al1, al2));
 	}
 }
