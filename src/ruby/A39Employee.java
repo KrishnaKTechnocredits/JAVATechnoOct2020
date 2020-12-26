@@ -50,5 +50,4 @@ public class A39Employee {
 				+ emp3.isSwitchRequired());
 
 	}
-
 }
