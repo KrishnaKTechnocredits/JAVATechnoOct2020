@@ -12,6 +12,7 @@ output :  Hi ->7 */
 public class A46MaxFreqWord {
 
 	static void findMaxFreqWord(String input) {
+		System.out.println("Input String :"+input);
 		int count = 0;
 		String[] word = input.split(" ");
 		HashMap<String, Integer> hMap = new HashMap<>();
