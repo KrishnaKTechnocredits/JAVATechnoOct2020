@@ -18,13 +18,14 @@ public class ReplaceWord {
 			}
 		}
 		arr[WordIndex]=name;
-		System.out.println(Arrays.toString(arr));
+		System.out.println("String replaced with name:"+ Arrays.toString(arr));
 	}
 	
 
 	public static void main(String[] args) {
 		ReplaceWord replaceWord=new ReplaceWord();
 		String st="Hi globant Hello Hi Hi globant Hi Hello Hello globant Hi Techno Credits Techno";
+		System.out.println("Given String: "+st);
 		String name="Raghv";
 		String word="Hi";
 		replaceWord.replaceSecondLastWord(st, name, word);
