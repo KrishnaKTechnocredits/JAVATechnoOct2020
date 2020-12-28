@@ -11,6 +11,8 @@ booked for how many hrs]
 */
 package ankita.assignment.scenarioBasedProgram;
 
+import java.util.Scanner;
+
 public class MeetingRoom {
 	String room;
 	int hrs;
@@ -26,15 +28,32 @@ public class MeetingRoom {
 	}
 
 	void display() {
+		if(room.equalsIgnoreCase("Nalanda"))
 		System.out.println(room + " meeting room is booked for " + hrs + " hours");
+		else 
+			System.out.println(room + " meeting room is booked for " + hrs + " hours");
 	}
 
 	public static void main(String[] args) {
 		MeetingRoom meetingRoom = new MeetingRoom();
-		meetingRoom.bookMeetingRoom();
+		Scanner sc  = new Scanner(System.in);
+		System.out.println("Enter meetinng room to be booked");
+		String mRoom =  sc.next();
+		
+		if(mRoom.equalsIgnoreCase("Nalanda"))
+			meetingRoom.bookMeetingRoom();
+		else if (mRoom.equalsIgnoreCase("Takshashila") || mRoom.equalsIgnoreCase("PratapGadh") || mRoom.equalsIgnoreCase("AgraFort"))	{
+			System.out.println("Enter time : ");
+			int hr = sc.nextInt();
+			meetingRoom.bookMeetingRoom(mRoom, hr);
+		}
+		else {
+			System.out.println("Wrong input...");
+			sc.close();
+			return;
+		}
+			
 		meetingRoom.display();
-
-		meetingRoom.bookMeetingRoom("AgraFort", 5);
-		meetingRoom.display();
+		sc.close();
 	}
 }
