@@ -12,7 +12,6 @@ output :  Hi ->7 */
 public class A46MaxFreqWord {
 
 	static void findMaxFreqWord(String input) {
-		System.out.println("Input String :"+input);
 		int count = 0;
 		String[] word = input.split(" ");
 		HashMap<String, Integer> hMap = new HashMap<>();
@@ -24,12 +23,20 @@ public class A46MaxFreqWord {
 			}
 		}
 		Set<String> setOfWord = hMap.keySet();
+		String temp = "";
 		for (String name : setOfWord) {
 			if (count < hMap.get(name)) {
 				count = hMap.get(name);
-				System.out.println(name + " -> " + hMap.get(name));
+				temp = name;
 			}
 		}
+		System.out.println(temp + " -> " + count);
+		// Max count is same for two words
+		/*for (String name : setOfWord) {
+			if (count == hMap.get(name)) {
+				System.out.println(name + " -> " + count);
+			}
+		}*/
 	}
 
 	public static void main(String[] args) {
