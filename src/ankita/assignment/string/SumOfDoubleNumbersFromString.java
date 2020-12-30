@@ -18,8 +18,12 @@ public class SumOfDoubleNumbersFromString {
 		double sum = 0;
 		for (int i = 0; i < arr.length; i++) {
 			String word = arr[i];
-			if (Character.isDigit(arr[i].charAt(0))) {
-				sum = sum + Double.parseDouble(word);
+			try {
+				if (Character.isDigit(arr[i].charAt(0))) {
+					sum = sum + Double.parseDouble(word);
+				}
+			} catch (NumberFormatException ne) {
+				System.out.println("Number Format Exception");
 			}
 		}
 		System.out.println("Output:" + sum);
