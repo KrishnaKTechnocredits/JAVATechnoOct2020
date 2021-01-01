@@ -1,22 +1,33 @@
 package mrunal;
-/*Program 1: return a reserve number.
-input : 1234
-output : 4321*/
+/*
+Program 1:  verify string is palindrom or not.
+input : naman
+output : naman is a palindrom string.
+input : techno
+output : techno is not a palindrom string.
+ */
 
 public class prog1 {
 
-	int reverseNumber(int num) {
-		System.out.println("Input is " + num);
-		int revNum = 0;
-		while (num > 0) {
-			int digit = num % 10;
-			revNum = (revNum * 10) + digit;
-			num = num / 10;
+	void verifyStringPalindrome(String input) {
+		System.out.println("Input: " + input);
+		boolean flag = true;
+		for (int i = 0, j = input.length() - 1; i < j; i++, j--) {
+			if (input.charAt(i) == input.charAt(j))
+				continue;
+			else {
+				flag = false;
+				break;
+			}
 		}
-		return revNum;
+		if (flag)
+			System.out.println(input + " is a Palindrome string");
+		else
+			System.out.println(input + " is not a Palindrome string");
 	}
-	public static void main(String[] args) {
-		prog1 program1 = new prog1();
-		System.out.println("Reverse Number is " + program1.reverseNumber(1234));
-	}
+public static void main(String[] args) {
+	    prog1 program1 = new prog1();
+		program1.verifyStringPalindrome("naman");
+		program1.verifyStringPalindrome("techno");
+}
 }
