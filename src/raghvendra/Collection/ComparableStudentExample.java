@@ -20,6 +20,6 @@ public class ComparableStudentExample {
 		listOfStudent.add(studentPojoForComparable2);
 		listOfStudent.add(studentPojoForComparable3);
 		Collections.sort(listOfStudent);
-		System.out.println(listOfStudent);
+		System.out.println("Sorted Student list:" +"\n"+listOfStudent);
 	}
 }
