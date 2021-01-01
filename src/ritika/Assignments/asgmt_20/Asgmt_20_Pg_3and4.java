@@ -1,4 +1,4 @@
-package ritika.Assignments;
+package ritika.Assignments.asgmt_20;
 /* Assignment-20 :
 
 Program : 3
