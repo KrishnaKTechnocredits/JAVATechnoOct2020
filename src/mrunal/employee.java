@@ -1,57 +1,52 @@
-package mrunal;
-/*Program : 1 
-Create Employee class and parameterized constructor with attributes empId , empName,
-years of Experience and salary. 
-Write a method to display the details of employees. 
-Create a method isEligible which will return true if Employee salary is more than 30000. 
-Create a method isSwitchRequired, which will return true if yearsOfExperience
- * 200000 < salary.*/
+/* Assignment 41 : 
+ * Program 1:
+Print all the details of employee having minimum salary.
+-> Employee class fields : firstName, lastName, surnName, age, 
+   empId, empDeptId, empDeptName.
+-> override toString method in Employee class.*/package mrunal;
 
-public class employee {
-	int empId;
-	String empName;
-	double exp;
-	double salary;
-
-	employee(int empId, String empName, double exp , double salary){
+public class Employee {
+	private int Salary,age,empId;
+	private String firstName,lastName,surnName,empDeptName;
+	
+	Employee( int Salary,int age,int empId ,String firstName,
+			String lastName,String surnName,String empDeptName){
+		this.Salary=Salary;
+		this.age=age;
 		this.empId=empId;
-		this.empName=empName;
-		this.exp=exp;
-		this.salary=salary;
+		this.firstName=firstName;
+		this.lastName=lastName;
+		this.surnName=surnName;
+		this.empDeptName= empDeptName;
 	}
-
-	void printEmpDetails(){
-		System.out.println("Employee Details");
-		System.out.println("Employee ID: "+ empId);
-		System.out.println("Employee Name: "+ empName);
-		System.out.println("Years of Experience: "+ exp +" months" );
-		System.out.println("Salary: "+ salary);
+	public int getEmpSalary() {
+		return Salary;
 	}
-
-	boolean isEligible(){
-		boolean flag = false;
-		if(salary>30000)
-			flag= true;
-
-		return flag;
+	public int getEmpAge() {
+		return age;
 	}
-
-	boolean isSwitchRequired() {
-		boolean flag = false;
-		if(salary <exp*200000) {
-			flag=true;
-		}
-
-		return flag;
+	public int getEmpID() {
+		return empId;
 	}
-
-	public static void main(String[]arg) {
-		employee emp= new employee(123456789 ,"Shine", 12, 80000);
-		emp.printEmpDetails();
-		boolean flag = emp.isEligible();
-		System.out.println("Is emp eligible? " + flag);
-		boolean flag01 = emp.isSwitchRequired();
-		System.out.println("Is switch required? " + flag01);	
+	public String getEmpFirstName() {
+		return firstName;
+	}
+	public String getEmpLastName() {
+		return lastName;
+	}
+	public String getEmpSurName() {
+		return surnName;
+	}
+	public String getEmpDepttName() {
+		return empDeptName;
+	}
+	
+	public String toString(){
+		return  "\n " + "Salary is:" + Salary + 
+				"\n " + "Age of Employee is : " + age +
+				"\n " + "Employee ID is : " + empId + 
+				"\n " + "Name of Employee: " + firstName + " " + lastName + " " + surnName +
+				"\n " + "Department Of Employee is : "  + empDeptName ; 
 	}
 
 }

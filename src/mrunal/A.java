@@ -1,6 +1,6 @@
 package mrunal;
 
-public class A {
+public class A{
 
 	void m1() {
 		System.out.println("M2 is called by M1 ");

@@ -3,7 +3,6 @@ package technoCredits;
 import java.util.Scanner;
 
 public class CharCompare {
-
 	public static void main(String[] args) {
 		char ch = 'a';
 		int count = 0;

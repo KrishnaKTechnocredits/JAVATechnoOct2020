@@ -1,6 +1,6 @@
 package technoCredits;
 
-public class Example3 {
+ class Example3 {
 	int count;
 	
 	void displayCount() {
