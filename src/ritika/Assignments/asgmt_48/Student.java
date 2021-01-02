@@ -1,5 +1,9 @@
 package ritika.Assignments.asgmt_48;
+/*Assignment : 48
 
+Student class having attribute -> studentId, studentName, studentStd.
+A) Use comparable to sort all students based on studentName.
+*/
 public class Student implements Comparable<Student> {
 	int id;
 	String name;
