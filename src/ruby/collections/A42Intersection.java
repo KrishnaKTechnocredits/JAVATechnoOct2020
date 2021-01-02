@@ -1,4 +1,4 @@
-package ruby;
+package ruby.collections;
 /*Program 1 : Retains all common elements between both list.
 
 ArrayList<String> al1 = new ArrayList<String>();
