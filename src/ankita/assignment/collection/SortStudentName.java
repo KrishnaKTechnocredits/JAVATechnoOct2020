@@ -15,8 +15,8 @@ public class SortStudentName {
 		al.add(new StudentInfo(6,"Riya",8));
 		al.add(new StudentInfo(3,"Neha",8));
 		al.add(new StudentInfo(5,"Jui",9));
-		
+		System.out.println("Before Sorting:"  + al);				
 		Collections.sort(al);
-		System.out.println(al);		
+		System.out.println("After Sorting:"  + al);				
 	}
 }
