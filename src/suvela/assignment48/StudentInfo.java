@@ -1,3 +1,7 @@
+/*Assignment : 48
+
+Student class having attribute -> studentId, studentName, studentStd.
+A) Use comparable to sort all students based on studentName.*/
 package suvela.assignment48;
 
 public class StudentInfo implements Comparable<StudentInfo> {
