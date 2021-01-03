@@ -1,62 +1,58 @@
 package monika;
-/*
-*Assignment - 40: 16th Dec'2020 
-Program - 1: 
-Create a class called Employee, having 3 fields Employee Name, DeptId and Salary (input using
-scanner). 
-Create 3 parameterized constructor for same.
-Take data for 2 employees and write a method which takes 2 arguments (instance of both
-employees) and print all the details of employee having max salary.
-HINT: Method declaration - void compareEmpSalary(Employee e1, Employee e2); 
- */
+/* Assignment 39:
+Program : 1
+Create Employee class and parameterized constructor with attributes empId , empName,
+years of Experience and salary. Write a method to display the details of employees.
+ Create a method isEligible which will return true if Employee salary is more than 30000.
+  Create a method isSwitchRequired, which will return true if yearsOfExperience * 200000 < salary.
+*/
 
-import java.util.Scanner;
 
 public class Employee {
-
+	int empID;
 	String empName;
-	int deptId;
-	double salary;
+	int expYear;
+	int sal;
 
-	Employee(String empName, int deptId, double salary) {
+	public Employee(int empID, String empName, int expYear, int sal) {
+		this.empID = empID;
 		this.empName = empName;
-		this.deptId = deptId;
-		this.salary = salary;
+		this.expYear = expYear;
+		this.sal = sal;
 	}
 
-	void compareEmpSalary(Employee emp1, Employee emp2) {
-		if (emp1.salary > emp2.salary) {
-			System.out.println("Name of Employee:" + emp1.empName);
-			System.out.println("Department ID:" + emp1.deptId);
-			System.out.println("Salary Is:" + emp1.salary);
-		} else if (emp1.salary < emp2.salary) {
-			System.out.println("Name of Employee:" + emp2.empName);
-			System.out.println("Department ID:" + emp2.deptId);
-			System.out.println("Salary Is:" + emp2.salary);
+	void display() {
+		System.out.println("Employee ID : " + empID);
+		System.out.println("Employee Name : " + empName);
+		System.out.println("Employee Exp Year : " + expYear);
+		System.out.println("Employee Salary : " + sal);
 
-		} else {
-			System.out.println("Both Employee Having Same Salary");
-		}
+	}
+
+	boolean isEligible(int salary) {
+		if (salary > 30000)
+			return true;
+		return false;
+	}
+
+	boolean isSwitchRequired() {
+		if ((expYear * 200000) < (sal * 12))
+			return true;
+		return false;
 	}
 
 	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
-		System.out.println("Enter Name of First Employee");
-		String name1 = sc.next();
-		System.out.println("Enter Department of First ID");
-		int departmentId1 = sc.nextInt();
-		System.out.println("Enter Salary of of First Employee");
-		double empSalary1 = sc.nextDouble();
-		Employee e1 = new Employee(name1, departmentId1, empSalary1);
-		System.out.println("Enter Name of Second Employee");
-		String name2 = sc.next();
-		System.out.println("Enter Department of Second ID");
-		int departmentId2 = sc.nextInt();
-		System.out.println("Enter Salary of Second Employee");
-		double empSalary2 = sc.nextDouble();
-		Employee e2 = new Employee(name2, departmentId2, empSalary2);
-		e1.compareEmpSalary(e1, e2);
+		Employee employee = new Employee(7, "Monika", 6, 60000);
+		employee.display();
+		if (employee.isEligible(employee.sal))
+			System.out.println("Employee is Eligible");
+		else
+			System.out.println("Employee is not Eligible");
+
+		if (employee.isSwitchRequired())
+			System.out.println("Employee require switch");
+		else
+			System.out.println("Employee do not require switch");
 
 	}
-
 }
