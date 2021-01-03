@@ -24,7 +24,7 @@ public class FreqOfWordInEachLine {
 						count++;
 					}
 				}
-				System.out.println(str + " ---> occurance of i :-  " + count);
+				System.out.println(str + " ---> occurance of :- " + searchWord + " : "+ count);
 
 			}
 
