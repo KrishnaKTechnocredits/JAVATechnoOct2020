@@ -2,9 +2,10 @@ package suvela.assignment41;
 
 public class Employee {
 	public String fname, lname, empDeptName;
+	
 	public int age, empId, empDeptId, Salary;
 
-	Employee(String fname, String lname, String empDeptName, int age, int empId, int empDeptId, int Salary) {
+	public Employee(String fname, String lname, String empDeptName, int age, int empId, int empDeptId, int Salary) {
 		this.age = age;
 		this.empDeptId = empDeptId;
 		this.empDeptName = empDeptName;

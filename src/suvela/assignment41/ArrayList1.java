@@ -1,3 +1,8 @@
+
+/*Program 1: 
+Print all the details of employee having minimum salary.
+-> Employee class fields : firstName, lastName, surnName, age, empId, empDeptId, empDeptName,salary.
+-> override toString method in Employee class. */
 package suvela.assignment41;
 
 import java.util.ArrayList;
