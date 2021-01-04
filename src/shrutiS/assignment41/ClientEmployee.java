@@ -1,3 +1,8 @@
+/*Assignment-41 
+Program 1: 
+Print all the details of employee having minimum salary.
+-> Employee class fields : firstName, lastName, surnName, age, empId, empDeptId, empDeptName.
+-> override toString method in Employee class. */
 package shrutiS.assignment41;
 
 import java.util.ArrayList;
