@@ -1,4 +1,4 @@
-package ruby;
+package ruby.collections;
 
 import java.util.HashMap;
 import java.util.Set;
