@@ -13,7 +13,7 @@ public class FileHandling {
 
 	public static void main(String[] args) throws FileNotFoundException {
 		int totalCount = 0;
-		Scanner scanner = new Scanner(new File("src//brijesh//assignment49//techno.txt"));
+		Scanner scanner = new Scanner(new File("src//priyanka//assignment49//File.txt"));
 		while (scanner.hasNextLine()) {
 			String[] splitted = scanner.nextLine().split(" ");
 			int count = 0;
