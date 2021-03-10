@@ -2,9 +2,10 @@ package technoCredits;
 public class Test2 {
 
 	public static void main(String[] args) {
-		System.out.println("Welcome to TechnoCredits 01234567 !!!");
-		System.out.println("T2");
-		System.out.println("T2 22222");
+		System.out.println("Welcome to the TechnoCredits !!!");
+		System.out.println("In AA");
+		System.out.println("In AA 11");
+		System.out.println("In AA 13");
 	}
 
 }
